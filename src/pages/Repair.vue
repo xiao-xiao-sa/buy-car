@@ -65,7 +65,7 @@
     	width: 100%;
     	height: 100%;
     	background-color: #fff;
-    	top:130px;
+    	top:0;
     	left: 0;
     }
 	.top{
