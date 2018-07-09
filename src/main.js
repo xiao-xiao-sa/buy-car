@@ -11,6 +11,7 @@ import base from './assets/js/base.js'
 
 Vue.config.productionTip = false
 
+
 Vue.use(base);
 //定义全局价格过滤器，保留两位小数
 Vue.filter('priceType', function (value) {

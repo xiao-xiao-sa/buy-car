@@ -18,6 +18,8 @@ import MyWallet from '@/pages/MyWallet'
 import MyIntegration from '@/pages/MyIntegration'
 import MyAccount from '@/pages/MyAccount'
 import BindAccount from '@/pages/BindAccount'
+import MaintenanceRecords from '@/pages/MaintenanceRecords'
+import Setting from '@/pages/Setting'
 
 Vue.use(Router)
 
@@ -94,6 +96,14 @@ export default new Router({
     {
       path:'/BindAccount',
       component:BindAccount
+    },
+    {
+      path:'/MaintenanceRecords',
+      component:MaintenanceRecords
+    },
+    {
+      path:'/Setting',
+      component:Setting
     }
   ]
 })
