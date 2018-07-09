@@ -1,6 +1,6 @@
 <template>
-	<div class="row">
-		<router-link to="/" class="content">
+	<div class="my-row">
+		<router-link :to="rowInfo.src" class="content">
 			<i :class="['iconfont','left', rowInfo.icon]"></i>
 			<span>{{rowInfo.title}}</span>
 			<i class="iconfont icon-jiantou2 right"></i>
@@ -16,7 +16,7 @@
 </script>
 
 <style lang="less" scoped>
-	.row{
+	.my-row{
 		width: 100%;
 		height:88px;
 		background-color: #fff;

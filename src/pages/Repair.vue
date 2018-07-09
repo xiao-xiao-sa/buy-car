@@ -59,7 +59,7 @@
 	}
 </script>
 
-<style>
+<style lang="less">
     .repair-container{
     	position: fixed;
     	width: 100%;
@@ -67,60 +67,61 @@
     	background-color: #fff;
     	top:0;
     	left: 0;
+    	.top{
+			width: 700px;
+			margin:30px auto;
+		}
+		.top img{
+			width: 100%;
+		}
+		.bottom .row{
+			width: 550px;
+			margin:70px auto 0;
+			display:flex;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+		}
+		.bottom .row input{
+			width: 385px;
+			height: 60px;
+			border:2px solid #999;
+			box-sizing: border-box;
+			padding:0 10px;
+			border-radius: 6px;
+		}
+		.bottom .row textarea{
+			width: 385px;
+			border:2px solid #999;
+			border-radius: 6px;
+			box-sizing: border-box;
+			padding:10px;
+		}
+		.bottom .row label{
+			width: 130px;
+			display: inline-block;
+			font-size: 30px;
+		}
+		[dpr="2"] .bottom .row label{
+			font-size: 60px;
+		}
+		[dpr="3"] .bottom .row label{
+			font-size: 90px;
+		}
+		.sub-btn{
+			width: 480px;
+			height: 80px;
+			background-color: #ff2132;
+			color: #fff;
+			font-size: 30px;
+			border-radius: 10px;
+			margin:80px auto 0;
+		}
+		[dpr="2"] .sub-btn{
+			font-size: 60px;
+		}
+		[dpr="3"] .sub-btn{
+			font-size: 90px;
+		}
     }
-	.top{
-		width: 700px;
-		margin:30px auto;
-	}
-	.top img{
-		width: 100%;
-	}
-	.bottom .row{
-		width: 550px;
-		margin:70px auto 0;
-		display:flex;
-		flex-wrap: nowrap;
-		justify-content: space-between;
-	}
-	.bottom .row input{
-		width: 385px;
-		height: 60px;
-		border:2px solid #999;
-		box-sizing: border-box;
-		padding:0 10px;
-		border-radius: 6px;
-	}
-	.bottom .row textarea{
-		width: 385px;
-		border:2px solid #999;
-		border-radius: 6px;
-		box-sizing: border-box;
-		padding:10px;
-	}
-	.bottom .row label{
-		width: 130px;
-		display: inline-block;
-		font-size: 30px;
-	}
-	[dpr="2"] .bottom .row label{
-		font-size: 60px;
-	}
-	[dpr="3"] .bottom .row label{
-		font-size: 90px;
-	}
-	.sub-btn{
-		width: 480px;
-		height: 80px;
-		background-color: #ff2132;
-		color: #fff;
-		font-size: 30px;
-		border-radius: 10px;
-		margin:80px auto 0;
-	}
-	[dpr="2"] .sub-btn{
-		font-size: 60px;
-	}
-	[dpr="3"] .sub-btn{
-		font-size: 90px;
-	}
+	
 </style>

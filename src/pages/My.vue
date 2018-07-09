@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="my">
 		<div v-if="userInfo != null" class="top">
 			<img :src="userInfo.ava" alt="">
 			<p>{{userInfo.name}}</p>
@@ -41,27 +41,29 @@
 </script>
 
 <style lang="less" scoped>
-	.row-list{
-		margin-top:20px;
-	}
-	.top{
-		height:  300px;
-		width: 100%;
-		background-color: #fff;
-		img{
-			width:165px;
-			height: 165px;
-			border-radius: 50%;
-			background-color: #ff2132;
+	.my{
+		.row-list{
+			margin-top:20px;
 		}
-		button{
-			background-color: #ff2132;
-			width: 200px;
-			height: 50px;
-			font-size: 28px;
-			color: #fff;
-			border-radius: 10px;
-			margin-top:125px;
+		.top{
+			height:  300px;
+			width: 100%;
+			background-color: #fff;
+			img{
+				width:165px;
+				height: 165px;
+				border-radius: 50%;
+				background-color: #ff2132;
+			}
+			button{
+				background-color: #ff2132;
+				width: 200px;
+				height: 50px;
+				font-size: 28px;
+				color: #fff;
+				border-radius: 10px;
+				margin-top:125px;
+			}
 		}
 	}
 </style>

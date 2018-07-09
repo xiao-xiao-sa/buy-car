@@ -12,6 +12,12 @@ import Appointment from '@/pages/Appointment'
 import MoreShop from '@/pages/MoreShop'
 import Share from '@/pages/Share'
 import PtShop from '@/pages/PtShop'
+import OrderDetail from '@/pages/OrderDetail'
+import MyConsume from '@/pages/MyConsume'
+import MyWallet from '@/pages/MyWallet'
+import MyIntegration from '@/pages/MyIntegration'
+import MyAccount from '@/pages/MyAccount'
+import BindAccount from '@/pages/BindAccount'
 
 Vue.use(Router)
 
@@ -64,6 +70,30 @@ export default new Router({
     {
       path:'/PtShop',
       component:PtShop
+    },
+    {
+      path:'/OrderDetail',
+      component:OrderDetail
+    },
+    {
+      path:'/MyConsume',
+      component:MyConsume
+    },
+    {
+      path:'/MyWallet',
+      component:MyWallet
+    },
+    {
+      path:'/MyIntegration',
+      component:MyIntegration
+    },
+    {
+      path:'/MyAccount',
+      component:MyAccount
+    },
+    {
+      path:'/BindAccount',
+      component:BindAccount
     }
   ]
 })

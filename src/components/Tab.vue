@@ -73,38 +73,5 @@
 </script>
 
 <style>
-	.tabs{
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: space-between;
-	}
-	.tabs-bar{
-		width: 200px;
-		background-color:#f0eff5; 
-		height: 100%;
-		border-right: #d4d4d4;
-	}
-	.tabs-content{
-		width: 550px;
-	}
-	.tabs-item{
-		cursor: pointer;
-		font-size: 26px;
-		display: block;
-		height: 100px;
-		width: 100%;
-		text-align: center;
-		line-height: 100px;
-		border-bottom: 2px solid #d4d4d4;
-	}
-	[dpr="2"] .tabs-item{
-		font-size: 52px;
-	}
-	[dpr="3"] .tabs-item{
-		font-size: 78px;
-	}
-	.tabs-item-active{
-		color: red;
-		background-color: #fff;
-	}
+	
 </style>
