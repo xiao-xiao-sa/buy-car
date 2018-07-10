@@ -1,7 +1,7 @@
 var navList = [
-	{"src":require('../image/nav9.png'),"title":"车辆详情","url":''},
-	{"src":require('../image/nav10.png'),"title":"车辆图片","url":''},
-	{"src":require('../image/nav11.png'),"title":"车辆参数","url":''},
+	{"src":require('../image/nav9.png'),"title":"车辆详情","url":'/CarDetailList'},
+	{"src":require('../image/nav10.png'),"title":"车辆图片","url":'/CarPicList'},
+	{"src":require('../image/nav11.png'),"title":"车辆参数","url":'/CarParameterList'},
 	{"src":require('../image/nav12.png'),"title":"车辆圈友","url":''}
 ]
 var allShopList = [

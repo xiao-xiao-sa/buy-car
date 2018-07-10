@@ -6,7 +6,14 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  mounted:function(){
+  	window.onpopstate = () => {
+    if (!this.$store.state.allowBack) {    //    这个allowBack 是存在vuex里面的变量
+        history.go(1)
+    }
+}
+  }
 }
 </script>
 

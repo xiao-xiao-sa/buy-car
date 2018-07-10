@@ -5,7 +5,13 @@ Vue.use(vuex);
 
 export default new vuex.Store({
 	state:{
-		shopCarList:[]
+		shopCarList:[], //购物车列表
+		addressList:null, //收货地址列表
+		reviseAddress:null, //要修改的address
+		allowBack:true, //允许页面回退,
+		carDetailId:null,
+		carPicId:null,
+		carParameterId:null,
 	},
 	//相当于组件的计算属性
 	getters:{},
@@ -61,6 +67,39 @@ export default new vuex.Store({
 					return;
 				}
 			}
+		},
+		updateAppSetting:function(state,allowBack){
+			state.allowBack=allowBack;
+		},
+		addressList:function(state,addressList){
+			state.addressList=addressList;
+		},
+		deleteAddress:function(state,val){
+			for(var i=0,l=state.addressList.length;i<l;i++){
+				if(state.addressList[i].id==val){
+					state.addressList.splice(i,1);
+					return;
+				}
+			}
+		},
+		reviseAddress:function(state,val){
+			console.log(val);
+			state.reviseAddress=val;
+		},
+		reviseAddressList:function(state,val){
+			state.addressList=val;
+		},
+		getCarDetail:function(state,val){
+			state.carDetailId=val;
+			console.log(state.carDetailId)
+		},
+		getCarPic:function(state,val){
+			state.carPicId=val;
+			console.log(state.carPicId)
+		},
+		getCarParameter:function(state,val){
+			state.carParameterId=val;
+			console.log(state.carParameterId)
 		}
 	},
 	actions:{
@@ -83,6 +122,11 @@ export default new vuex.Store({
 			setTimeout(function(){
 				context.commit('deleteItem',id)
 			},500);
+		},
+		deleteAddress:function(content,val){
+			setTimeout(function(){
+				content.commit('deleteAddress',val)
+			},500)
 		}
 	}
 })

@@ -7,7 +7,7 @@ var rowList1 = [
 ]
 var rowList2 = [
 	{"icon":"icon-shezhi","title":"设置中心","src":"/Setting"},
-	{"icon":"icon-dizhi","title":"收货地址","src":"/"}
+	{"icon":"icon-dizhi","title":"收货地址","src":"/Address"}
 ]
 
 module.exports = {

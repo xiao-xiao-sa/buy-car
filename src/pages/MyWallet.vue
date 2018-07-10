@@ -22,7 +22,7 @@
 		}},
 		created:function(){
 			document.title="我的钱包";
-			//从后天获取账户信息
+			//从后台获取账户信息
 		},
 		filters:{
 			accountLength:function(val){

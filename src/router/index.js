@@ -20,6 +20,17 @@ import MyAccount from '@/pages/MyAccount'
 import BindAccount from '@/pages/BindAccount'
 import MaintenanceRecords from '@/pages/MaintenanceRecords'
 import Setting from '@/pages/Setting'
+import Address from '@/pages/Address'
+import addAddress from '@/pages/addAddress'
+import Login from '@/pages/Login'
+import Register from '@/pages/Register'
+import ForgetPwd from '@/pages/ForgetPwd'
+import CarDetailList from '@/pages/CarDetailList'
+import CarParameterList from '@/pages/CarParameterList'
+import CarPicList from '@/pages/CarPicList'
+import CarDetail from '@/pages/CarDetail'
+import CarParameter from '@/pages/CarParameter'
+import CarPic from '@/pages/CarPic'
 
 Vue.use(Router)
 
@@ -27,19 +38,23 @@ export default new Router({
   routes: [
     {
        	path: '/',
-       	component: Index
+       	component: Index,
+        meta: {allowBack: false}
     },
     {
     	path:'/SelectCar',
-    	component:SelectCar
+    	component:SelectCar,
+      meta: {allowBack: false}
     },
     {
     	path:'/ShopCar',
-    	component:ShopCar
+    	component:ShopCar,
+      meta: {allowBack: false}
     },
     {
     	path:'/My',
-    	component:My
+    	component:My,
+      meta: {allowBack: false}
     },
     {
       path:'/RecommendGood',
@@ -104,6 +119,50 @@ export default new Router({
     {
       path:'/Setting',
       component:Setting
+    },
+    {
+      path:'/Address',
+      component:Address
+    },
+    {
+      path:'/addAddress',
+      component:addAddress
+    },
+    {
+      path:'/Login',
+      component:Login
+    },
+    {
+      path:'/Register',
+      component:Register
+    },
+    {
+      path:'/ForgetPwd',
+      component:ForgetPwd
+    },
+    {
+      path:'/CarDetailList',
+      component:CarDetailList
+    },
+    {
+      path:'/CarPicList',
+      component:CarPicList
+    },
+    {
+      path:'/CarParameterList',
+      component:CarParameterList
+    },
+    {
+      path:'/CarDetail',
+      component:CarDetail
+    },
+    {
+      path:'/CarParameter',
+      component:CarParameter
+    },
+    {
+      path:'/CarPic',
+      component:CarPic
     }
   ]
 })

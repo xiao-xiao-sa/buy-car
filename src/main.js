@@ -21,6 +21,20 @@ Vue.filter('priceType', function (value) {
   }
 })
 
+router.beforeEach(function (to, from, next) {
+	next();
+	let allowBack = true    //    给个默认值true
+	if (to.meta.allowBack !== undefined) {
+	    allowBack = to.meta.allowBack
+	}
+	if (!allowBack) {
+	      history.pushState(null, null, location.href)
+	}    
+	store.commit('updateAppSetting', {     //   updateAppSetting 只是store里面的一个action， 用来改变store里的allowBack的值的，具体怎么改这个值 要根据各位的实际情况而定
+	    allowBack: allowBack
+	})
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
