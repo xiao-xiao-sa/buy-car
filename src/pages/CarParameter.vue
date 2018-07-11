@@ -83,6 +83,8 @@
 		table{
 			border:2px solid #efefef;
 			width: 100%;
+			background-color: #fff;
+			padding:10px;
 		}
 		tr{
 			border-bottom: 2px solid #efefef;

@@ -1,246 +1,246 @@
 var chineseCities =[
     {id: 1, name: '北京', city: [
-    {id: 1, name: '北京市', district: [
-      {id: 1, name: '东城区'},
-      {id: 2, name: '西城区'},
-      {id: 3, name: '崇文区'},
-      {id: 4, name: '宣武区'},
-      {id: 5, name: '朝阳区'},
-      {id: 6, name: '丰台区'},
-      {id: 7, name: '石景山区'},
-      {id: 8, name: '海淀区'},
-      {id: 9, name: '门头沟区'},
-      {id: 10, name: '房山区'},
-      {id: 11, name: '通州区'},
-      {id: 12, name: '顺义区'},
-      {id: 13, name: '昌平区'},
-      {id: 14, name: '大兴区'},
-      {id: 15, name: '怀柔区'},
-      {id: 16, name: '平谷区'},
-      {id: 17, name: '密云县'},
-      {id: 18, name: '延庆县'}
-    ]}
+      {id: 1, name: '北京市', city: [
+        {id: 1, name: '东城区'},
+        {id: 2, name: '西城区'},
+        {id: 3, name: '崇文区'},
+        {id: 4, name: '宣武区'},
+        {id: 5, name: '朝阳区'},
+        {id: 6, name: '丰台区'},
+        {id: 7, name: '石景山区'},
+        {id: 8, name: '海淀区'},
+        {id: 9, name: '门头沟区'},
+        {id: 10, name: '房山区'},
+        {id: 11, name: '通州区'},
+        {id: 12, name: '顺义区'},
+        {id: 13, name: '昌平区'},
+        {id: 14, name: '大兴区'},
+        {id: 15, name: '怀柔区'},
+        {id: 16, name: '平谷区'},
+        {id: 17, name: '密云县'},
+        {id: 18, name: '延庆县'}
+      ]}
     ]},
     {id: 2, name: '天津', city: [
-    {id: 2, name: '天津市', district: [
-      {id: 19, name: '和平区'},
-      {id: 20, name: '河东区'},
-      {id: 21, name: '河西区'},
-      {id: 22, name: '南开区'},
-      {id: 23, name: '河北区'},
-      {id: 24, name: '红桥区'},
-      {id: 25, name: '塘沽区'},
-      {id: 26, name: '汉沽区'},
-      {id: 27, name: '大港区'},
-      {id: 28, name: '东丽区'},
-      {id: 29, name: '西青区'},
-      {id: 30, name: '津南区'},
-      {id: 31, name: '北辰区'},
-      {id: 32, name: '武清区'},
-      {id: 33, name: '宝坻区'},
-      {id: 34, name: '宁河县'},
-      {id: 35, name: '静海县'},
-      {id: 36, name: '蓟县'}
-    ]}
+      {id: 2, name: '天津市', city: [
+        {id: 19, name: '和平区'},
+        {id: 20, name: '河东区'},
+        {id: 21, name: '河西区'},
+        {id: 22, name: '南开区'},
+        {id: 23, name: '河北区'},
+        {id: 24, name: '红桥区'},
+        {id: 25, name: '塘沽区'},
+        {id: 26, name: '汉沽区'},
+        {id: 27, name: '大港区'},
+        {id: 28, name: '东丽区'},
+        {id: 29, name: '西青区'},
+        {id: 30, name: '津南区'},
+        {id: 31, name: '北辰区'},
+        {id: 32, name: '武清区'},
+        {id: 33, name: '宝坻区'},
+        {id: 34, name: '宁河县'},
+        {id: 35, name: '静海县'},
+        {id: 36, name: '蓟县'}
+      ]}
     ]},
     {id: 3, name: '河北', city: [
-    {id: 3, name: '石家庄市', district: [
-      {id: 37, name: '长安区'},
-      {id: 38, name: '桥东区'},
-      {id: 39, name: '桥西区'},
-      {id: 40, name: '新华区'},
-      {id: 41, name: '井陉矿区'},
-      {id: 42, name: '裕华区'},
-      {id: 43, name: '井陉县'},
-      {id: 44, name: '正定县'},
-      {id: 45, name: '栾城县'},
-      {id: 46, name: '行唐县'},
-      {id: 47, name: '灵寿县'},
-      {id: 48, name: '高邑县'},
-      {id: 49, name: '深泽县'},
-      {id: 50, name: '赞皇县'},
-      {id: 51, name: '无极县'},
-      {id: 52, name: '平山县'},
-      {id: 53, name: '元氏县'},
-      {id: 54, name: '赵县'},
-      {id: 55, name: '辛集市'},
-      {id: 56, name: '藁城市'},
-      {id: 57, name: '晋州市'},
-      {id: 58, name: '新乐市'},
-      {id: 59, name: '鹿泉市'}
-    ]},
-    {id: 4, name: '唐山市', district: [
-      {id: 60, name: '路南区'},
-      {id: 61, name: '路北区'},
-      {id: 62, name: '古冶区'},
-      {id: 63, name: '开平区'},
-      {id: 64, name: '丰南区'},
-      {id: 65, name: '丰润区'},
-      {id: 66, name: '滦县'},
-      {id: 67, name: '滦南县'},
-      {id: 68, name: '乐亭县'},
-      {id: 69, name: '迁西县'},
-      {id: 70, name: '玉田县'},
-      {id: 71, name: '唐海县'},
-      {id: 72, name: '遵化市'},
-      {id: 73, name: '迁安市'}
-    ]},
-    {id: 5, name: '秦皇岛市', district: [
-      {id: 74, name: '海港区'},
-      {id: 75, name: '山海关区'},
-      {id: 76, name: '北戴河区'},
-      {id: 77, name: '青龙满族自治县'},
-      {id: 78, name: '昌黎县'},
-      {id: 79, name: '抚宁县'},
-      {id: 80, name: '卢龙县'}
-    ]},
-    {id: 6, name: '邯郸市', district: [
-      {id: 81, name: '邯山区'},
-      {id: 82, name: '丛台区'},
-      {id: 83, name: '复兴区'},
-      {id: 84, name: '峰峰矿区'},
-      {id: 85, name: '邯郸县'},
-      {id: 86, name: '临漳县'},
-      {id: 87, name: '成安县'},
-      {id: 88, name: '大名县'},
-      {id: 89, name: '涉县'},
-      {id: 90, name: '磁县'},
-      {id: 91, name: '肥乡县'},
-      {id: 92, name: '永年县'},
-      {id: 93, name: '邱县'},
-      {id: 94, name: '鸡泽县'},
-      {id: 95, name: '广平县'},
-      {id: 96, name: '馆陶县'},
-      {id: 97, name: '魏县'},
-      {id: 98, name: '曲周县'},
-      {id: 99, name: '武安市'}
-    ]},
-    {id: 7, name: '邢台市', district: [
-      {id: 100, name: '桥东区'},
-      {id: 101, name: '桥西区'},
-      {id: 102, name: '邢台县'},
-      {id: 103, name: '临城县'},
-      {id: 104, name: '内丘县'},
-      {id: 105, name: '柏乡县'},
-      {id: 106, name: '隆尧县'},
-      {id: 107, name: '任县'},
-      {id: 108, name: '南和县'},
-      {id: 109, name: '宁晋县'},
-      {id: 110, name: '巨鹿县'},
-      {id: 111, name: '新河县'},
-      {id: 112, name: '广宗县'},
-      {id: 113, name: '平乡县'},
-      {id: 114, name: '威县'},
-      {id: 115, name: '清河县'},
-      {id: 116, name: '临西县'},
-      {id: 117, name: '南宫市'},
-      {id: 118, name: '沙河市'}
-    ]},
-    {id: 8, name: '保定市', district: [
-      {id: 119, name: '新市区'},
-      {id: 120, name: '北市区'},
-      {id: 121, name: '南市区'},
-      {id: 122, name: '满城县'},
-      {id: 123, name: '清苑县'},
-      {id: 124, name: '涞水县'},
-      {id: 125, name: '阜平县'},
-      {id: 126, name: '徐水县'},
-      {id: 127, name: '定兴县'},
-      {id: 128, name: '唐县'},
-      {id: 129, name: '高阳县'},
-      {id: 130, name: '容城县'},
-      {id: 131, name: '涞源县'},
-      {id: 132, name: '望都县'},
-      {id: 133, name: '安新县'},
-      {id: 134, name: '易县'},
-      {id: 135, name: '曲阳县'},
-      {id: 136, name: '蠡县'},
-      {id: 137, name: '顺平县'},
-      {id: 138, name: '博野县'},
-      {id: 139, name: '雄县'},
-      {id: 140, name: '涿州市'},
-      {id: 141, name: '定州市'},
-      {id: 142, name: '安国市'},
-      {id: 143, name: '高碑店市'}
-    ]},
-    {id: 9, name: '张家口市', district: [
-      {id: 144, name: '桥东区'},
-      {id: 145, name: '桥西区'},
-      {id: 146, name: '宣化区'},
-      {id: 147, name: '下花园区'},
-      {id: 148, name: '宣化县'},
-      {id: 149, name: '张北县'},
-      {id: 150, name: '康保县'},
-      {id: 151, name: '沽源县'},
-      {id: 152, name: '尚义县'},
-      {id: 153, name: '蔚县'},
-      {id: 154, name: '阳原县'},
-      {id: 155, name: '怀安县'},
-      {id: 156, name: '万全县'},
-      {id: 157, name: '怀来县'},
-      {id: 158, name: '涿鹿县'},
-      {id: 159, name: '赤城县'},
-      {id: 160, name: '崇礼县'}
-    ]},
-    {id: 10, name: '承德市', district: [
-      {id: 161, name: '双桥区'},
-      {id: 162, name: '双滦区'},
-      {id: 163, name: '鹰手营子矿区'},
-      {id: 164, name: '承德县'},
-      {id: 165, name: '兴隆县'},
-      {id: 166, name: '平泉县'},
-      {id: 167, name: '滦平县'},
-      {id: 168, name: '隆化县'},
-      {id: 169, name: '丰宁满族自治县'},
-      {id: 170, name: '宽城满族自治县'},
-      {id: 171, name: '围场满族蒙古族自治县'}
-    ]},
-    {id: 11, name: '沧州市', district: [
-      {id: 172, name: '新华区'},
-      {id: 173, name: '运河区'},
-      {id: 174, name: '沧县'},
-      {id: 175, name: '青县'},
-      {id: 176, name: '东光县'},
-      {id: 177, name: '海兴县'},
-      {id: 178, name: '盐山县'},
-      {id: 179, name: '肃宁县'},
-      {id: 180, name: '南皮县'},
-      {id: 181, name: '吴桥县'},
-      {id: 182, name: '献县'},
-      {id: 183, name: '孟村回族自治县'},
-      {id: 184, name: '泊头市'},
-      {id: 185, name: '任丘市'},
-      {id: 186, name: '黄骅市'},
-      {id: 187, name: '河间市'}
-    ]},
-    {id: 12, name: '廊坊市', district: [
-      {id: 188, name: '安次区'},
-      {id: 189, name: '广阳区'},
-      {id: 190, name: '固安县'},
-      {id: 191, name: '永清县'},
-      {id: 192, name: '香河县'},
-      {id: 193, name: '大城县'},
-      {id: 194, name: '文安县'},
-      {id: 195, name: '大厂回族自治县'},
-      {id: 196, name: '霸州市'},
-      {id: 197, name: '三河市'}
-    ]},
-    {id: 13, name: '衡水市', district: [
-      {id: 198, name: '桃城区'},
-      {id: 199, name: '枣强县'},
-      {id: 200, name: '武邑县'},
-      {id: 201, name: '武强县'},
-      {id: 202, name: '饶阳县'},
-      {id: 203, name: '安平县'},
-      {id: 204, name: '故城县'},
-      {id: 205, name: '景县'},
-      {id: 206, name: '阜城县'},
-      {id: 207, name: '冀州市'},
-      {id: 208, name: '深州市'}
-    ]}
+      {id: 3, name: '石家庄市', city: [
+        {id: 37, name: '长安区'},
+        {id: 38, name: '桥东区'},
+        {id: 39, name: '桥西区'},
+        {id: 40, name: '新华区'},
+        {id: 41, name: '井陉矿区'},
+        {id: 42, name: '裕华区'},
+        {id: 43, name: '井陉县'},
+        {id: 44, name: '正定县'},
+        {id: 45, name: '栾城县'},
+        {id: 46, name: '行唐县'},
+        {id: 47, name: '灵寿县'},
+        {id: 48, name: '高邑县'},
+        {id: 49, name: '深泽县'},
+        {id: 50, name: '赞皇县'},
+        {id: 51, name: '无极县'},
+        {id: 52, name: '平山县'},
+        {id: 53, name: '元氏县'},
+        {id: 54, name: '赵县'},
+        {id: 55, name: '辛集市'},
+        {id: 56, name: '藁城市'},
+        {id: 57, name: '晋州市'},
+        {id: 58, name: '新乐市'},
+        {id: 59, name: '鹿泉市'}
+      ]},
+      {id: 4, name: '唐山市', city: [
+        {id: 60, name: '路南区'},
+        {id: 61, name: '路北区'},
+        {id: 62, name: '古冶区'},
+        {id: 63, name: '开平区'},
+        {id: 64, name: '丰南区'},
+        {id: 65, name: '丰润区'},
+        {id: 66, name: '滦县'},
+        {id: 67, name: '滦南县'},
+        {id: 68, name: '乐亭县'},
+        {id: 69, name: '迁西县'},
+        {id: 70, name: '玉田县'},
+        {id: 71, name: '唐海县'},
+        {id: 72, name: '遵化市'},
+        {id: 73, name: '迁安市'}
+      ]},
+      {id: 5, name: '秦皇岛市', city: [
+        {id: 74, name: '海港区'},
+        {id: 75, name: '山海关区'},
+        {id: 76, name: '北戴河区'},
+        {id: 77, name: '青龙满族自治县'},
+        {id: 78, name: '昌黎县'},
+        {id: 79, name: '抚宁县'},
+        {id: 80, name: '卢龙县'}
+      ]},
+      {id: 6, name: '邯郸市', city: [
+        {id: 81, name: '邯山区'},
+        {id: 82, name: '丛台区'},
+        {id: 83, name: '复兴区'},
+        {id: 84, name: '峰峰矿区'},
+        {id: 85, name: '邯郸县'},
+        {id: 86, name: '临漳县'},
+        {id: 87, name: '成安县'},
+        {id: 88, name: '大名县'},
+        {id: 89, name: '涉县'},
+        {id: 90, name: '磁县'},
+        {id: 91, name: '肥乡县'},
+        {id: 92, name: '永年县'},
+        {id: 93, name: '邱县'},
+        {id: 94, name: '鸡泽县'},
+        {id: 95, name: '广平县'},
+        {id: 96, name: '馆陶县'},
+        {id: 97, name: '魏县'},
+        {id: 98, name: '曲周县'},
+        {id: 99, name: '武安市'}
+      ]},
+      {id: 7, name: '邢台市', city: [
+        {id: 100, name: '桥东区'},
+        {id: 101, name: '桥西区'},
+        {id: 102, name: '邢台县'},
+        {id: 103, name: '临城县'},
+        {id: 104, name: '内丘县'},
+        {id: 105, name: '柏乡县'},
+        {id: 106, name: '隆尧县'},
+        {id: 107, name: '任县'},
+        {id: 108, name: '南和县'},
+        {id: 109, name: '宁晋县'},
+        {id: 110, name: '巨鹿县'},
+        {id: 111, name: '新河县'},
+        {id: 112, name: '广宗县'},
+        {id: 113, name: '平乡县'},
+        {id: 114, name: '威县'},
+        {id: 115, name: '清河县'},
+        {id: 116, name: '临西县'},
+        {id: 117, name: '南宫市'},
+        {id: 118, name: '沙河市'}
+      ]},
+      {id: 8, name: '保定市', city: [
+        {id: 119, name: '新市区'},
+        {id: 120, name: '北市区'},
+        {id: 121, name: '南市区'},
+        {id: 122, name: '满城县'},
+        {id: 123, name: '清苑县'},
+        {id: 124, name: '涞水县'},
+        {id: 125, name: '阜平县'},
+        {id: 126, name: '徐水县'},
+        {id: 127, name: '定兴县'},
+        {id: 128, name: '唐县'},
+        {id: 129, name: '高阳县'},
+        {id: 130, name: '容城县'},
+        {id: 131, name: '涞源县'},
+        {id: 132, name: '望都县'},
+        {id: 133, name: '安新县'},
+        {id: 134, name: '易县'},
+        {id: 135, name: '曲阳县'},
+        {id: 136, name: '蠡县'},
+        {id: 137, name: '顺平县'},
+        {id: 138, name: '博野县'},
+        {id: 139, name: '雄县'},
+        {id: 140, name: '涿州市'},
+        {id: 141, name: '定州市'},
+        {id: 142, name: '安国市'},
+        {id: 143, name: '高碑店市'}
+      ]},
+      {id: 9, name: '张家口市', city: [
+        {id: 144, name: '桥东区'},
+        {id: 145, name: '桥西区'},
+        {id: 146, name: '宣化区'},
+        {id: 147, name: '下花园区'},
+        {id: 148, name: '宣化县'},
+        {id: 149, name: '张北县'},
+        {id: 150, name: '康保县'},
+        {id: 151, name: '沽源县'},
+        {id: 152, name: '尚义县'},
+        {id: 153, name: '蔚县'},
+        {id: 154, name: '阳原县'},
+        {id: 155, name: '怀安县'},
+        {id: 156, name: '万全县'},
+        {id: 157, name: '怀来县'},
+        {id: 158, name: '涿鹿县'},
+        {id: 159, name: '赤城县'},
+        {id: 160, name: '崇礼县'}
+      ]},
+      {id: 10, name: '承德市', city: [
+        {id: 161, name: '双桥区'},
+        {id: 162, name: '双滦区'},
+        {id: 163, name: '鹰手营子矿区'},
+        {id: 164, name: '承德县'},
+        {id: 165, name: '兴隆县'},
+        {id: 166, name: '平泉县'},
+        {id: 167, name: '滦平县'},
+        {id: 168, name: '隆化县'},
+        {id: 169, name: '丰宁满族自治县'},
+        {id: 170, name: '宽城满族自治县'},
+        {id: 171, name: '围场满族蒙古族自治县'}
+      ]},
+      {id: 11, name: '沧州市', city: [
+        {id: 172, name: '新华区'},
+        {id: 173, name: '运河区'},
+        {id: 174, name: '沧县'},
+        {id: 175, name: '青县'},
+        {id: 176, name: '东光县'},
+        {id: 177, name: '海兴县'},
+        {id: 178, name: '盐山县'},
+        {id: 179, name: '肃宁县'},
+        {id: 180, name: '南皮县'},
+        {id: 181, name: '吴桥县'},
+        {id: 182, name: '献县'},
+        {id: 183, name: '孟村回族自治县'},
+        {id: 184, name: '泊头市'},
+        {id: 185, name: '任丘市'},
+        {id: 186, name: '黄骅市'},
+        {id: 187, name: '河间市'}
+      ]},
+      {id: 12, name: '廊坊市', city: [
+        {id: 188, name: '安次区'},
+        {id: 189, name: '广阳区'},
+        {id: 190, name: '固安县'},
+        {id: 191, name: '永清县'},
+        {id: 192, name: '香河县'},
+        {id: 193, name: '大城县'},
+        {id: 194, name: '文安县'},
+        {id: 195, name: '大厂回族自治县'},
+        {id: 196, name: '霸州市'},
+        {id: 197, name: '三河市'}
+      ]},
+      {id: 13, name: '衡水市', city: [
+        {id: 198, name: '桃城区'},
+        {id: 199, name: '枣强县'},
+        {id: 200, name: '武邑县'},
+        {id: 201, name: '武强县'},
+        {id: 202, name: '饶阳县'},
+        {id: 203, name: '安平县'},
+        {id: 204, name: '故城县'},
+        {id: 205, name: '景县'},
+        {id: 206, name: '阜城县'},
+        {id: 207, name: '冀州市'},
+        {id: 208, name: '深州市'}
+      ]}
     ]},
     {id: 4, name: '山西', city: [
-    {id: 14, name: '太原市', district: [
+    {id: 14, name: '太原市', city: [
       {id: 209, name: '小店区'},
       {id: 210, name: '迎泽区'},
       {id: 211, name: '杏花岭区'},
@@ -252,7 +252,7 @@ var chineseCities =[
       {id: 217, name: '娄烦县'},
       {id: 218, name: '古交市'}
     ]},
-    {id: 15, name: '大同市', district: [
+    {id: 15, name: '大同市', city: [
       {id: 219, name: '城区'},
       {id: 220, name: '矿区'},
       {id: 221, name: '南郊区'},
@@ -265,14 +265,14 @@ var chineseCities =[
       {id: 228, name: '左云县'},
       {id: 229, name: '大同县'}
     ]},
-    {id: 16, name: '阳泉市', district: [
+    {id: 16, name: '阳泉市', city: [
       {id: 230, name: '城区'},
       {id: 231, name: '矿区'},
       {id: 232, name: '郊区'},
       {id: 233, name: '平定县'},
       {id: 234, name: '盂县'}
     ]},
-    {id: 17, name: '长治市', district: [
+    {id: 17, name: '长治市', city: [
       {id: 235, name: '城区'},
       {id: 236, name: '郊区'},
       {id: 237, name: '长治县'},
@@ -287,7 +287,7 @@ var chineseCities =[
       {id: 246, name: '沁源县'},
       {id: 247, name: '潞城市'}
     ]},
-    {id: 18, name: '晋城市', district: [
+    {id: 18, name: '晋城市', city: [
       {id: 248, name: '城区'},
       {id: 249, name: '沁水县'},
       {id: 250, name: '阳城县'},
@@ -295,7 +295,7 @@ var chineseCities =[
       {id: 252, name: '泽州县'},
       {id: 253, name: '高平市'}
     ]},
-    {id: 19, name: '朔州市', district: [
+    {id: 19, name: '朔州市', city: [
       {id: 254, name: '朔城区'},
       {id: 255, name: '平鲁区'},
       {id: 256, name: '山阴县'},
@@ -303,7 +303,7 @@ var chineseCities =[
       {id: 258, name: '右玉县'},
       {id: 259, name: '怀仁县'}
     ]},
-    {id: 20, name: '晋中市', district: [
+    {id: 20, name: '晋中市', city: [
       {id: 260, name: '榆次区'},
       {id: 261, name: '榆社县'},
       {id: 262, name: '左权县'},
@@ -316,7 +316,7 @@ var chineseCities =[
       {id: 269, name: '灵石县'},
       {id: 270, name: '介休市'}
     ]},
-    {id: 21, name: '运城市', district: [
+    {id: 21, name: '运城市', city: [
       {id: 271, name: '盐湖区'},
       {id: 272, name: '临猗县'},
       {id: 273, name: '万荣县'},
@@ -331,7 +331,7 @@ var chineseCities =[
       {id: 282, name: '永济市'},
       {id: 283, name: '河津市'}
     ]},
-    {id: 22, name: '忻州市', district: [
+    {id: 22, name: '忻州市', city: [
       {id: 284, name: '忻府区'},
       {id: 285, name: '定襄县'},
       {id: 286, name: '五台县'},
@@ -347,7 +347,7 @@ var chineseCities =[
       {id: 296, name: '偏关县'},
       {id: 297, name: '原平市'}
     ]},
-    {id: 23, name: '临汾市', district: [
+    {id: 23, name: '临汾市', city: [
       {id: 298, name: '尧都区'},
       {id: 299, name: '曲沃县'},
       {id: 300, name: '翼城县'},
@@ -366,7 +366,7 @@ var chineseCities =[
       {id: 313, name: '侯马市'},
       {id: 314, name: '霍州市'}
     ]},
-    {id: 24, name: '吕梁市', district: [
+    {id: 24, name: '吕梁市', city: [
       {id: 315, name: '离石区'},
       {id: 316, name: '文水县'},
       {id: 317, name: '交城县'},
@@ -383,7 +383,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 5, name: '内蒙古', city: [
-    {id: 25, name: '呼和浩特市', district: [
+    {id: 25, name: '呼和浩特市', city: [
       {id: 328, name: '新城区'},
       {id: 329, name: '回民区'},
       {id: 330, name: '玉泉区'},
@@ -394,7 +394,7 @@ var chineseCities =[
       {id: 335, name: '清水河县'},
       {id: 336, name: '武川县'}
     ]},
-    {id: 26, name: '包头市', district: [
+    {id: 26, name: '包头市', city: [
       {id: 337, name: '东河区'},
       {id: 338, name: '昆都仑区'},
       {id: 339, name: '青山区'},
@@ -405,12 +405,12 @@ var chineseCities =[
       {id: 344, name: '固阳县'},
       {id: 345, name: '达尔罕茂明安联合旗'}
     ]},
-    {id: 27, name: '乌海市', district: [
+    {id: 27, name: '乌海市', city: [
       {id: 346, name: '海勃湾区'},
       {id: 347, name: '海南区'},
       {id: 348, name: '乌达区'}
     ]},
-    {id: 28, name: '赤峰市', district: [
+    {id: 28, name: '赤峰市', city: [
       {id: 349, name: '红山区'},
       {id: 350, name: '元宝山区'},
       {id: 351, name: '松山区'},
@@ -424,7 +424,7 @@ var chineseCities =[
       {id: 359, name: '宁城县'},
       {id: 360, name: '敖汉旗'}
     ]},
-    {id: 29, name: '通辽市', district: [
+    {id: 29, name: '通辽市', city: [
       {id: 361, name: '科尔沁区'},
       {id: 362, name: '科尔沁左翼中旗'},
       {id: 363, name: '科尔沁左翼后旗'},
@@ -434,7 +434,7 @@ var chineseCities =[
       {id: 367, name: '扎鲁特旗'},
       {id: 368, name: '霍林郭勒市'}
     ]},
-    {id: 30, name: '鄂尔多斯市', district: [
+    {id: 30, name: '鄂尔多斯市', city: [
       {id: 369, name: '东胜区'},
       {id: 370, name: '达拉特旗'},
       {id: 371, name: '准格尔旗'},
@@ -444,7 +444,7 @@ var chineseCities =[
       {id: 375, name: '乌审旗'},
       {id: 376, name: '伊金霍洛旗'}
     ]},
-    {id: 31, name: '呼伦贝尔市', district: [
+    {id: 31, name: '呼伦贝尔市', city: [
       {id: 377, name: '海拉尔区'},
       {id: 378, name: '阿荣旗'},
       {id: 379, name: '莫力达瓦达斡尔族自治旗'},
@@ -459,7 +459,7 @@ var chineseCities =[
       {id: 388, name: '额尔古纳市'},
       {id: 389, name: '根河市'}
     ]},
-    {id: 32, name: '巴彦淖尔市', district: [
+    {id: 32, name: '巴彦淖尔市', city: [
       {id: 390, name: '临河区'},
       {id: 391, name: '五原县'},
       {id: 392, name: '磴口县'},
@@ -468,7 +468,7 @@ var chineseCities =[
       {id: 395, name: '乌拉特后旗'},
       {id: 396, name: '杭锦后旗'}
     ]},
-    {id: 33, name: '乌兰察布市', district: [
+    {id: 33, name: '乌兰察布市', city: [
       {id: 397, name: '集宁区'},
       {id: 398, name: '卓资县'},
       {id: 399, name: '化德县'},
@@ -481,7 +481,7 @@ var chineseCities =[
       {id: 406, name: '四子王旗'},
       {id: 407, name: '丰镇市'}
     ]},
-    {id: 34, name: '兴安盟', district: [
+    {id: 34, name: '兴安盟', city: [
       {id: 408, name: '乌兰浩特市'},
       {id: 409, name: '阿尔山市'},
       {id: 410, name: '科尔沁右翼前旗'},
@@ -489,7 +489,7 @@ var chineseCities =[
       {id: 412, name: '扎赉特旗'},
       {id: 413, name: '突泉县'}
     ]},
-    {id: 35, name: '锡林郭勒盟', district: [
+    {id: 35, name: '锡林郭勒盟', city: [
       {id: 414, name: '二连浩特市'},
       {id: 415, name: '锡林浩特市'},
       {id: 416, name: '阿巴嘎旗'},
@@ -503,14 +503,14 @@ var chineseCities =[
       {id: 424, name: '正蓝旗'},
       {id: 425, name: '多伦县'}
     ]},
-    {id: 36, name: '阿拉善盟', district: [
+    {id: 36, name: '阿拉善盟', city: [
       {id: 426, name: '阿拉善左旗'},
       {id: 427, name: '阿拉善右旗'},
       {id: 428, name: '额济纳旗'}
     ]}
     ]},
     {id: 6, name: '辽宁', city: [
-    {id: 37, name: '沈阳市', district: [
+    {id: 37, name: '沈阳市', city: [
       {id: 429, name: '和平区'},
       {id: 430, name: '沈河区'},
       {id: 431, name: '大东区'},
@@ -525,7 +525,7 @@ var chineseCities =[
       {id: 440, name: '法库县'},
       {id: 441, name: '新民市'}
     ]},
-    {id: 38, name: '大连市', district: [
+    {id: 38, name: '大连市', city: [
       {id: 442, name: '中山区'},
       {id: 443, name: '西岗区'},
       {id: 444, name: '沙河口区'},
@@ -537,7 +537,7 @@ var chineseCities =[
       {id: 450, name: '普兰店市'},
       {id: 451, name: '庄河市'}
     ]},
-    {id: 39, name: '鞍山市', district: [
+    {id: 39, name: '鞍山市', city: [
       {id: 452, name: '铁东区'},
       {id: 453, name: '铁西区'},
       {id: 454, name: '立山区'},
@@ -546,7 +546,7 @@ var chineseCities =[
       {id: 457, name: '岫岩满族自治县'},
       {id: 458, name: '海城市'}
     ]},
-    {id: 40, name: '抚顺市', district: [
+    {id: 40, name: '抚顺市', city: [
       {id: 459, name: '新抚区'},
       {id: 460, name: '东洲区'},
       {id: 461, name: '望花区'},
@@ -555,7 +555,7 @@ var chineseCities =[
       {id: 464, name: '新宾满族自治县'},
       {id: 465, name: '清原满族自治县'}
     ]},
-    {id: 41, name: '本溪市', district: [
+    {id: 41, name: '本溪市', city: [
       {id: 466, name: '平山区'},
       {id: 467, name: '溪湖区'},
       {id: 468, name: '明山区'},
@@ -563,7 +563,7 @@ var chineseCities =[
       {id: 470, name: '本溪满族自治县'},
       {id: 471, name: '桓仁满族自治县'}
     ]},
-    {id: 42, name: '丹东市', district: [
+    {id: 42, name: '丹东市', city: [
       {id: 472, name: '元宝区'},
       {id: 473, name: '振兴区'},
       {id: 474, name: '振安区'},
@@ -571,7 +571,7 @@ var chineseCities =[
       {id: 476, name: '东港市'},
       {id: 477, name: '凤城市'}
     ]},
-    {id: 43, name: '锦州市', district: [
+    {id: 43, name: '锦州市', city: [
       {id: 478, name: '古塔区'},
       {id: 479, name: '凌河区'},
       {id: 480, name: '太和区'},
@@ -580,7 +580,7 @@ var chineseCities =[
       {id: 483, name: '凌海市'},
       {id: 484, name: '北宁市'}
     ]},
-    {id: 44, name: '营口市', district: [
+    {id: 44, name: '营口市', city: [
       {id: 485, name: '站前区'},
       {id: 486, name: '西市区'},
       {id: 487, name: '鲅鱼圈区'},
@@ -588,7 +588,7 @@ var chineseCities =[
       {id: 489, name: '盖州市'},
       {id: 490, name: '大石桥市'}
     ]},
-    {id: 45, name: '阜新市', district: [
+    {id: 45, name: '阜新市', city: [
       {id: 491, name: '海州区'},
       {id: 492, name: '新邱区'},
       {id: 493, name: '太平区'},
@@ -597,7 +597,7 @@ var chineseCities =[
       {id: 496, name: '阜新蒙古族自治县'},
       {id: 497, name: '彰武县'}
     ]},
-    {id: 46, name: '辽阳市', district: [
+    {id: 46, name: '辽阳市', city: [
       {id: 498, name: '白塔区'},
       {id: 499, name: '文圣区'},
       {id: 500, name: '宏伟区'},
@@ -606,13 +606,13 @@ var chineseCities =[
       {id: 503, name: '辽阳县'},
       {id: 504, name: '灯塔市'}
     ]},
-    {id: 47, name: '盘锦市', district: [
+    {id: 47, name: '盘锦市', city: [
       {id: 505, name: '双台子区'},
       {id: 506, name: '兴隆台区'},
       {id: 507, name: '大洼县'},
       {id: 508, name: '盘山县'}
     ]},
-    {id: 48, name: '铁岭市', district: [
+    {id: 48, name: '铁岭市', city: [
       {id: 509, name: '银州区'},
       {id: 510, name: '清河区'},
       {id: 511, name: '铁岭县'},
@@ -621,7 +621,7 @@ var chineseCities =[
       {id: 514, name: '调兵山市'},
       {id: 515, name: '开原市'}
     ]},
-    {id: 49, name: '朝阳市', district: [
+    {id: 49, name: '朝阳市', city: [
       {id: 516, name: '双塔区'},
       {id: 517, name: '龙城区'},
       {id: 518, name: '朝阳县'},
@@ -630,7 +630,7 @@ var chineseCities =[
       {id: 521, name: '北票市'},
       {id: 522, name: '凌源市'}
     ]},
-    {id: 50, name: '葫芦岛市', district: [
+    {id: 50, name: '葫芦岛市', city: [
       {id: 523, name: '连山区'},
       {id: 524, name: '龙港区'},
       {id: 525, name: '南票区'},
@@ -640,7 +640,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 7, name: '吉林', city: [
-    {id: 51, name: '长春市', district: [
+    {id: 51, name: '长春市', city: [
       {id: 529, name: '南关区'},
       {id: 530, name: '宽城区'},
       {id: 531, name: '朝阳区'},
@@ -652,7 +652,7 @@ var chineseCities =[
       {id: 537, name: '榆树市'},
       {id: 538, name: '德惠市'}
     ]},
-    {id: 52, name: '吉林市', district: [
+    {id: 52, name: '吉林市', city: [
       {id: 539, name: '昌邑区'},
       {id: 540, name: '龙潭区'},
       {id: 541, name: '船营区'},
@@ -663,7 +663,7 @@ var chineseCities =[
       {id: 546, name: '舒兰市'},
       {id: 547, name: '磐石市'}
     ]},
-    {id: 53, name: '四平市', district: [
+    {id: 53, name: '四平市', city: [
       {id: 548, name: '铁西区'},
       {id: 549, name: '铁东区'},
       {id: 550, name: '梨树县'},
@@ -671,13 +671,13 @@ var chineseCities =[
       {id: 552, name: '公主岭市'},
       {id: 553, name: '双辽市'}
     ]},
-    {id: 54, name: '辽源市', district: [
+    {id: 54, name: '辽源市', city: [
       {id: 554, name: '龙山区'},
       {id: 555, name: '西安区'},
       {id: 556, name: '东丰县'},
       {id: 557, name: '东辽县'}
     ]},
-    {id: 55, name: '通化市', district: [
+    {id: 55, name: '通化市', city: [
       {id: 558, name: '东昌区'},
       {id: 559, name: '二道江区'},
       {id: 560, name: '通化县'},
@@ -686,7 +686,7 @@ var chineseCities =[
       {id: 563, name: '梅河口市'},
       {id: 564, name: '集安市'}
     ]},
-    {id: 56, name: '白山市', district: [
+    {id: 56, name: '白山市', city: [
       {id: 565, name: '八道江区'},
       {id: 566, name: '抚松县'},
       {id: 567, name: '靖宇县'},
@@ -694,21 +694,21 @@ var chineseCities =[
       {id: 569, name: '江源县'},
       {id: 570, name: '临江市'}
     ]},
-    {id: 57, name: '松原市', district: [
+    {id: 57, name: '松原市', city: [
       {id: 571, name: '宁江区'},
       {id: 572, name: '前郭尔罗斯蒙古族自治县'},
       {id: 573, name: '长岭县'},
       {id: 574, name: '乾安县'},
       {id: 575, name: '扶余县'}
     ]},
-    {id: 58, name: '白城市', district: [
+    {id: 58, name: '白城市', city: [
       {id: 576, name: '洮北区'},
       {id: 577, name: '镇赉县'},
       {id: 578, name: '通榆县'},
       {id: 579, name: '洮南市'},
       {id: 580, name: '大安市'}
     ]},
-    {id: 59, name: '延边', district: [
+    {id: 59, name: '延边', city: [
       {id: 581, name: '延吉市'},
       {id: 582, name: '图们市'},
       {id: 583, name: '敦化市'},
@@ -720,7 +720,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 8, name: '黑龙江', city: [
-    {id: 60, name: '哈尔滨市', district: [
+    {id: 60, name: '哈尔滨市', city: [
       {id: 589, name: '道里区'},
       {id: 590, name: '南岗区'},
       {id: 591, name: '道外区'},
@@ -741,7 +741,7 @@ var chineseCities =[
       {id: 606, name: '尚志市'},
       {id: 607, name: '五常市'}
     ]},
-    {id: 61, name: '齐齐哈尔市', district: [
+    {id: 61, name: '齐齐哈尔市', city: [
       {id: 608, name: '龙沙区'},
       {id: 609, name: '建华区'},
       {id: 610, name: '铁锋区'},
@@ -759,7 +759,7 @@ var chineseCities =[
       {id: 622, name: '拜泉县'},
       {id: 623, name: '讷河市'}
     ]},
-    {id: 62, name: '鸡西市', district: [
+    {id: 62, name: '鸡西市', city: [
       {id: 624, name: '鸡冠区'},
       {id: 625, name: '恒山区'},
       {id: 626, name: '滴道区'},
@@ -770,7 +770,7 @@ var chineseCities =[
       {id: 631, name: '虎林市'},
       {id: 632, name: '密山市'}
     ]},
-    {id: 63, name: '鹤岗市', district: [
+    {id: 63, name: '鹤岗市', city: [
       {id: 633, name: '向阳区'},
       {id: 634, name: '工农区'},
       {id: 635, name: '南山区'},
@@ -780,7 +780,7 @@ var chineseCities =[
       {id: 639, name: '萝北县'},
       {id: 640, name: '绥滨县'}
     ]},
-    {id: 64, name: '双鸭山市', district: [
+    {id: 64, name: '双鸭山市', city: [
       {id: 641, name: '尖山区'},
       {id: 642, name: '岭东区'},
       {id: 643, name: '四方台区'},
@@ -790,7 +790,7 @@ var chineseCities =[
       {id: 647, name: '宝清县'},
       {id: 648, name: '饶河县'}
     ]},
-    {id: 65, name: '大庆市', district: [
+    {id: 65, name: '大庆市', city: [
       {id: 649, name: '萨尔图区'},
       {id: 650, name: '龙凤区'},
       {id: 651, name: '让胡路区'},
@@ -801,7 +801,7 @@ var chineseCities =[
       {id: 656, name: '林甸县'},
       {id: 657, name: '杜尔伯特蒙古族自治县'}
     ]},
-    {id: 66, name: '伊春市', district: [
+    {id: 66, name: '伊春市', city: [
       {id: 658, name: '伊春区'},
       {id: 659, name: '南岔区'},
       {id: 660, name: '友好区'},
@@ -820,7 +820,7 @@ var chineseCities =[
       {id: 673, name: '嘉荫县'},
       {id: 674, name: '铁力市'}
     ]},
-    {id: 67, name: '佳木斯市', district: [
+    {id: 67, name: '佳木斯市', city: [
       {id: 675, name: '永红区'},
       {id: 676, name: '向阳区'},
       {id: 677, name: '前进区'},
@@ -833,13 +833,13 @@ var chineseCities =[
       {id: 684, name: '同江市'},
       {id: 685, name: '富锦市'}
     ]},
-    {id: 68, name: '七台河市', district: [
+    {id: 68, name: '七台河市', city: [
       {id: 686, name: '新兴区'},
       {id: 687, name: '桃山区'},
       {id: 688, name: '茄子河区'},
       {id: 689, name: '勃利县'}
     ]},
-    {id: 69, name: '牡丹江市', district: [
+    {id: 69, name: '牡丹江市', city: [
       {id: 690, name: '东安区'},
       {id: 691, name: '阳明区'},
       {id: 692, name: '爱民区'},
@@ -851,7 +851,7 @@ var chineseCities =[
       {id: 698, name: '宁安市'},
       {id: 699, name: '穆棱市'}
     ]},
-    {id: 70, name: '黑河市', district: [
+    {id: 70, name: '黑河市', city: [
       {id: 700, name: '爱辉区'},
       {id: 701, name: '嫩江县'},
       {id: 702, name: '逊克县'},
@@ -859,7 +859,7 @@ var chineseCities =[
       {id: 704, name: '北安市'},
       {id: 705, name: '五大连池市'}
     ]},
-    {id: 71, name: '绥化市', district: [
+    {id: 71, name: '绥化市', city: [
       {id: 706, name: '北林区'},
       {id: 707, name: '望奎县'},
       {id: 708, name: '兰西县'},
@@ -871,14 +871,14 @@ var chineseCities =[
       {id: 714, name: '肇东市'},
       {id: 715, name: '海伦市'}
     ]},
-    {id: 72, name: '大兴安岭地区', district: [
+    {id: 72, name: '大兴安岭地区', city: [
       {id: 716, name: '呼玛县'},
       {id: 717, name: '塔河县'},
       {id: 718, name: '漠河县'}
     ]}
     ]},
     {id: 9, name: '上海', city: [
-    {id: 73, name: '上海市', district: [
+    {id: 73, name: '上海市', city: [
       {id: 719, name: '黄浦区'},
       {id: 720, name: '卢湾区'},
       {id: 721, name: '徐汇区'},
@@ -901,7 +901,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 10, name: '江苏', city: [
-    {id: 74, name: '南京市', district: [
+    {id: 74, name: '南京市', city: [
       {id: 738, name: '玄武区'},
       {id: 739, name: '白下区'},
       {id: 740, name: '秦淮区'},
@@ -916,7 +916,7 @@ var chineseCities =[
       {id: 749, name: '溧水县'},
       {id: 750, name: '高淳县'}
     ]},
-    {id: 75, name: '无锡市', district: [
+    {id: 75, name: '无锡市', city: [
       {id: 751, name: '崇安区'},
       {id: 752, name: '南长区'},
       {id: 753, name: '北塘区'},
@@ -926,7 +926,7 @@ var chineseCities =[
       {id: 757, name: '江阴市'},
       {id: 758, name: '宜兴市'}
     ]},
-    {id: 76, name: '徐州市', district: [
+    {id: 76, name: '徐州市', city: [
       {id: 759, name: '鼓楼区'},
       {id: 760, name: '云龙区'},
       {id: 761, name: '九里区'},
@@ -939,7 +939,7 @@ var chineseCities =[
       {id: 768, name: '新沂市'},
       {id: 769, name: '邳州市'}
     ]},
-    {id: 77, name: '常州市', district: [
+    {id: 77, name: '常州市', city: [
       {id: 770, name: '天宁区'},
       {id: 771, name: '钟楼区'},
       {id: 772, name: '戚墅堰区'},
@@ -948,7 +948,7 @@ var chineseCities =[
       {id: 775, name: '溧阳市'},
       {id: 776, name: '金坛市'}
     ]},
-    {id: 78, name: '苏州市', district: [
+    {id: 78, name: '苏州市', city: [
       {id: 777, name: '沧浪区'},
       {id: 778, name: '平江区'},
       {id: 779, name: '金阊区'},
@@ -961,7 +961,7 @@ var chineseCities =[
       {id: 786, name: '吴江市'},
       {id: 787, name: '太仓市'}
     ]},
-    {id: 79, name: '南通市', district: [
+    {id: 79, name: '南通市', city: [
       {id: 788, name: '崇川区'},
       {id: 789, name: '港闸区'},
       {id: 790, name: '海安县'},
@@ -971,7 +971,7 @@ var chineseCities =[
       {id: 794, name: '通州市'},
       {id: 795, name: '海门市'}
     ]},
-    {id: 80, name: '连云港市', district: [
+    {id: 80, name: '连云港市', city: [
       {id: 796, name: '连云区'},
       {id: 797, name: '新浦区'},
       {id: 798, name: '海州区'},
@@ -980,7 +980,7 @@ var chineseCities =[
       {id: 801, name: '灌云县'},
       {id: 802, name: '灌南县'}
     ]},
-    {id: 81, name: '淮安市', district: [
+    {id: 81, name: '淮安市', city: [
       {id: 803, name: '清河区'},
       {id: 804, name: '楚州区'},
       {id: 805, name: '淮阴区'},
@@ -990,7 +990,7 @@ var chineseCities =[
       {id: 809, name: '盱眙县'},
       {id: 810, name: '金湖县'}
     ]},
-    {id: 82, name: '盐城市', district: [
+    {id: 82, name: '盐城市', city: [
       {id: 811, name: '亭湖区'},
       {id: 812, name: '盐都区'},
       {id: 813, name: '响水县'},
@@ -1001,7 +1001,7 @@ var chineseCities =[
       {id: 818, name: '东台市'},
       {id: 819, name: '大丰市'}
     ]},
-    {id: 83, name: '扬州市', district: [
+    {id: 83, name: '扬州市', city: [
       {id: 820, name: '广陵区'},
       {id: 821, name: '邗江区'},
       {id: 822, name: '维扬区'},
@@ -1010,7 +1010,7 @@ var chineseCities =[
       {id: 825, name: '高邮市'},
       {id: 826, name: '江都市'}
     ]},
-    {id: 84, name: '镇江市', district: [
+    {id: 84, name: '镇江市', city: [
       {id: 827, name: '京口区'},
       {id: 828, name: '润州区'},
       {id: 829, name: '丹徒区'},
@@ -1018,7 +1018,7 @@ var chineseCities =[
       {id: 831, name: '扬中市'},
       {id: 832, name: '句容市'}
     ]},
-    {id: 85, name: '泰州市', district: [
+    {id: 85, name: '泰州市', city: [
       {id: 833, name: '海陵区'},
       {id: 834, name: '高港区'},
       {id: 835, name: '兴化市'},
@@ -1026,7 +1026,7 @@ var chineseCities =[
       {id: 837, name: '泰兴市'},
       {id: 838, name: '姜堰市'}
     ]},
-    {id: 86, name: '宿迁市', district: [
+    {id: 86, name: '宿迁市', city: [
       {id: 839, name: '宿城区'},
       {id: 840, name: '宿豫区'},
       {id: 841, name: '沭阳县'},
@@ -1035,7 +1035,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 11, name: '浙江', city: [
-    {id: 87, name: '杭州市', district: [
+    {id: 87, name: '杭州市', city: [
       {id: 844, name: '上城区'},
       {id: 845, name: '下城区'},
       {id: 846, name: '江干区'},
@@ -1050,7 +1050,7 @@ var chineseCities =[
       {id: 855, name: '富阳市'},
       {id: 856, name: '临安市'}
     ]},
-    {id: 88, name: '宁波市', district: [
+    {id: 88, name: '宁波市', city: [
       {id: 857, name: '海曙区'},
       {id: 858, name: '江东区'},
       {id: 859, name: '江北区'},
@@ -1063,7 +1063,7 @@ var chineseCities =[
       {id: 866, name: '慈溪市'},
       {id: 867, name: '奉化市'}
     ]},
-    {id: 89, name: '温州市', district: [
+    {id: 89, name: '温州市', city: [
       {id: 868, name: '鹿城区'},
       {id: 869, name: '龙湾区'},
       {id: 870, name: '瓯海区'},
@@ -1076,7 +1076,7 @@ var chineseCities =[
       {id: 877, name: '瑞安市'},
       {id: 878, name: '乐清市'}
     ]},
-    {id: 90, name: '嘉兴市', district: [
+    {id: 90, name: '嘉兴市', city: [
       {id: 879, name: '秀城区'},
       {id: 880, name: '秀洲区'},
       {id: 881, name: '嘉善县'},
@@ -1085,14 +1085,14 @@ var chineseCities =[
       {id: 884, name: '平湖市'},
       {id: 885, name: '桐乡市'}
     ]},
-    {id: 91, name: '湖州市', district: [
+    {id: 91, name: '湖州市', city: [
       {id: 886, name: '吴兴区'},
       {id: 887, name: '南浔区'},
       {id: 888, name: '德清县'},
       {id: 889, name: '长兴县'},
       {id: 890, name: '安吉县'}
     ]},
-    {id: 92, name: '绍兴市', district: [
+    {id: 92, name: '绍兴市', city: [
       {id: 891, name: '越城区'},
       {id: 892, name: '绍兴县'},
       {id: 893, name: '新昌县'},
@@ -1100,7 +1100,7 @@ var chineseCities =[
       {id: 895, name: '上虞市'},
       {id: 896, name: '嵊州市'}
     ]},
-    {id: 93, name: '金华市', district: [
+    {id: 93, name: '金华市', city: [
       {id: 897, name: '婺城区'},
       {id: 898, name: '金东区'},
       {id: 899, name: '武义县'},
@@ -1111,7 +1111,7 @@ var chineseCities =[
       {id: 904, name: '东阳市'},
       {id: 905, name: '永康市'}
     ]},
-    {id: 94, name: '衢州市', district: [
+    {id: 94, name: '衢州市', city: [
       {id: 906, name: '柯城区'},
       {id: 907, name: '衢江区'},
       {id: 908, name: '常山县'},
@@ -1119,13 +1119,13 @@ var chineseCities =[
       {id: 910, name: '龙游县'},
       {id: 911, name: '江山市'}
     ]},
-    {id: 95, name: '舟山市', district: [
+    {id: 95, name: '舟山市', city: [
       {id: 912, name: '定海区'},
       {id: 913, name: '普陀区'},
       {id: 914, name: '岱山县'},
       {id: 915, name: '嵊泗县'}
     ]},
-    {id: 96, name: '台州市', district: [
+    {id: 96, name: '台州市', city: [
       {id: 916, name: '椒江区'},
       {id: 917, name: '黄岩区'},
       {id: 918, name: '路桥区'},
@@ -1136,7 +1136,7 @@ var chineseCities =[
       {id: 923, name: '温岭市'},
       {id: 924, name: '临海市'}
     ]},
-    {id: 97, name: '丽水市', district: [
+    {id: 97, name: '丽水市', city: [
       {id: 925, name: '莲都区'},
       {id: 926, name: '青田县'},
       {id: 927, name: '缙云县'},
@@ -1149,7 +1149,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 12, name: '安徽', city: [
-    {id: 98, name: '合肥市', district: [
+    {id: 98, name: '合肥市', city: [
       {id: 934, name: '瑶海区'},
       {id: 935, name: '庐阳区'},
       {id: 936, name: '蜀山区'},
@@ -1158,7 +1158,7 @@ var chineseCities =[
       {id: 939, name: '肥东县'},
       {id: 940, name: '肥西县'}
     ]},
-    {id: 99, name: '芜湖市', district: [
+    {id: 99, name: '芜湖市', city: [
       {id: 941, name: '镜湖区'},
       {id: 942, name: '马塘区'},
       {id: 943, name: '新芜区'},
@@ -1167,7 +1167,7 @@ var chineseCities =[
       {id: 946, name: '繁昌县'},
       {id: 947, name: '南陵县'}
     ]},
-    {id: 100, name: '蚌埠市', district: [
+    {id: 100, name: '蚌埠市', city: [
       {id: 948, name: '龙子湖区'},
       {id: 949, name: '蚌山区'},
       {id: 950, name: '禹会区'},
@@ -1176,7 +1176,7 @@ var chineseCities =[
       {id: 953, name: '五河县'},
       {id: 954, name: '固镇县'}
     ]},
-    {id: 101, name: '淮南市', district: [
+    {id: 101, name: '淮南市', city: [
       {id: 955, name: '大通区'},
       {id: 956, name: '田家庵区'},
       {id: 957, name: '谢家集区'},
@@ -1184,25 +1184,25 @@ var chineseCities =[
       {id: 959, name: '潘集区'},
       {id: 960, name: '凤台县'}
     ]},
-    {id: 102, name: '马鞍山市', district: [
+    {id: 102, name: '马鞍山市', city: [
       {id: 961, name: '金家庄区'},
       {id: 962, name: '花山区'},
       {id: 963, name: '雨山区'},
       {id: 964, name: '当涂县'}
     ]},
-    {id: 103, name: '淮北市', district: [
+    {id: 103, name: '淮北市', city: [
       {id: 965, name: '杜集区'},
       {id: 966, name: '相山区'},
       {id: 967, name: '烈山区'},
       {id: 968, name: '濉溪县'}
     ]},
-    {id: 104, name: '铜陵市', district: [
+    {id: 104, name: '铜陵市', city: [
       {id: 969, name: '铜官山区'},
       {id: 970, name: '狮子山区'},
       {id: 971, name: '郊区'},
       {id: 972, name: '铜陵县'}
     ]},
-    {id: 105, name: '安庆市', district: [
+    {id: 105, name: '安庆市', city: [
       {id: 973, name: '迎江区'},
       {id: 974, name: '大观区'},
       {id: 975, name: '郊区'},
@@ -1215,7 +1215,7 @@ var chineseCities =[
       {id: 982, name: '岳西县'},
       {id: 983, name: '桐城市'}
     ]},
-    {id: 106, name: '黄山市', district: [
+    {id: 106, name: '黄山市', city: [
       {id: 984, name: '屯溪区'},
       {id: 985, name: '黄山区'},
       {id: 986, name: '徽州区'},
@@ -1224,7 +1224,7 @@ var chineseCities =[
       {id: 989, name: '黟县'},
       {id: 990, name: '祁门县'}
     ]},
-    {id: 107, name: '滁州市', district: [
+    {id: 107, name: '滁州市', city: [
       {id: 991, name: '琅琊区'},
       {id: 992, name: '南谯区'},
       {id: 993, name: '来安县'},
@@ -1234,7 +1234,7 @@ var chineseCities =[
       {id: 997, name: '天长市'},
       {id: 998, name: '明光市'}
     ]},
-    {id: 108, name: '阜阳市', district: [
+    {id: 108, name: '阜阳市', city: [
       {id: 999, name: '颍州区'},
       {id: 1000, name: '颍东区'},
       {id: 1001, name: '颍泉区'},
@@ -1244,21 +1244,21 @@ var chineseCities =[
       {id: 1005, name: '颍上县'},
       {id: 1006, name: '界首市'}
     ]},
-    {id: 109, name: '宿州市', district: [
+    {id: 109, name: '宿州市', city: [
       {id: 1007, name: '埇桥区'},
       {id: 1008, name: '砀山县'},
       {id: 1009, name: '萧县'},
       {id: 1010, name: '灵璧县'},
       {id: 1011, name: '泗县'}
     ]},
-    {id: 110, name: '巢湖市', district: [
+    {id: 110, name: '巢湖市', city: [
       {id: 1012, name: '居巢区'},
       {id: 1013, name: '庐江县'},
       {id: 1014, name: '无为县'},
       {id: 1015, name: '含山县'},
       {id: 1016, name: '和县'}
     ]},
-    {id: 111, name: '六安市', district: [
+    {id: 111, name: '六安市', city: [
       {id: 1017, name: '金安区'},
       {id: 1018, name: '裕安区'},
       {id: 1019, name: '寿县'},
@@ -1267,19 +1267,19 @@ var chineseCities =[
       {id: 1022, name: '金寨县'},
       {id: 1023, name: '霍山县'}
     ]},
-    {id: 112, name: '亳州市', district: [
+    {id: 112, name: '亳州市', city: [
       {id: 1024, name: '谯城区'},
       {id: 1025, name: '涡阳县'},
       {id: 1026, name: '蒙城县'},
       {id: 1027, name: '利辛县'}
     ]},
-    {id: 113, name: '池州市', district: [
+    {id: 113, name: '池州市', city: [
       {id: 1028, name: '贵池区'},
       {id: 1029, name: '东至县'},
       {id: 1030, name: '石台县'},
       {id: 1031, name: '青阳县'}
     ]},
-    {id: 114, name: '宣城市', district: [
+    {id: 114, name: '宣城市', city: [
       {id: 1032, name: '宣州区'},
       {id: 1033, name: '郎溪县'},
       {id: 1034, name: '广德县'},
@@ -1290,7 +1290,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 13, name: '福建', city: [
-    {id: 115, name: '福州市', district: [
+    {id: 115, name: '福州市', city: [
       {id: 1039, name: '鼓楼区'},
       {id: 1040, name: '台江区'},
       {id: 1041, name: '仓山区'},
@@ -1305,7 +1305,7 @@ var chineseCities =[
       {id: 1050, name: '福清市'},
       {id: 1051, name: '长乐市'}
     ]},
-    {id: 116, name: '厦门市', district: [
+    {id: 116, name: '厦门市', city: [
       {id: 1052, name: '思明区'},
       {id: 1053, name: '海沧区'},
       {id: 1054, name: '湖里区'},
@@ -1313,14 +1313,14 @@ var chineseCities =[
       {id: 1056, name: '同安区'},
       {id: 1057, name: '翔安区'}
     ]},
-    {id: 117, name: '莆田市', district: [
+    {id: 117, name: '莆田市', city: [
       {id: 1058, name: '城厢区'},
       {id: 1059, name: '涵江区'},
       {id: 1060, name: '荔城区'},
       {id: 1061, name: '秀屿区'},
       {id: 1062, name: '仙游县'}
     ]},
-    {id: 118, name: '三明市', district: [
+    {id: 118, name: '三明市', city: [
       {id: 1063, name: '梅列区'},
       {id: 1064, name: '三元区'},
       {id: 1065, name: '明溪县'},
@@ -1334,7 +1334,7 @@ var chineseCities =[
       {id: 1073, name: '建宁县'},
       {id: 1074, name: '永安市'}
     ]},
-    {id: 119, name: '泉州市', district: [
+    {id: 119, name: '泉州市', city: [
       {id: 1075, name: '鲤城区'},
       {id: 1076, name: '丰泽区'},
       {id: 1077, name: '洛江区'},
@@ -1348,7 +1348,7 @@ var chineseCities =[
       {id: 1085, name: '晋江市'},
       {id: 1086, name: '南安市'}
     ]},
-    {id: 120, name: '漳州市', district: [
+    {id: 120, name: '漳州市', city: [
       {id: 1087, name: '芗城区'},
       {id: 1088, name: '龙文区'},
       {id: 1089, name: '云霄县'},
@@ -1361,7 +1361,7 @@ var chineseCities =[
       {id: 1096, name: '华安县'},
       {id: 1097, name: '龙海市'}
     ]},
-    {id: 121, name: '南平市', district: [
+    {id: 121, name: '南平市', city: [
       {id: 1098, name: '延平区'},
       {id: 1099, name: '顺昌县'},
       {id: 1100, name: '浦城县'},
@@ -1373,7 +1373,7 @@ var chineseCities =[
       {id: 1106, name: '建瓯市'},
       {id: 1107, name: '建阳市'}
     ]},
-    {id: 122, name: '龙岩市', district: [
+    {id: 122, name: '龙岩市', city: [
       {id: 1108, name: '新罗区'},
       {id: 1109, name: '长汀县'},
       {id: 1110, name: '永定县'},
@@ -1382,7 +1382,7 @@ var chineseCities =[
       {id: 1113, name: '连城县'},
       {id: 1114, name: '漳平市'}
     ]},
-    {id: 123, name: '宁德市', district: [
+    {id: 123, name: '宁德市', city: [
       {id: 1115, name: '蕉城区'},
       {id: 1116, name: '霞浦县'},
       {id: 1117, name: '古田县'},
@@ -1395,7 +1395,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 14, name: '江西', city: [
-    {id: 124, name: '南昌市', district: [
+    {id: 124, name: '南昌市', city: [
       {id: 1124, name: '东湖区'},
       {id: 1125, name: '西湖区'},
       {id: 1126, name: '青云谱区'},
@@ -1406,20 +1406,20 @@ var chineseCities =[
       {id: 1131, name: '安义县'},
       {id: 1132, name: '进贤县'}
     ]},
-    {id: 125, name: '景德镇市', district: [
+    {id: 125, name: '景德镇市', city: [
       {id: 1133, name: '昌江区'},
       {id: 1134, name: '珠山区'},
       {id: 1135, name: '浮梁县'},
       {id: 1136, name: '乐平市'}
     ]},
-    {id: 126, name: '萍乡市', district: [
+    {id: 126, name: '萍乡市', city: [
       {id: 1137, name: '安源区'},
       {id: 1138, name: '湘东区'},
       {id: 1139, name: '莲花县'},
       {id: 1140, name: '上栗县'},
       {id: 1141, name: '芦溪县'}
     ]},
-    {id: 127, name: '九江市', district: [
+    {id: 127, name: '九江市', city: [
       {id: 1142, name: '庐山区'},
       {id: 1143, name: '浔阳区'},
       {id: 1144, name: '九江县'},
@@ -1433,16 +1433,16 @@ var chineseCities =[
       {id: 1152, name: '彭泽县'},
       {id: 1153, name: '瑞昌市'}
     ]},
-    {id: 128, name: '新余市', district: [
+    {id: 128, name: '新余市', city: [
       {id: 1154, name: '渝水区'},
       {id: 1155, name: '分宜县'}
     ]},
-    {id: 129, name: '鹰潭市', district: [
+    {id: 129, name: '鹰潭市', city: [
       {id: 1156, name: '月湖区'},
       {id: 1157, name: '余江县'},
       {id: 1158, name: '贵溪市'}
     ]},
-    {id: 130, name: '赣州市', district: [
+    {id: 130, name: '赣州市', city: [
       {id: 1159, name: '章贡区'},
       {id: 1160, name: '赣县'},
       {id: 1161, name: '信丰县'},
@@ -1462,7 +1462,7 @@ var chineseCities =[
       {id: 1175, name: '瑞金市'},
       {id: 1176, name: '南康市'}
     ]},
-    {id: 131, name: '吉安市', district: [
+    {id: 131, name: '吉安市', city: [
       {id: 1177, name: '吉州区'},
       {id: 1178, name: '青原区'},
       {id: 1179, name: '吉安县'},
@@ -1477,7 +1477,7 @@ var chineseCities =[
       {id: 1188, name: '永新县'},
       {id: 1189, name: '井冈山市'}
     ]},
-    {id: 132, name: '宜春市', district: [
+    {id: 132, name: '宜春市', city: [
       {id: 1190, name: '袁州区'},
       {id: 1191, name: '奉新县'},
       {id: 1192, name: '万载县'},
@@ -1489,7 +1489,7 @@ var chineseCities =[
       {id: 1198, name: '樟树市'},
       {id: 1199, name: '高安市'}
     ]},
-    {id: 133, name: '抚州市', district: [
+    {id: 133, name: '抚州市', city: [
       {id: 1200, name: '临川区'},
       {id: 1201, name: '南城县'},
       {id: 1202, name: '黎川县'},
@@ -1502,7 +1502,7 @@ var chineseCities =[
       {id: 1209, name: '东乡县'},
       {id: 1210, name: '广昌县'}
     ]},
-    {id: 134, name: '上饶市', district: [
+    {id: 134, name: '上饶市', city: [
       {id: 1211, name: '信州区'},
       {id: 1212, name: '上饶县'},
       {id: 1213, name: '广丰县'},
@@ -1518,7 +1518,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 15, name: '山东', city: [
-    {id: 135, name: '济南市', district: [
+    {id: 135, name: '济南市', city: [
       {id: 1223, name: '历下区'},
       {id: 1224, name: '市中区'},
       {id: 1225, name: '槐荫区'},
@@ -1530,7 +1530,7 @@ var chineseCities =[
       {id: 1231, name: '商河县'},
       {id: 1232, name: '章丘市'}
     ]},
-    {id: 136, name: '青岛市', district: [
+    {id: 136, name: '青岛市', city: [
       {id: 1233, name: '市南区'},
       {id: 1234, name: '市北区'},
       {id: 1235, name: '四方区'},
@@ -1544,7 +1544,7 @@ var chineseCities =[
       {id: 1243, name: '胶南市'},
       {id: 1244, name: '莱西市'}
     ]},
-    {id: 137, name: '淄博市', district: [
+    {id: 137, name: '淄博市', city: [
       {id: 1245, name: '淄川区'},
       {id: 1246, name: '张店区'},
       {id: 1247, name: '博山区'},
@@ -1554,7 +1554,7 @@ var chineseCities =[
       {id: 1251, name: '高青县'},
       {id: 1252, name: '沂源县'}
     ]},
-    {id: 138, name: '枣庄市', district: [
+    {id: 138, name: '枣庄市', city: [
       {id: 1253, name: '市中区'},
       {id: 1254, name: '薛城区'},
       {id: 1255, name: '峄城区'},
@@ -1562,14 +1562,14 @@ var chineseCities =[
       {id: 1257, name: '山亭区'},
       {id: 1258, name: '滕州市'}
     ]},
-    {id: 139, name: '东营市', district: [
+    {id: 139, name: '东营市', city: [
       {id: 1259, name: '东营区'},
       {id: 1260, name: '河口区'},
       {id: 1261, name: '垦利县'},
       {id: 1262, name: '利津县'},
       {id: 1263, name: '广饶县'}
     ]},
-    {id: 140, name: '烟台市', district: [
+    {id: 140, name: '烟台市', city: [
       {id: 1264, name: '芝罘区'},
       {id: 1265, name: '福山区'},
       {id: 1266, name: '牟平区'},
@@ -1583,7 +1583,7 @@ var chineseCities =[
       {id: 1274, name: '栖霞市'},
       {id: 1275, name: '海阳市'}
     ]},
-    {id: 141, name: '潍坊市', district: [
+    {id: 141, name: '潍坊市', city: [
       {id: 1276, name: '潍城区'},
       {id: 1277, name: '寒亭区'},
       {id: 1278, name: '坊子区'},
@@ -1597,7 +1597,7 @@ var chineseCities =[
       {id: 1286, name: '高密市'},
       {id: 1287, name: '昌邑市'}
     ]},
-    {id: 142, name: '济宁市', district: [
+    {id: 142, name: '济宁市', city: [
       {id: 1288, name: '市中区'},
       {id: 1289, name: '任城区'},
       {id: 1290, name: '微山县'},
@@ -1611,7 +1611,7 @@ var chineseCities =[
       {id: 1298, name: '兖州市'},
       {id: 1299, name: '邹城市'}
     ]},
-    {id: 143, name: '泰安市', district: [
+    {id: 143, name: '泰安市', city: [
       {id: 1300, name: '泰山区'},
       {id: 1301, name: '岱岳区'},
       {id: 1302, name: '宁阳县'},
@@ -1619,23 +1619,23 @@ var chineseCities =[
       {id: 1304, name: '新泰市'},
       {id: 1305, name: '肥城市'}
     ]},
-    {id: 144, name: '威海市', district: [
+    {id: 144, name: '威海市', city: [
       {id: 1306, name: '环翠区'},
       {id: 1307, name: '文登市'},
       {id: 1308, name: '荣成市'},
       {id: 1309, name: '乳山市'}
     ]},
-    {id: 145, name: '日照市', district: [
+    {id: 145, name: '日照市', city: [
       {id: 1310, name: '东港区'},
       {id: 1311, name: '岚山区'},
       {id: 1312, name: '五莲县'},
       {id: 1313, name: '莒县'}
     ]},
-    {id: 146, name: '莱芜市', district: [
+    {id: 146, name: '莱芜市', city: [
       {id: 1314, name: '莱城区'},
       {id: 1315, name: '钢城区'}
     ]},
-    {id: 147, name: '临沂市', district: [
+    {id: 147, name: '临沂市', city: [
       {id: 1316, name: '兰山区'},
       {id: 1317, name: '罗庄区'},
       {id: 1318, name: '河东区'},
@@ -1649,7 +1649,7 @@ var chineseCities =[
       {id: 1326, name: '蒙阴县'},
       {id: 1327, name: '临沭县'}
     ]},
-    {id: 148, name: '德州市', district: [
+    {id: 148, name: '德州市', city: [
       {id: 1328, name: '德城区'},
       {id: 1329, name: '陵县'},
       {id: 1330, name: '宁津县'},
@@ -1662,7 +1662,7 @@ var chineseCities =[
       {id: 1337, name: '乐陵市'},
       {id: 1338, name: '禹城市'}
     ]},
-    {id: 149, name: '聊城市', district: [
+    {id: 149, name: '聊城市', city: [
       {id: 1339, name: '东昌府区'},
       {id: 1340, name: '阳谷县'},
       {id: 1341, name: '莘县'},
@@ -1672,7 +1672,7 @@ var chineseCities =[
       {id: 1345, name: '高唐县'},
       {id: 1346, name: '临清市'}
     ]},
-    {id: 150, name: '滨州市', district: [
+    {id: 150, name: '滨州市', city: [
       {id: 1347, name: '滨城区'},
       {id: 1348, name: '惠民县'},
       {id: 1349, name: '阳信县'},
@@ -1681,7 +1681,7 @@ var chineseCities =[
       {id: 1352, name: '博兴县'},
       {id: 1353, name: '邹平县'}
     ]},
-    {id: 151, name: '荷泽市', district: [
+    {id: 151, name: '荷泽市', city: [
       {id: 1354, name: '牡丹区'},
       {id: 1355, name: '曹县'},
       {id: 1356, name: '单县'},
@@ -1694,7 +1694,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 16, name: '河南', city: [
-    {id: 152, name: '郑州市', district: [
+    {id: 152, name: '郑州市', city: [
       {id: 1363, name: '中原区'},
       {id: 1364, name: '二七区'},
       {id: 1365, name: '管城回族区'},
@@ -1708,7 +1708,7 @@ var chineseCities =[
       {id: 1373, name: '新郑市'},
       {id: 1374, name: '登封市'}
     ]},
-    {id: 153, name: '开封市', district: [
+    {id: 153, name: '开封市', city: [
       {id: 1375, name: '龙亭区'},
       {id: 1376, name: '顺河回族区'},
       {id: 1377, name: '鼓楼区'},
@@ -1720,7 +1720,7 @@ var chineseCities =[
       {id: 1383, name: '开封县'},
       {id: 1384, name: '兰考县'}
     ]},
-    {id: 154, name: '洛阳市', district: [
+    {id: 154, name: '洛阳市', city: [
       {id: 1385, name: '老城区'},
       {id: 1386, name: '西工区'},
       {id: 1387, name: '廛河回族区'},
@@ -1737,7 +1737,7 @@ var chineseCities =[
       {id: 1398, name: '伊川县'},
       {id: 1399, name: '偃师市'}
     ]},
-    {id: 155, name: '平顶山市', district: [
+    {id: 155, name: '平顶山市', city: [
       {id: 1400, name: '新华区'},
       {id: 1401, name: '卫东区'},
       {id: 1402, name: '石龙区'},
@@ -1749,7 +1749,7 @@ var chineseCities =[
       {id: 1408, name: '舞钢市'},
       {id: 1409, name: '汝州市'}
     ]},
-    {id: 156, name: '安阳市', district: [
+    {id: 156, name: '安阳市', city: [
       {id: 1410, name: '文峰区'},
       {id: 1411, name: '北关区'},
       {id: 1412, name: '殷都区'},
@@ -1760,14 +1760,14 @@ var chineseCities =[
       {id: 1417, name: '内黄县'},
       {id: 1418, name: '林州市'}
     ]},
-    {id: 157, name: '鹤壁市', district: [
+    {id: 157, name: '鹤壁市', city: [
       {id: 1419, name: '鹤山区'},
       {id: 1420, name: '山城区'},
       {id: 1421, name: '淇滨区'},
       {id: 1422, name: '浚县'},
       {id: 1423, name: '淇县'}
     ]},
-    {id: 158, name: '新乡市', district: [
+    {id: 158, name: '新乡市', city: [
       {id: 1424, name: '红旗区'},
       {id: 1425, name: '卫滨区'},
       {id: 1426, name: '凤泉区'},
@@ -1781,7 +1781,7 @@ var chineseCities =[
       {id: 1434, name: '卫辉市'},
       {id: 1435, name: '辉县市'}
     ]},
-    {id: 159, name: '焦作市', district: [
+    {id: 159, name: '焦作市', city: [
       {id: 1436, name: '解放区'},
       {id: 1437, name: '中站区'},
       {id: 1438, name: '马村区'},
@@ -1794,7 +1794,7 @@ var chineseCities =[
       {id: 1445, name: '沁阳市'},
       {id: 1446, name: '孟州市'}
     ]},
-    {id: 160, name: '濮阳市', district: [
+    {id: 160, name: '濮阳市', city: [
       {id: 1447, name: '华龙区'},
       {id: 1448, name: '清丰县'},
       {id: 1449, name: '南乐县'},
@@ -1802,7 +1802,7 @@ var chineseCities =[
       {id: 1451, name: '台前县'},
       {id: 1452, name: '濮阳县'}
     ]},
-    {id: 161, name: '许昌市', district: [
+    {id: 161, name: '许昌市', city: [
       {id: 1453, name: '魏都区'},
       {id: 1454, name: '许昌县'},
       {id: 1455, name: '鄢陵县'},
@@ -1810,14 +1810,14 @@ var chineseCities =[
       {id: 1457, name: '禹州市'},
       {id: 1458, name: '长葛市'}
     ]},
-    {id: 162, name: '漯河市', district: [
+    {id: 162, name: '漯河市', city: [
       {id: 1459, name: '源汇区'},
       {id: 1460, name: '郾城区'},
       {id: 1461, name: '召陵区'},
       {id: 1462, name: '舞阳县'},
       {id: 1463, name: '临颍县'}
     ]},
-    {id: 163, name: '三门峡市', district: [
+    {id: 163, name: '三门峡市', city: [
       {id: 1464, name: '市辖区'},
       {id: 1465, name: '湖滨区'},
       {id: 1466, name: '渑池县'},
@@ -1826,7 +1826,7 @@ var chineseCities =[
       {id: 1469, name: '义马市'},
       {id: 1470, name: '灵宝市'}
     ]},
-    {id: 164, name: '南阳市', district: [
+    {id: 164, name: '南阳市', city: [
       {id: 1471, name: '宛城区'},
       {id: 1472, name: '卧龙区'},
       {id: 1473, name: '南召县'},
@@ -1841,7 +1841,7 @@ var chineseCities =[
       {id: 1482, name: '桐柏县'},
       {id: 1483, name: '邓州市'}
     ]},
-    {id: 165, name: '商丘市', district: [
+    {id: 165, name: '商丘市', city: [
       {id: 1484, name: '梁园区'},
       {id: 1485, name: '睢阳区'},
       {id: 1486, name: '民权县'},
@@ -1852,7 +1852,7 @@ var chineseCities =[
       {id: 1491, name: '夏邑县'},
       {id: 1492, name: '永城市'}
     ]},
-    {id: 166, name: '信阳市', district: [
+    {id: 166, name: '信阳市', city: [
       {id: 1493, name: '浉河区'},
       {id: 1494, name: '平桥区'},
       {id: 1495, name: '罗山县'},
@@ -1864,7 +1864,7 @@ var chineseCities =[
       {id: 1501, name: '淮滨县'},
       {id: 1502, name: '息县'}
     ]},
-    {id: 167, name: '周口市', district: [
+    {id: 167, name: '周口市', city: [
       {id: 1503, name: '川汇区'},
       {id: 1504, name: '扶沟县'},
       {id: 1505, name: '西华县'},
@@ -1876,7 +1876,7 @@ var chineseCities =[
       {id: 1511, name: '鹿邑县'},
       {id: 1512, name: '项城市'}
     ]},
-    {id: 168, name: '驻马店市', district: [
+    {id: 168, name: '驻马店市', city: [
       {id: 1513, name: '驿城区'},
       {id: 1514, name: '西平县'},
       {id: 1515, name: '上蔡县'},
@@ -1890,7 +1890,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 17, name: '湖北', city: [
-    {id: 169, name: '武汉市', district: [
+    {id: 169, name: '武汉市', city: [
       {id: 1523, name: '江岸区'},
       {id: 1524, name: '江汉区'},
       {id: 1525, name: '硚口区'},
@@ -1905,7 +1905,7 @@ var chineseCities =[
       {id: 1534, name: '黄陂区'},
       {id: 1535, name: '新洲区'}
     ]},
-    {id: 170, name: '黄石市', district: [
+    {id: 170, name: '黄石市', city: [
       {id: 1536, name: '黄石港区'},
       {id: 1537, name: '西塞山区'},
       {id: 1538, name: '下陆区'},
@@ -1913,7 +1913,7 @@ var chineseCities =[
       {id: 1540, name: '阳新县'},
       {id: 1541, name: '大冶市'}
     ]},
-    {id: 171, name: '十堰市', district: [
+    {id: 171, name: '十堰市', city: [
       {id: 1542, name: '茅箭区'},
       {id: 1543, name: '张湾区'},
       {id: 1544, name: '郧县'},
@@ -1923,7 +1923,7 @@ var chineseCities =[
       {id: 1548, name: '房县'},
       {id: 1549, name: '丹江口市'}
     ]},
-    {id: 172, name: '宜昌市', district: [
+    {id: 172, name: '宜昌市', city: [
       {id: 1550, name: '西陵区'},
       {id: 1551, name: '伍家岗区'},
       {id: 1552, name: '点军区'},
@@ -1938,7 +1938,7 @@ var chineseCities =[
       {id: 1561, name: '当阳市'},
       {id: 1562, name: '枝江市'}
     ]},
-    {id: 173, name: '襄樊市', district: [
+    {id: 173, name: '襄樊市', city: [
       {id: 1563, name: '襄城区'},
       {id: 1564, name: '樊城区'},
       {id: 1565, name: '襄阳区'},
@@ -1949,19 +1949,19 @@ var chineseCities =[
       {id: 1570, name: '枣阳市'},
       {id: 1571, name: '宜城市'}
     ]},
-    {id: 174, name: '鄂州市', district: [
+    {id: 174, name: '鄂州市', city: [
       {id: 1572, name: '梁子湖区'},
       {id: 1573, name: '华容区'},
       {id: 1574, name: '鄂城区'}
     ]},
-    {id: 175, name: '荆门市', district: [
+    {id: 175, name: '荆门市', city: [
       {id: 1575, name: '东宝区'},
       {id: 1576, name: '掇刀区'},
       {id: 1577, name: '京山县'},
       {id: 1578, name: '沙洋县'},
       {id: 1579, name: '钟祥市'}
     ]},
-    {id: 176, name: '孝感市', district: [
+    {id: 176, name: '孝感市', city: [
       {id: 1580, name: '孝南区'},
       {id: 1581, name: '孝昌县'},
       {id: 1582, name: '大悟县'},
@@ -1970,7 +1970,7 @@ var chineseCities =[
       {id: 1585, name: '安陆市'},
       {id: 1586, name: '汉川市'}
     ]},
-    {id: 177, name: '荆州市', district: [
+    {id: 177, name: '荆州市', city: [
       {id: 1587, name: '沙市区'},
       {id: 1588, name: '荆州区'},
       {id: 1589, name: '公安县'},
@@ -1980,7 +1980,7 @@ var chineseCities =[
       {id: 1593, name: '洪湖市'},
       {id: 1594, name: '松滋市'}
     ]},
-    {id: 178, name: '黄冈市', district: [
+    {id: 178, name: '黄冈市', city: [
       {id: 1595, name: '黄州区'},
       {id: 1596, name: '团风县'},
       {id: 1597, name: '红安县'},
@@ -1992,7 +1992,7 @@ var chineseCities =[
       {id: 1603, name: '麻城市'},
       {id: 1604, name: '武穴市'}
     ]},
-    {id: 179, name: '咸宁市', district: [
+    {id: 179, name: '咸宁市', city: [
       {id: 1605, name: '咸安区'},
       {id: 1606, name: '嘉鱼县'},
       {id: 1607, name: '通城县'},
@@ -2000,11 +2000,11 @@ var chineseCities =[
       {id: 1609, name: '通山县'},
       {id: 1610, name: '赤壁市'}
     ]},
-    {id: 180, name: '随州市', district: [
+    {id: 180, name: '随州市', city: [
       {id: 1611, name: '曾都区'},
       {id: 1612, name: '广水市'}
     ]},
-    {id: 181, name: '恩施', district: [
+    {id: 181, name: '恩施', city: [
       {id: 1613, name: '恩施市'},
       {id: 1614, name: '利川市'},
       {id: 1615, name: '建始县'},
@@ -2014,7 +2014,7 @@ var chineseCities =[
       {id: 1619, name: '来凤县'},
       {id: 1620, name: '鹤峰县'}
     ]},
-    {id: 182, name: '神农架', district: [
+    {id: 182, name: '神农架', city: [
       {id: 1621, name: '仙桃市'},
       {id: 1622, name: '潜江市'},
       {id: 1623, name: '天门市'},
@@ -2022,7 +2022,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 18, name: '湖南', city: [
-    {id: 183, name: '长沙市', district: [
+    {id: 183, name: '长沙市', city: [
       {id: 1625, name: '芙蓉区'},
       {id: 1626, name: '天心区'},
       {id: 1627, name: '岳麓区'},
@@ -2033,7 +2033,7 @@ var chineseCities =[
       {id: 1632, name: '宁乡县'},
       {id: 1633, name: '浏阳市'}
     ]},
-    {id: 184, name: '株洲市', district: [
+    {id: 184, name: '株洲市', city: [
       {id: 1634, name: '荷塘区'},
       {id: 1635, name: '芦淞区'},
       {id: 1636, name: '石峰区'},
@@ -2044,14 +2044,14 @@ var chineseCities =[
       {id: 1641, name: '炎陵县'},
       {id: 1642, name: '醴陵市'}
     ]},
-    {id: 185, name: '湘潭市', district: [
+    {id: 185, name: '湘潭市', city: [
       {id: 1643, name: '雨湖区'},
       {id: 1644, name: '岳塘区'},
       {id: 1645, name: '湘潭县'},
       {id: 1646, name: '湘乡市'},
       {id: 1647, name: '韶山市'}
     ]},
-    {id: 186, name: '衡阳市', district: [
+    {id: 186, name: '衡阳市', city: [
       {id: 1648, name: '珠晖区'},
       {id: 1649, name: '雁峰区'},
       {id: 1650, name: '石鼓区'},
@@ -2065,7 +2065,7 @@ var chineseCities =[
       {id: 1658, name: '耒阳市'},
       {id: 1659, name: '常宁市'}
     ]},
-    {id: 187, name: '邵阳市', district: [
+    {id: 187, name: '邵阳市', city: [
       {id: 1660, name: '双清区'},
       {id: 1661, name: '大祥区'},
       {id: 1662, name: '北塔区'},
@@ -2079,7 +2079,7 @@ var chineseCities =[
       {id: 1670, name: '城步苗族自治县'},
       {id: 1671, name: '武冈市'}
     ]},
-    {id: 188, name: '岳阳市', district: [
+    {id: 188, name: '岳阳市', city: [
       {id: 1672, name: '岳阳楼区'},
       {id: 1673, name: '云溪区'},
       {id: 1674, name: '君山区'},
@@ -2090,7 +2090,7 @@ var chineseCities =[
       {id: 1679, name: '汨罗市'},
       {id: 1680, name: '临湘市'}
     ]},
-    {id: 189, name: '常德市', district: [
+    {id: 189, name: '常德市', city: [
       {id: 1681, name: '武陵区'},
       {id: 1682, name: '鼎城区'},
       {id: 1683, name: '安乡县'},
@@ -2101,13 +2101,13 @@ var chineseCities =[
       {id: 1688, name: '石门县'},
       {id: 1689, name: '津市市'}
     ]},
-    {id: 190, name: '张家界市', district: [
+    {id: 190, name: '张家界市', city: [
       {id: 1690, name: '永定区'},
       {id: 1691, name: '武陵源区'},
       {id: 1692, name: '慈利县'},
       {id: 1693, name: '桑植县'}
     ]},
-    {id: 191, name: '益阳市', district: [
+    {id: 191, name: '益阳市', city: [
       {id: 1694, name: '资阳区'},
       {id: 1695, name: '赫山区'},
       {id: 1696, name: '南县'},
@@ -2115,7 +2115,7 @@ var chineseCities =[
       {id: 1698, name: '安化县'},
       {id: 1699, name: '沅江市'}
     ]},
-    {id: 192, name: '郴州市', district: [
+    {id: 192, name: '郴州市', city: [
       {id: 1700, name: '北湖区'},
       {id: 1701, name: '苏仙区'},
       {id: 1702, name: '桂阳县'},
@@ -2128,7 +2128,7 @@ var chineseCities =[
       {id: 1709, name: '安仁县'},
       {id: 1710, name: '资兴市'}
     ]},
-    {id: 193, name: '永州市', district: [
+    {id: 193, name: '永州市', city: [
       {id: 1711, name: '芝山区'},
       {id: 1712, name: '冷水滩区'},
       {id: 1713, name: '祁阳县'},
@@ -2141,7 +2141,7 @@ var chineseCities =[
       {id: 1720, name: '新田县'},
       {id: 1721, name: '江华瑶族自治县'}
     ]},
-    {id: 194, name: '怀化市', district: [
+    {id: 194, name: '怀化市', city: [
       {id: 1722, name: '鹤城区'},
       {id: 1723, name: '中方县'},
       {id: 1724, name: '沅陵县'},
@@ -2155,14 +2155,14 @@ var chineseCities =[
       {id: 1732, name: '通道侗族自治县'},
       {id: 1733, name: '洪江市'}
     ]},
-    {id: 195, name: '娄底市', district: [
+    {id: 195, name: '娄底市', city: [
       {id: 1734, name: '娄星区'},
       {id: 1735, name: '双峰县'},
       {id: 1736, name: '新化县'},
       {id: 1737, name: '冷水江市'},
       {id: 1738, name: '涟源市'}
     ]},
-    {id: 196, name: '湘西', district: [
+    {id: 196, name: '湘西', city: [
       {id: 1739, name: '吉首市'},
       {id: 1740, name: '泸溪县'},
       {id: 1741, name: '凤凰县'},
@@ -2174,7 +2174,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 19, name: '广东', city: [
-    {id: 197, name: '广州市', district: [
+    {id: 197, name: '广州市', city: [
       {id: 1747, name: '东山区'},
       {id: 1748, name: '荔湾区'},
       {id: 1749, name: '越秀区'},
@@ -2188,7 +2188,7 @@ var chineseCities =[
       {id: 1757, name: '增城市'},
       {id: 1758, name: '从化市'}
     ]},
-    {id: 198, name: '韶关市', district: [
+    {id: 198, name: '韶关市', city: [
       {id: 1759, name: '武江区'},
       {id: 1760, name: '浈江区'},
       {id: 1761, name: '曲江区'},
@@ -2200,7 +2200,7 @@ var chineseCities =[
       {id: 1767, name: '乐昌市'},
       {id: 1768, name: '南雄市'}
     ]},
-    {id: 199, name: '深圳市', district: [
+    {id: 199, name: '深圳市', city: [
       {id: 1769, name: '罗湖区'},
       {id: 1770, name: '福田区'},
       {id: 1771, name: '南山区'},
@@ -2208,12 +2208,12 @@ var chineseCities =[
       {id: 1773, name: '龙岗区'},
       {id: 1774, name: '盐田区'}
     ]},
-    {id: 200, name: '珠海市', district: [
+    {id: 200, name: '珠海市', city: [
       {id: 1775, name: '香洲区'},
       {id: 1776, name: '斗门区'},
       {id: 1777, name: '金湾区'}
     ]},
-    {id: 201, name: '汕头市', district: [
+    {id: 201, name: '汕头市', city: [
       {id: 1778, name: '龙湖区'},
       {id: 1779, name: '金平区'},
       {id: 1780, name: '濠江区'},
@@ -2222,14 +2222,14 @@ var chineseCities =[
       {id: 1783, name: '澄海区'},
       {id: 1784, name: '南澳县'}
     ]},
-    {id: 202, name: '佛山市', district: [
+    {id: 202, name: '佛山市', city: [
       {id: 1785, name: '禅城区'},
       {id: 1786, name: '南海区'},
       {id: 1787, name: '顺德区'},
       {id: 1788, name: '三水区'},
       {id: 1789, name: '高明区'}
     ]},
-    {id: 203, name: '江门市', district: [
+    {id: 203, name: '江门市', city: [
       {id: 1790, name: '蓬江区'},
       {id: 1791, name: '江海区'},
       {id: 1792, name: '新会区'},
@@ -2238,7 +2238,7 @@ var chineseCities =[
       {id: 1795, name: '鹤山市'},
       {id: 1796, name: '恩平市'}
     ]},
-    {id: 204, name: '湛江市', district: [
+    {id: 204, name: '湛江市', city: [
       {id: 1797, name: '赤坎区'},
       {id: 1798, name: '霞山区'},
       {id: 1799, name: '坡头区'},
@@ -2249,7 +2249,7 @@ var chineseCities =[
       {id: 1804, name: '雷州市'},
       {id: 1805, name: '吴川市'}
     ]},
-    {id: 205, name: '茂名市', district: [
+    {id: 205, name: '茂名市', city: [
       {id: 1806, name: '茂南区'},
       {id: 1807, name: '茂港区'},
       {id: 1808, name: '电白县'},
@@ -2257,7 +2257,7 @@ var chineseCities =[
       {id: 1810, name: '化州市'},
       {id: 1811, name: '信宜市'}
     ]},
-    {id: 206, name: '肇庆市', district: [
+    {id: 206, name: '肇庆市', city: [
       {id: 1812, name: '端州区'},
       {id: 1813, name: '鼎湖区'},
       {id: 1814, name: '广宁县'},
@@ -2267,14 +2267,14 @@ var chineseCities =[
       {id: 1818, name: '高要市'},
       {id: 1819, name: '四会市'}
     ]},
-    {id: 207, name: '惠州市', district: [
+    {id: 207, name: '惠州市', city: [
       {id: 1820, name: '惠城区'},
       {id: 1821, name: '惠阳区'},
       {id: 1822, name: '博罗县'},
       {id: 1823, name: '惠东县'},
       {id: 1824, name: '龙门县'}
     ]},
-    {id: 208, name: '梅州市', district: [
+    {id: 208, name: '梅州市', city: [
       {id: 1825, name: '梅江区'},
       {id: 1826, name: '梅县'},
       {id: 1827, name: '大埔县'},
@@ -2284,13 +2284,13 @@ var chineseCities =[
       {id: 1831, name: '蕉岭县'},
       {id: 1832, name: '兴宁市'}
     ]},
-    {id: 209, name: '汕尾市', district: [
+    {id: 209, name: '汕尾市', city: [
       {id: 1833, name: '城区'},
       {id: 1834, name: '海丰县'},
       {id: 1835, name: '陆河县'},
       {id: 1836, name: '陆丰市'}
     ]},
-    {id: 210, name: '河源市', district: [
+    {id: 210, name: '河源市', city: [
       {id: 1837, name: '源城区'},
       {id: 1838, name: '紫金县'},
       {id: 1839, name: '龙川县'},
@@ -2298,13 +2298,13 @@ var chineseCities =[
       {id: 1841, name: '和平县'},
       {id: 1842, name: '东源县'}
     ]},
-    {id: 211, name: '阳江市', district: [
+    {id: 211, name: '阳江市', city: [
       {id: 1843, name: '江城区'},
       {id: 1844, name: '阳西县'},
       {id: 1845, name: '阳东县'},
       {id: 1846, name: '阳春市'}
     ]},
-    {id: 212, name: '清远市', district: [
+    {id: 212, name: '清远市', city: [
       {id: 1847, name: '清城区'},
       {id: 1848, name: '佛冈县'},
       {id: 1849, name: '阳山县'},
@@ -2314,21 +2314,21 @@ var chineseCities =[
       {id: 1853, name: '英德市'},
       {id: 1854, name: '连州市'}
     ]},
-    {id: 213, name: '东莞市', district: []},
-    {id: 214, name: '中山市', district: []},
-    {id: 215, name: '潮州市', district: [
+    {id: 213, name: '东莞市', city: []},
+    {id: 214, name: '中山市', city: []},
+    {id: 215, name: '潮州市', city: [
       {id: 1855, name: '湘桥区'},
       {id: 1856, name: '潮安县'},
       {id: 1857, name: '饶平县'}
     ]},
-    {id: 216, name: '揭阳市', district: [
+    {id: 216, name: '揭阳市', city: [
       {id: 1858, name: '榕城区'},
       {id: 1859, name: '揭东县'},
       {id: 1860, name: '揭西县'},
       {id: 1861, name: '惠来县'},
       {id: 1862, name: '普宁市'}
     ]},
-    {id: 217, name: '云浮市', district: [
+    {id: 217, name: '云浮市', city: [
       {id: 1863, name: '云城区'},
       {id: 1864, name: '新兴县'},
       {id: 1865, name: '郁南县'},
@@ -2337,7 +2337,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 20, name: '广西', city: [
-    {id: 218, name: '南宁市', district: [
+    {id: 218, name: '南宁市', city: [
       {id: 1868, name: '兴宁区'},
       {id: 1869, name: '青秀区'},
       {id: 1870, name: '江南区'},
@@ -2351,7 +2351,7 @@ var chineseCities =[
       {id: 1878, name: '宾阳县'},
       {id: 1879, name: '横县'}
     ]},
-    {id: 219, name: '柳州市', district: [
+    {id: 219, name: '柳州市', city: [
       {id: 1880, name: '城中区'},
       {id: 1881, name: '鱼峰区'},
       {id: 1882, name: '柳南区'},
@@ -2363,7 +2363,7 @@ var chineseCities =[
       {id: 1888, name: '融水苗族自治县'},
       {id: 1889, name: '三江侗族自治县'}
     ]},
-    {id: 220, name: '桂林市', district: [
+    {id: 220, name: '桂林市', city: [
       {id: 1890, name: '秀峰区'},
       {id: 1891, name: '叠彩区'},
       {id: 1892, name: '象山区'},
@@ -2382,7 +2382,7 @@ var chineseCities =[
       {id: 1905, name: '荔蒲县'},
       {id: 1906, name: '恭城瑶族自治县'}
     ]},
-    {id: 221, name: '梧州市', district: [
+    {id: 221, name: '梧州市', city: [
       {id: 1907, name: '万秀区'},
       {id: 1908, name: '蝶山区'},
       {id: 1909, name: '长洲区'},
@@ -2391,32 +2391,32 @@ var chineseCities =[
       {id: 1912, name: '蒙山县'},
       {id: 1913, name: '岑溪市'}
     ]},
-    {id: 222, name: '北海市', district: [
+    {id: 222, name: '北海市', city: [
       {id: 1914, name: '海城区'},
       {id: 1915, name: '银海区'},
       {id: 1916, name: '铁山港区'},
       {id: 1917, name: '合浦县'}
     ]},
-    {id: 223, name: '防城港市', district: [
+    {id: 223, name: '防城港市', city: [
       {id: 1918, name: '港口区'},
       {id: 1919, name: '防城区'},
       {id: 1920, name: '上思县'},
       {id: 1921, name: '东兴市'}
     ]},
-    {id: 224, name: '钦州市', district: [
+    {id: 224, name: '钦州市', city: [
       {id: 1922, name: '钦南区'},
       {id: 1923, name: '钦北区'},
       {id: 1924, name: '灵山县'},
       {id: 1925, name: '浦北县'}
     ]},
-    {id: 225, name: '贵港市', district: [
+    {id: 225, name: '贵港市', city: [
       {id: 1926, name: '港北区'},
       {id: 1927, name: '港南区'},
       {id: 1928, name: '覃塘区'},
       {id: 1929, name: '平南县'},
       {id: 1930, name: '桂平市'}
     ]},
-    {id: 226, name: '玉林市', district: [
+    {id: 226, name: '玉林市', city: [
       {id: 1931, name: '玉州区'},
       {id: 1932, name: '容县'},
       {id: 1933, name: '陆川县'},
@@ -2424,7 +2424,7 @@ var chineseCities =[
       {id: 1935, name: '兴业县'},
       {id: 1936, name: '北流市'}
     ]},
-    {id: 227, name: '百色市', district: [
+    {id: 227, name: '百色市', city: [
       {id: 1937, name: '右江区'},
       {id: 1938, name: '田阳县'},
       {id: 1939, name: '田东县'},
@@ -2438,13 +2438,13 @@ var chineseCities =[
       {id: 1947, name: '西林县'},
       {id: 1948, name: '隆林各族自治县'}
     ]},
-    {id: 228, name: '贺州市', district: [
+    {id: 228, name: '贺州市', city: [
       {id: 1949, name: '八步区'},
       {id: 1950, name: '昭平县'},
       {id: 1951, name: '钟山县'},
       {id: 1952, name: '富川瑶族自治县'}
     ]},
-    {id: 229, name: '河池市', district: [
+    {id: 229, name: '河池市', city: [
       {id: 1953, name: '金城江区'},
       {id: 1954, name: '南丹县'},
       {id: 1955, name: '天峨县'},
@@ -2457,7 +2457,7 @@ var chineseCities =[
       {id: 1962, name: '大化瑶族自治县'},
       {id: 1963, name: '宜州市'}
     ]},
-    {id: 230, name: '来宾市', district: [
+    {id: 230, name: '来宾市', city: [
       {id: 1964, name: '兴宾区'},
       {id: 1965, name: '忻城县'},
       {id: 1966, name: '象州县'},
@@ -2465,7 +2465,7 @@ var chineseCities =[
       {id: 1968, name: '金秀瑶族自治县'},
       {id: 1969, name: '合山市'}
     ]},
-    {id: 231, name: '崇左市', district: [
+    {id: 231, name: '崇左市', city: [
       {id: 1970, name: '江洲区'},
       {id: 1971, name: '扶绥县'},
       {id: 1972, name: '宁明县'},
@@ -2476,13 +2476,13 @@ var chineseCities =[
     ]}
     ]},
     {id: 21, name: '海南', city: [
-    {id: 232, name: '海口市', district: [
+    {id: 232, name: '海口市', city: [
       {id: 1977, name: '秀英区'},
       {id: 1978, name: '龙华区'},
       {id: 1979, name: '琼山区'},
       {id: 1980, name: '美兰区'}
     ]},
-    {id: 233, name: '三亚市', district: [
+    {id: 233, name: '三亚市', city: [
       {id: 1981, name: '五指山市'},
       {id: 1982, name: '琼海市'},
       {id: 1983, name: '儋州市'},
@@ -2505,7 +2505,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 22, name: '重庆', city: [
-    {id: 234, name: '重庆市', district: [
+    {id: 234, name: '重庆市', city: [
       {id: 2000, name: '万州区'},
       {id: 2001, name: '涪陵区'},
       {id: 2002, name: '渝中区'},
@@ -2549,7 +2549,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 23, name: '四川', city: [
-    {id: 235, name: '成都市', district: [
+    {id: 235, name: '成都市', city: [
       {id: 2040, name: '锦江区'},
       {id: 2041, name: '青羊区'},
       {id: 2042, name: '金牛区'},
@@ -2570,7 +2570,7 @@ var chineseCities =[
       {id: 2057, name: '邛崃市'},
       {id: 2058, name: '崇州市'}
     ]},
-    {id: 236, name: '自贡市', district: [
+    {id: 236, name: '自贡市', city: [
       {id: 2059, name: '自流井区'},
       {id: 2060, name: '贡井区'},
       {id: 2061, name: '大安区'},
@@ -2578,14 +2578,14 @@ var chineseCities =[
       {id: 2063, name: '荣县'},
       {id: 2064, name: '富顺县'}
     ]},
-    {id: 237, name: '攀枝花市', district: [
+    {id: 237, name: '攀枝花市', city: [
       {id: 2065, name: '东区'},
       {id: 2066, name: '西区'},
       {id: 2067, name: '仁和区'},
       {id: 2068, name: '米易县'},
       {id: 2069, name: '盐边县'}
     ]},
-    {id: 238, name: '泸州市', district: [
+    {id: 238, name: '泸州市', city: [
       {id: 2070, name: '江阳区'},
       {id: 2071, name: '纳溪区'},
       {id: 2072, name: '龙马潭区'},
@@ -2594,7 +2594,7 @@ var chineseCities =[
       {id: 2075, name: '叙永县'},
       {id: 2076, name: '古蔺县'}
     ]},
-    {id: 239, name: '德阳市', district: [
+    {id: 239, name: '德阳市', city: [
       {id: 2077, name: '旌阳区'},
       {id: 2078, name: '中江县'},
       {id: 2079, name: '罗江县'},
@@ -2602,7 +2602,7 @@ var chineseCities =[
       {id: 2081, name: '什邡市'},
       {id: 2082, name: '绵竹市'}
     ]},
-    {id: 240, name: '绵阳市', district: [
+    {id: 240, name: '绵阳市', city: [
       {id: 2083, name: '涪城区'},
       {id: 2084, name: '游仙区'},
       {id: 2085, name: '三台县'},
@@ -2613,7 +2613,7 @@ var chineseCities =[
       {id: 2090, name: '平武县'},
       {id: 2091, name: '江油市'}
     ]},
-    {id: 241, name: '广元市', district: [
+    {id: 241, name: '广元市', city: [
       {id: 2092, name: '市中区'},
       {id: 2093, name: '元坝区'},
       {id: 2094, name: '朝天区'},
@@ -2622,21 +2622,21 @@ var chineseCities =[
       {id: 2097, name: '剑阁县'},
       {id: 2098, name: '苍溪县'}
     ]},
-    {id: 242, name: '遂宁市', district: [
+    {id: 242, name: '遂宁市', city: [
       {id: 2099, name: '船山区'},
       {id: 2100, name: '安居区'},
       {id: 2101, name: '蓬溪县'},
       {id: 2102, name: '射洪县'},
       {id: 2103, name: '大英县'}
     ]},
-    {id: 243, name: '内江市', district: [
+    {id: 243, name: '内江市', city: [
       {id: 2104, name: '市中区'},
       {id: 2105, name: '东兴区'},
       {id: 2106, name: '威远县'},
       {id: 2107, name: '资中县'},
       {id: 2108, name: '隆昌县'}
     ]},
-    {id: 244, name: '乐山市', district: [
+    {id: 244, name: '乐山市', city: [
       {id: 2109, name: '市中区'},
       {id: 2110, name: '沙湾区'},
       {id: 2111, name: '五通桥区'},
@@ -2649,7 +2649,7 @@ var chineseCities =[
       {id: 2118, name: '马边彝族自治县'},
       {id: 2119, name: '峨眉山市'}
     ]},
-    {id: 245, name: '南充市', district: [
+    {id: 245, name: '南充市', city: [
       {id: 2120, name: '顺庆区'},
       {id: 2121, name: '高坪区'},
       {id: 2122, name: '嘉陵区'},
@@ -2660,7 +2660,7 @@ var chineseCities =[
       {id: 2127, name: '西充县'},
       {id: 2128, name: '阆中市'}
     ]},
-    {id: 246, name: '眉山市', district: [
+    {id: 246, name: '眉山市', city: [
       {id: 2129, name: '东坡区'},
       {id: 2130, name: '仁寿县'},
       {id: 2131, name: '彭山县'},
@@ -2668,7 +2668,7 @@ var chineseCities =[
       {id: 2133, name: '丹棱县'},
       {id: 2134, name: '青神县'}
     ]},
-    {id: 247, name: '宜宾市', district: [
+    {id: 247, name: '宜宾市', city: [
       {id: 2135, name: '翠屏区'},
       {id: 2136, name: '宜宾县'},
       {id: 2137, name: '南溪县'},
@@ -2680,14 +2680,14 @@ var chineseCities =[
       {id: 2143, name: '兴文县'},
       {id: 2144, name: '屏山县'}
     ]},
-    {id: 248, name: '广安市', district: [
+    {id: 248, name: '广安市', city: [
       {id: 2145, name: '广安区'},
       {id: 2146, name: '岳池县'},
       {id: 2147, name: '武胜县'},
       {id: 2148, name: '邻水县'},
       {id: 2149, name: '华蓥市'}
     ]},
-    {id: 249, name: '达州市', district: [
+    {id: 249, name: '达州市', city: [
       {id: 2150, name: '通川区'},
       {id: 2151, name: '达县'},
       {id: 2152, name: '宣汉县'},
@@ -2696,7 +2696,7 @@ var chineseCities =[
       {id: 2155, name: '渠县'},
       {id: 2156, name: '万源市'}
     ]},
-    {id: 250, name: '雅安市', district: [
+    {id: 250, name: '雅安市', city: [
       {id: 2157, name: '雨城区'},
       {id: 2158, name: '名山县'},
       {id: 2159, name: '荥经县'},
@@ -2706,19 +2706,19 @@ var chineseCities =[
       {id: 2163, name: '芦山县'},
       {id: 2164, name: '宝兴县'}
     ]},
-    {id: 251, name: '巴中市', district: [
+    {id: 251, name: '巴中市', city: [
       {id: 2165, name: '巴州区'},
       {id: 2166, name: '通江县'},
       {id: 2167, name: '南江县'},
       {id: 2168, name: '平昌县'}
     ]},
-    {id: 252, name: '资阳市', district: [
+    {id: 252, name: '资阳市', city: [
       {id: 2169, name: '雁江区'},
       {id: 2170, name: '安岳县'},
       {id: 2171, name: '乐至县'},
       {id: 2172, name: '简阳市'}
     ]},
-    {id: 253, name: '阿坝', district: [
+    {id: 253, name: '阿坝', city: [
       {id: 2173, name: '汶川县'},
       {id: 2174, name: '理县'},
       {id: 2175, name: '茂县'},
@@ -2733,7 +2733,7 @@ var chineseCities =[
       {id: 2184, name: '若尔盖县'},
       {id: 2185, name: '红原县'}
     ]},
-    {id: 254, name: '甘孜', district: [
+    {id: 254, name: '甘孜', city: [
       {id: 2186, name: '康定县'},
       {id: 2187, name: '泸定县'},
       {id: 2188, name: '丹巴县'},
@@ -2753,7 +2753,7 @@ var chineseCities =[
       {id: 2202, name: '稻城县'},
       {id: 2203, name: '得荣县'}
     ]},
-    {id: 255, name: '凉山', district: [
+    {id: 255, name: '凉山', city: [
       {id: 2204, name: '西昌市'},
       {id: 2205, name: '木里藏族自治县'},
       {id: 2206, name: '盐源县'},
@@ -2774,7 +2774,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 24, name: '贵州', city: [
-    {id: 256, name: '贵阳市', district: [
+    {id: 256, name: '贵阳市', city: [
       {id: 2221, name: '南明区'},
       {id: 2222, name: '云岩区'},
       {id: 2223, name: '花溪区'},
@@ -2786,13 +2786,13 @@ var chineseCities =[
       {id: 2229, name: '修文县'},
       {id: 2230, name: '清镇市'}
     ]},
-    {id: 257, name: '六盘水市', district: [
+    {id: 257, name: '六盘水市', city: [
       {id: 2231, name: '钟山区'},
       {id: 2232, name: '六枝特区'},
       {id: 2233, name: '水城县'},
       {id: 2234, name: '盘县'}
     ]},
-    {id: 258, name: '遵义市', district: [
+    {id: 258, name: '遵义市', city: [
       {id: 2235, name: '红花岗区'},
       {id: 2236, name: '汇川区'},
       {id: 2237, name: '遵义县'},
@@ -2808,7 +2808,7 @@ var chineseCities =[
       {id: 2247, name: '赤水市'},
       {id: 2248, name: '仁怀市'}
     ]},
-    {id: 259, name: '安顺市', district: [
+    {id: 259, name: '安顺市', city: [
       {id: 2249, name: '西秀区'},
       {id: 2250, name: '平坝县'},
       {id: 2251, name: '普定县'},
@@ -2816,7 +2816,7 @@ var chineseCities =[
       {id: 2253, name: '关岭布依族苗族自治县'},
       {id: 2254, name: '紫云苗族布依族自治县'}
     ]},
-    {id: 260, name: '铜仁地区', district: [
+    {id: 260, name: '铜仁地区', city: [
       {id: 2255, name: '铜仁市'},
       {id: 2256, name: '江口县'},
       {id: 2257, name: '玉屏侗族自治县'},
@@ -2828,7 +2828,7 @@ var chineseCities =[
       {id: 2263, name: '松桃苗族自治县'},
       {id: 2264, name: '万山特区'}
     ]},
-    {id: 261, name: '黔西', district: [
+    {id: 261, name: '黔西', city: [
       {id: 2265, name: '兴义市'},
       {id: 2266, name: '兴仁县'},
       {id: 2267, name: '普安县'},
@@ -2838,7 +2838,7 @@ var chineseCities =[
       {id: 2271, name: '册亨县'},
       {id: 2272, name: '安龙县'}
     ]},
-    {id: 262, name: '毕节地区', district: [
+    {id: 262, name: '毕节地区', city: [
       {id: 2273, name: '毕节市'},
       {id: 2274, name: '大方县'},
       {id: 2275, name: '黔西县'},
@@ -2848,7 +2848,7 @@ var chineseCities =[
       {id: 2279, name: '威宁彝族回族苗族自治县'},
       {id: 2280, name: '赫章县'}
     ]},
-    {id: 263, name: '黔东', district: [
+    {id: 263, name: '黔东', city: [
       {id: 2281, name: '凯里市'},
       {id: 2282, name: '黄平县'},
       {id: 2283, name: '施秉县'},
@@ -2866,7 +2866,7 @@ var chineseCities =[
       {id: 2295, name: '麻江县'},
       {id: 2296, name: '丹寨县'}
     ]},
-    {id: 264, name: '黔南', district: [
+    {id: 264, name: '黔南', city: [
       {id: 2297, name: '都匀市'},
       {id: 2298, name: '福泉市'},
       {id: 2299, name: '荔波县'},
@@ -2882,7 +2882,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 25, name: '云南', city: [
-    {id: 265, name: '昆明市', district: [
+    {id: 265, name: '昆明市', city: [
       {id: 2309, name: '五华区'},
       {id: 2310, name: '盘龙区'},
       {id: 2311, name: '官渡区'},
@@ -2898,7 +2898,7 @@ var chineseCities =[
       {id: 2321, name: '寻甸回族彝族自治县'},
       {id: 2322, name: '安宁市'}
     ]},
-    {id: 266, name: '曲靖市', district: [
+    {id: 266, name: '曲靖市', city: [
       {id: 2323, name: '麒麟区'},
       {id: 2324, name: '马龙县'},
       {id: 2325, name: '陆良县'},
@@ -2909,7 +2909,7 @@ var chineseCities =[
       {id: 2330, name: '沾益县'},
       {id: 2331, name: '宣威市'}
     ]},
-    {id: 267, name: '玉溪市', district: [
+    {id: 267, name: '玉溪市', city: [
       {id: 2332, name: '红塔区'},
       {id: 2333, name: '江川县'},
       {id: 2334, name: '澄江县'},
@@ -2920,14 +2920,14 @@ var chineseCities =[
       {id: 2339, name: '新平彝族傣族自治县'},
       {id: 2340, name: '元江哈尼族彝族傣族自治县'}
     ]},
-    {id: 268, name: '保山市', district: [
+    {id: 268, name: '保山市', city: [
       {id: 2341, name: '隆阳区'},
       {id: 2342, name: '施甸县'},
       {id: 2343, name: '腾冲县'},
       {id: 2344, name: '龙陵县'},
       {id: 2345, name: '昌宁县'}
     ]},
-    {id: 269, name: '昭通市', district: [
+    {id: 269, name: '昭通市', city: [
       {id: 2346, name: '昭阳区'},
       {id: 2347, name: '鲁甸县'},
       {id: 2348, name: '巧家县'},
@@ -2940,14 +2940,14 @@ var chineseCities =[
       {id: 2355, name: '威信县'},
       {id: 2356, name: '水富县'}
     ]},
-    {id: 270, name: '丽江市', district: [
+    {id: 270, name: '丽江市', city: [
       {id: 2357, name: '古城区'},
       {id: 2358, name: '玉龙纳西族自治县'},
       {id: 2359, name: '永胜县'},
       {id: 2360, name: '华坪县'},
       {id: 2361, name: '宁蒗彝族自治县'}
     ]},
-    {id: 271, name: '思茅市', district: [
+    {id: 271, name: '思茅市', city: [
       {id: 2362, name: '翠云区'},
       {id: 2363, name: '普洱哈尼族彝族自治县'},
       {id: 2364, name: '墨江哈尼族自治县'},
@@ -2959,7 +2959,7 @@ var chineseCities =[
       {id: 2370, name: '澜沧拉祜族自治县'},
       {id: 2371, name: '西盟佤族自治县'}
     ]},
-    {id: 272, name: '临沧市', district: [
+    {id: 272, name: '临沧市', city: [
       {id: 2372, name: '临翔区'},
       {id: 2373, name: '凤庆县'},
       {id: 2374, name: '云县'},
@@ -2969,7 +2969,7 @@ var chineseCities =[
       {id: 2378, name: '耿马傣族佤族自治县'},
       {id: 2379, name: '沧源佤族自治县'}
     ]},
-    {id: 273, name: '楚雄', district: [
+    {id: 273, name: '楚雄', city: [
       {id: 2380, name: '楚雄市'},
       {id: 2381, name: '双柏县'},
       {id: 2382, name: '牟定县'},
@@ -2981,7 +2981,7 @@ var chineseCities =[
       {id: 2388, name: '武定县'},
       {id: 2389, name: '禄丰县'}
     ]},
-    {id: 274, name: '红河', district: [
+    {id: 274, name: '红河', city: [
       {id: 2390, name: '个旧市'},
       {id: 2391, name: '开远市'},
       {id: 2392, name: '蒙自县'},
@@ -2996,7 +2996,7 @@ var chineseCities =[
       {id: 2401, name: '绿春县'},
       {id: 2402, name: '河口瑶族自治县'}
     ]},
-    {id: 275, name: '文山', district: [
+    {id: 275, name: '文山', city: [
       {id: 2403, name: '文山县'},
       {id: 2404, name: '砚山县'},
       {id: 2405, name: '西畴县'},
@@ -3006,12 +3006,12 @@ var chineseCities =[
       {id: 2409, name: '广南县'},
       {id: 2410, name: '富宁县'}
     ]},
-    {id: 276, name: '西双版纳', district: [
+    {id: 276, name: '西双版纳', city: [
       {id: 2411, name: '景洪市'},
       {id: 2412, name: '勐海县'},
       {id: 2413, name: '勐腊县'}
     ]},
-    {id: 277, name: '大理', district: [
+    {id: 277, name: '大理', city: [
       {id: 2414, name: '大理市'},
       {id: 2415, name: '漾濞彝族自治县'},
       {id: 2416, name: '祥云县'},
@@ -3025,27 +3025,27 @@ var chineseCities =[
       {id: 2424, name: '剑川县'},
       {id: 2425, name: '鹤庆县'}
     ]},
-    {id: 278, name: '德宏', district: [
+    {id: 278, name: '德宏', city: [
       {id: 2426, name: '瑞丽市'},
       {id: 2427, name: '潞西市'},
       {id: 2428, name: '梁河县'},
       {id: 2429, name: '盈江县'},
       {id: 2430, name: '陇川县'}
     ]},
-    {id: 279, name: '怒江', district: [
+    {id: 279, name: '怒江', city: [
       {id: 2431, name: '泸水县'},
       {id: 2432, name: '福贡县'},
       {id: 2433, name: '贡山独龙族怒族自治县'},
       {id: 2434, name: '兰坪白族普米族自治县'}
     ]},
-    {id: 280, name: '迪庆', district: [
+    {id: 280, name: '迪庆', city: [
       {id: 2435, name: '香格里拉县'},
       {id: 2436, name: '德钦县'},
       {id: 2437, name: '维西傈僳族自治县'}
     ]}
     ]},
     {id: 26, name: '西藏', city: [
-    {id: 281, name: '拉萨市', district: [
+    {id: 281, name: '拉萨市', city: [
       {id: 2438, name: '城关区'},
       {id: 2439, name: '林周县'},
       {id: 2440, name: '当雄县'},
@@ -3055,7 +3055,7 @@ var chineseCities =[
       {id: 2444, name: '达孜县'},
       {id: 2445, name: '墨竹工卡县'}
     ]},
-    {id: 282, name: '昌都地区', district: [
+    {id: 282, name: '昌都地区', city: [
       {id: 2446, name: '昌都县'},
       {id: 2447, name: '江达县'},
       {id: 2448, name: '贡觉县'},
@@ -3068,7 +3068,7 @@ var chineseCities =[
       {id: 2455, name: '洛隆县'},
       {id: 2456, name: '边坝县'}
     ]},
-    {id: 283, name: '山南地区', district: [
+    {id: 283, name: '山南地区', city: [
       {id: 2457, name: '乃东县'},
       {id: 2458, name: '扎囊县'},
       {id: 2459, name: '贡嘎县'},
@@ -3082,7 +3082,7 @@ var chineseCities =[
       {id: 2467, name: '错那县'},
       {id: 2468, name: '浪卡子县'}
     ]},
-    {id: 284, name: '日喀则地区', district: [
+    {id: 284, name: '日喀则地区', city: [
       {id: 2469, name: '日喀则市'},
       {id: 2470, name: '南木林县'},
       {id: 2471, name: '江孜县'},
@@ -3102,7 +3102,7 @@ var chineseCities =[
       {id: 2485, name: '萨嘎县'},
       {id: 2486, name: '岗巴县'}
     ]},
-    {id: 285, name: '那曲地区', district: [
+    {id: 285, name: '那曲地区', city: [
       {id: 2487, name: '那曲县'},
       {id: 2488, name: '嘉黎县'},
       {id: 2489, name: '比如县'},
@@ -3114,7 +3114,7 @@ var chineseCities =[
       {id: 2495, name: '巴青县'},
       {id: 2496, name: '尼玛县'}
     ]},
-    {id: 286, name: '阿里地区', district: [
+    {id: 286, name: '阿里地区', city: [
       {id: 2497, name: '普兰县'},
       {id: 2498, name: '札达县'},
       {id: 2499, name: '噶尔县'},
@@ -3123,7 +3123,7 @@ var chineseCities =[
       {id: 2502, name: '改则县'},
       {id: 2503, name: '措勤县'}
     ]},
-    {id: 287, name: '林芝地区', district: [
+    {id: 287, name: '林芝地区', city: [
       {id: 2504, name: '林芝县'},
       {id: 2505, name: '工布江达县'},
       {id: 2506, name: '米林县'},
@@ -3134,7 +3134,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 27, name: '陕西', city: [
-    {id: 288, name: '西安市', district: [
+    {id: 288, name: '西安市', city: [
       {id: 2511, name: '新城区'},
       {id: 2512, name: '碑林区'},
       {id: 2513, name: '莲湖区'},
@@ -3149,13 +3149,13 @@ var chineseCities =[
       {id: 2522, name: '户县'},
       {id: 2523, name: '高陵县'}
     ]},
-    {id: 289, name: '铜川市', district: [
+    {id: 289, name: '铜川市', city: [
       {id: 2524, name: '王益区'},
       {id: 2525, name: '印台区'},
       {id: 2526, name: '耀州区'},
       {id: 2527, name: '宜君县'}
     ]},
-    {id: 290, name: '宝鸡市', district: [
+    {id: 290, name: '宝鸡市', city: [
       {id: 2528, name: '渭滨区'},
       {id: 2529, name: '金台区'},
       {id: 2530, name: '陈仓区'},
@@ -3169,7 +3169,7 @@ var chineseCities =[
       {id: 2538, name: '凤县'},
       {id: 2539, name: '太白县'}
     ]},
-    {id: 291, name: '咸阳市', district: [
+    {id: 291, name: '咸阳市', city: [
       {id: 2540, name: '秦都区'},
       {id: 2541, name: '杨凌区'},
       {id: 2542, name: '渭城区'},
@@ -3185,7 +3185,7 @@ var chineseCities =[
       {id: 2552, name: '武功县'},
       {id: 2553, name: '兴平市'}
     ]},
-    {id: 292, name: '渭南市', district: [
+    {id: 292, name: '渭南市', city: [
       {id: 2554, name: '临渭区'},
       {id: 2555, name: '华县'},
       {id: 2556, name: '潼关县'},
@@ -3198,7 +3198,7 @@ var chineseCities =[
       {id: 2563, name: '韩城市'},
       {id: 2564, name: '华阴市'}
     ]},
-    {id: 293, name: '延安市', district: [
+    {id: 293, name: '延安市', city: [
       {id: 2565, name: '宝塔区'},
       {id: 2566, name: '延长县'},
       {id: 2567, name: '延川县'},
@@ -3213,7 +3213,7 @@ var chineseCities =[
       {id: 2576, name: '黄龙县'},
       {id: 2577, name: '黄陵县'}
     ]},
-    {id: 294, name: '汉中市', district: [
+    {id: 294, name: '汉中市', city: [
       {id: 2578, name: '汉台区'},
       {id: 2579, name: '南郑县'},
       {id: 2580, name: '城固县'},
@@ -3226,7 +3226,7 @@ var chineseCities =[
       {id: 2587, name: '留坝县'},
       {id: 2588, name: '佛坪县'}
     ]},
-    {id: 295, name: '榆林市', district: [
+    {id: 295, name: '榆林市', city: [
       {id: 2589, name: '榆阳区'},
       {id: 2590, name: '神木县'},
       {id: 2591, name: '府谷县'},
@@ -3240,7 +3240,7 @@ var chineseCities =[
       {id: 2599, name: '清涧县'},
       {id: 2600, name: '子洲县'}
     ]},
-    {id: 296, name: '安康市', district: [
+    {id: 296, name: '安康市', city: [
       {id: 2601, name: '汉滨区'},
       {id: 2602, name: '汉阴县'},
       {id: 2603, name: '石泉县'},
@@ -3252,7 +3252,7 @@ var chineseCities =[
       {id: 2609, name: '旬阳县'},
       {id: 2610, name: '白河县'}
     ]},
-    {id: 297, name: '商洛市', district: [
+    {id: 297, name: '商洛市', city: [
       {id: 2611, name: '商州区'},
       {id: 2612, name: '洛南县'},
       {id: 2613, name: '丹凤县'},
@@ -3263,7 +3263,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 28, name: '甘肃', city: [
-    {id: 298, name: '兰州市', district: [
+    {id: 298, name: '兰州市', city: [
       {id: 2618, name: '城关区'},
       {id: 2619, name: '七里河区'},
       {id: 2620, name: '西固区'},
@@ -3273,19 +3273,19 @@ var chineseCities =[
       {id: 2624, name: '皋兰县'},
       {id: 2625, name: '榆中县'}
     ]},
-    {id: 299, name: '嘉峪关市', district: []},
-    {id: 300, name: '金昌市', district: [
+    {id: 299, name: '嘉峪关市', city: []},
+    {id: 300, name: '金昌市', city: [
       {id: 2626, name: '金川区'},
       {id: 2627, name: '永昌县'}
     ]},
-    {id: 301, name: '白银市', district: [
+    {id: 301, name: '白银市', city: [
       {id: 2628, name: '白银区'},
       {id: 2629, name: '平川区'},
       {id: 2630, name: '靖远县'},
       {id: 2631, name: '会宁县'},
       {id: 2632, name: '景泰县'}
     ]},
-    {id: 302, name: '天水市', district: [
+    {id: 302, name: '天水市', city: [
       {id: 2633, name: '秦城区'},
       {id: 2634, name: '北道区'},
       {id: 2635, name: '清水县'},
@@ -3294,13 +3294,13 @@ var chineseCities =[
       {id: 2638, name: '武山县'},
       {id: 2639, name: '张家川回族自治县'}
     ]},
-    {id: 303, name: '武威市', district: [
+    {id: 303, name: '武威市', city: [
       {id: 2640, name: '凉州区'},
       {id: 2641, name: '民勤县'},
       {id: 2642, name: '古浪县'},
       {id: 2643, name: '天祝藏族自治县'}
     ]},
-    {id: 304, name: '张掖市', district: [
+    {id: 304, name: '张掖市', city: [
       {id: 2644, name: '甘州区'},
       {id: 2645, name: '肃南裕固族自治县'},
       {id: 2646, name: '民乐县'},
@@ -3308,7 +3308,7 @@ var chineseCities =[
       {id: 2648, name: '高台县'},
       {id: 2649, name: '山丹县'}
     ]},
-    {id: 305, name: '平凉市', district: [
+    {id: 305, name: '平凉市', city: [
       {id: 2650, name: '崆峒区'},
       {id: 2651, name: '泾川县'},
       {id: 2652, name: '灵台县'},
@@ -3317,7 +3317,7 @@ var chineseCities =[
       {id: 2655, name: '庄浪县'},
       {id: 2656, name: '静宁县'}
     ]},
-    {id: 306, name: '酒泉市', district: [
+    {id: 306, name: '酒泉市', city: [
       {id: 2657, name: '肃州区'},
       {id: 2658, name: '金塔县'},
       {id: 2659, name: '安西县'},
@@ -3326,7 +3326,7 @@ var chineseCities =[
       {id: 2662, name: '玉门市'},
       {id: 2663, name: '敦煌市'}
     ]},
-    {id: 307, name: '庆阳市', district: [
+    {id: 307, name: '庆阳市', city: [
       {id: 2664, name: '西峰区'},
       {id: 2665, name: '庆城县'},
       {id: 2666, name: '环县'},
@@ -3336,7 +3336,7 @@ var chineseCities =[
       {id: 2670, name: '宁县'},
       {id: 2671, name: '镇原县'}
     ]},
-    {id: 308, name: '定西市', district: [
+    {id: 308, name: '定西市', city: [
       {id: 2672, name: '安定区'},
       {id: 2673, name: '通渭县'},
       {id: 2674, name: '陇西县'},
@@ -3345,7 +3345,7 @@ var chineseCities =[
       {id: 2677, name: '漳县'},
       {id: 2678, name: '岷县'}
     ]},
-    {id: 309, name: '陇南市', district: [
+    {id: 309, name: '陇南市', city: [
       {id: 2679, name: '武都区'},
       {id: 2680, name: '成县'},
       {id: 2681, name: '文县'},
@@ -3356,7 +3356,7 @@ var chineseCities =[
       {id: 2686, name: '徽县'},
       {id: 2687, name: '两当县'}
     ]},
-    {id: 310, name: '临夏', district: [
+    {id: 310, name: '临夏', city: [
       {id: 2688, name: '临夏市'},
       {id: 2689, name: '临夏县'},
       {id: 2690, name: '康乐县'},
@@ -3366,7 +3366,7 @@ var chineseCities =[
       {id: 2694, name: '东乡族自治县'},
       {id: 2695, name: '积石山保安族东乡族撒拉族自治县'}
     ]},
-    {id: 311, name: '甘南', district: [
+    {id: 311, name: '甘南', city: [
       {id: 2696, name: '合作市'},
       {id: 2697, name: '临潭县'},
       {id: 2698, name: '卓尼县'},
@@ -3378,7 +3378,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 29, name: '青海', city: [
-    {id: 312, name: '西宁市', district: [
+    {id: 312, name: '西宁市', city: [
       {id: 2704, name: '城东区'},
       {id: 2705, name: '城中区'},
       {id: 2706, name: '城西区'},
@@ -3387,7 +3387,7 @@ var chineseCities =[
       {id: 2709, name: '湟中县'},
       {id: 2710, name: '湟源县'}
     ]},
-    {id: 313, name: '海东地区', district: [
+    {id: 313, name: '海东地区', city: [
       {id: 2711, name: '平安县'},
       {id: 2712, name: '民和回族土族自治县'},
       {id: 2713, name: '乐都县'},
@@ -3395,26 +3395,26 @@ var chineseCities =[
       {id: 2715, name: '化隆回族自治县'},
       {id: 2716, name: '循化撒拉族自治县'}
     ]},
-    {id: 314, name: '海北', district: [
+    {id: 314, name: '海北', city: [
       {id: 2717, name: '门源回族自治县'},
       {id: 2718, name: '祁连县'},
       {id: 2719, name: '海晏县'},
       {id: 2720, name: '刚察县'}
     ]},
-    {id: 315, name: '黄南', district: [
+    {id: 315, name: '黄南', city: [
       {id: 2721, name: '同仁县'},
       {id: 2722, name: '尖扎县'},
       {id: 2723, name: '泽库县'},
       {id: 2724, name: '河南蒙古族自治县'}
     ]},
-    {id: 316, name: '海南', district: [
+    {id: 316, name: '海南', city: [
       {id: 2725, name: '共和县'},
       {id: 2726, name: '同德县'},
       {id: 2727, name: '贵德县'},
       {id: 2728, name: '兴海县'},
       {id: 2729, name: '贵南县'}
     ]},
-    {id: 317, name: '果洛', district: [
+    {id: 317, name: '果洛', city: [
       {id: 2730, name: '玛沁县'},
       {id: 2731, name: '班玛县'},
       {id: 2732, name: '甘德县'},
@@ -3422,7 +3422,7 @@ var chineseCities =[
       {id: 2734, name: '久治县'},
       {id: 2735, name: '玛多县'}
     ]},
-    {id: 318, name: '玉树', district: [
+    {id: 318, name: '玉树', city: [
       {id: 2736, name: '玉树县'},
       {id: 2737, name: '杂多县'},
       {id: 2738, name: '称多县'},
@@ -3430,7 +3430,7 @@ var chineseCities =[
       {id: 2740, name: '囊谦县'},
       {id: 2741, name: '曲麻莱县'}
     ]},
-    {id: 319, name: '海西', district: [
+    {id: 319, name: '海西', city: [
       {id: 2742, name: '格尔木市'},
       {id: 2743, name: '德令哈市'},
       {id: 2744, name: '乌兰县'},
@@ -3439,7 +3439,7 @@ var chineseCities =[
     ]}
     ]},
     {id: 30, name: '宁夏', city: [
-    {id: 320, name: '银川市', district: [
+    {id: 320, name: '银川市', city: [
       {id: 2747, name: '兴庆区'},
       {id: 2748, name: '西夏区'},
       {id: 2749, name: '金凤区'},
@@ -3447,32 +3447,32 @@ var chineseCities =[
       {id: 2751, name: '贺兰县'},
       {id: 2752, name: '灵武市'}
     ]},
-    {id: 321, name: '石嘴山市', district: [
+    {id: 321, name: '石嘴山市', city: [
       {id: 2753, name: '大武口区'},
       {id: 2754, name: '惠农区'},
       {id: 2755, name: '平罗县'}
     ]},
-    {id: 322, name: '吴忠市', district: [
+    {id: 322, name: '吴忠市', city: [
       {id: 2756, name: '利通区'},
       {id: 2757, name: '盐池县'},
       {id: 2758, name: '同心县'},
       {id: 2759, name: '青铜峡市'}
     ]},
-    {id: 323, name: '固原市', district: [
+    {id: 323, name: '固原市', city: [
       {id: 2760, name: '原州区'},
       {id: 2761, name: '西吉县'},
       {id: 2762, name: '隆德县'},
       {id: 2763, name: '泾源县'},
       {id: 2764, name: '彭阳县'}
     ]},
-    {id: 324, name: '中卫市', district: [
+    {id: 324, name: '中卫市', city: [
       {id: 2765, name: '沙坡头区'},
       {id: 2766, name: '中宁县'},
       {id: 2767, name: '海原县'}
     ]}
     ]},
     {id: 31, name: '新疆', city: [
-    {id: 325, name: '乌鲁木齐市', district: [
+    {id: 325, name: '乌鲁木齐市', city: [
       {id: 2768, name: '天山区'},
       {id: 2769, name: '沙依巴克区'},
       {id: 2770, name: '新市区'},
@@ -3482,23 +3482,23 @@ var chineseCities =[
       {id: 2774, name: '东山区'},
       {id: 2775, name: '乌鲁木齐县'}
     ]},
-    {id: 326, name: '克拉玛依市', district: [
+    {id: 326, name: '克拉玛依市', city: [
       {id: 2776, name: '独山子区'},
       {id: 2777, name: '克拉玛依区'},
       {id: 2778, name: '白碱滩区'},
       {id: 2779, name: '乌尔禾区'}
     ]},
-    {id: 327, name: '吐鲁番地区', district: [
+    {id: 327, name: '吐鲁番地区', city: [
       {id: 2780, name: '吐鲁番市'},
       {id: 2781, name: '鄯善县'},
       {id: 2782, name: '托克逊县'}
     ]},
-    {id: 328, name: '哈密地区', district: [
+    {id: 328, name: '哈密地区', city: [
       {id: 2783, name: '哈密市'},
       {id: 2784, name: '巴里坤哈萨克自治县'},
       {id: 2785, name: '伊吾县'}
     ]},
-    {id: 329, name: '昌吉', district: [
+    {id: 329, name: '昌吉', city: [
       {id: 2786, name: '昌吉市'},
       {id: 2787, name: '阜康市'},
       {id: 2788, name: '米泉市'},
@@ -3508,12 +3508,12 @@ var chineseCities =[
       {id: 2792, name: '吉木萨尔县'},
       {id: 2793, name: '木垒哈萨克自治县'}
     ]},
-    {id: 330, name: '博尔塔拉', district: [
+    {id: 330, name: '博尔塔拉', city: [
       {id: 2794, name: '博乐市'},
       {id: 2795, name: '精河县'},
       {id: 2796, name: '温泉县'}
     ]},
-    {id: 331, name: '巴音郭楞', district: [
+    {id: 331, name: '巴音郭楞', city: [
       {id: 2797, name: '库尔勒市'},
       {id: 2798, name: '轮台县'},
       {id: 2799, name: '尉犁县'},
@@ -3524,7 +3524,7 @@ var chineseCities =[
       {id: 2804, name: '和硕县'},
       {id: 2805, name: '博湖县'}
     ]},
-    {id: 332, name: '阿克苏地区', district: [
+    {id: 332, name: '阿克苏地区', city: [
       {id: 2806, name: '阿克苏市'},
       {id: 2807, name: '温宿县'},
       {id: 2808, name: '库车县'},
@@ -3535,13 +3535,13 @@ var chineseCities =[
       {id: 2813, name: '阿瓦提县'},
       {id: 2814, name: '柯坪县'}
     ]},
-    {id: 333, name: '克孜勒苏柯尔克孜', district: [
+    {id: 333, name: '克孜勒苏柯尔克孜', city: [
       {id: 2815, name: '阿图什市'},
       {id: 2816, name: '阿克陶县'},
       {id: 2817, name: '阿合奇县'},
       {id: 2818, name: '乌恰县'}
     ]},
-    {id: 334, name: '喀什地区', district: [
+    {id: 334, name: '喀什地区', city: [
       {id: 2819, name: '喀什市'},
       {id: 2820, name: '疏附县'},
       {id: 2821, name: '疏勒县'},
@@ -3555,7 +3555,7 @@ var chineseCities =[
       {id: 2829, name: '巴楚县'},
       {id: 2830, name: '塔什库尔干塔吉克自治县'}
     ]},
-    {id: 335, name: '和田地区', district: [
+    {id: 335, name: '和田地区', city: [
       {id: 2831, name: '和田市'},
       {id: 2832, name: '和田县'},
       {id: 2833, name: '墨玉县'},
@@ -3565,7 +3565,7 @@ var chineseCities =[
       {id: 2837, name: '于田县'},
       {id: 2838, name: '民丰县'}
     ]},
-    {id: 336, name: '伊犁哈萨克', district: [
+    {id: 336, name: '伊犁哈萨克', city: [
       {id: 2839, name: '伊宁市'},
       {id: 2840, name: '奎屯市'},
       {id: 2841, name: '伊宁县'},
@@ -3577,7 +3577,7 @@ var chineseCities =[
       {id: 2847, name: '特克斯县'},
       {id: 2848, name: '尼勒克县'}
     ]},
-    {id: 337, name: '塔城地区', district: [
+    {id: 337, name: '塔城地区', city: [
       {id: 2849, name: '塔城市'},
       {id: 2850, name: '乌苏市'},
       {id: 2851, name: '额敏县'},
@@ -3586,7 +3586,7 @@ var chineseCities =[
       {id: 2854, name: '裕民县'},
       {id: 2855, name: '和布克赛尔蒙古自治县'}
     ]},
-    {id: 338, name: '阿勒泰地区', district: [
+    {id: 338, name: '阿勒泰地区', city: [
       {id: 2856, name: '阿勒泰市'},
       {id: 2857, name: '布尔津县'},
       {id: 2858, name: '富蕴县'},
@@ -3595,18 +3595,22 @@ var chineseCities =[
       {id: 2861, name: '青河县'},
       {id: 2862, name: '吉木乃县'}
     ]},
-    {id: 339, name: '石河子市', district: []},
-    {id: 340, name: '阿拉尔市', district: []},
-    {id: 341, name: '图木舒克市', district: []},
-    {id: 342, name: '五家渠市', district: []}
+    {id: 339, name: '石河子市', city: []},
+    {id: 340, name: '阿拉尔市', city: []},
+    {id: 341, name: '图木舒克市', city: []},
+    {id: 342, name: '五家渠市', city: []}
     ]},
     {id: 32, name: '香港', city: [
-    {id: 343, name: '香港', district: []}
+    {id: 343, name: '香港', city: []}
     ]},
     {id: 33, name: '澳门', city: [
-    {id: 344, name: '澳门', district: []}
+    {id: 344, name: '澳门', city: []}
     ]},
     {id: 34, name: '台湾', city: [
-    {id: 345, name: '台湾', district: []}
+    {id: 345, name: '台湾', city: []}
     ]}
 ]
+
+module.exports = {
+  chineseCities:chineseCities
+}

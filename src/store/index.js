@@ -100,6 +100,14 @@ export default new vuex.Store({
 		getCarParameter:function(state,val){
 			state.carParameterId=val;
 			console.log(state.carParameterId)
+		},
+		changeIsSelect:function(state,val){
+			for(var i=0,l=state.addressList.length;i<l;i++){
+				state.addressList[i].isSelect=false;
+				if(state.addressList[i].id==val){
+					state.addressList[i].isSelect=true;
+				}
+			}
 		}
 	},
 	actions:{
@@ -127,6 +135,11 @@ export default new vuex.Store({
 			setTimeout(function(){
 				content.commit('deleteAddress',val)
 			},500)
+		},
+		changeIsSelect:function(content,val){
+			setTimeout(function(){
+				content.commit('changeIsSelect',val)
+			})
 		}
 	}
 })

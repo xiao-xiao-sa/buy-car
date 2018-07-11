@@ -10,9 +10,8 @@
 		</div>
 		<div class="add-row">
 			<label>所在地区</label>
-			<!-- 移动端地区选择组件 -->
-			<p v-html="address.area"></p>
-			<i class="iconfont icon-jiantou2"></i>
+			<div id="trigger5" class="area"><span>{{address.area}}</span><i class="iconfont icon-jiantou2"></i></div>
+			
 		</div>
 		<div class="add-row detail-address">
 			<label>详细地址</label>
@@ -28,6 +27,9 @@
 </template>
 
 <script>
+	import MobileSelect from 'mobile-select'
+    import cityData from '../assets/data/cityData'
+
 	export default {
 		name:'addAddress',
 		data(){return{
@@ -35,18 +37,38 @@
 				"id":'',
 				"name":'',
 				"phone":'',
-				"area":'',
+				"area":'选择省、市、区',
 				'detail':"",
 				"isSelect":false
 			},
+			chineseCities:null
 		}},
 		watch:{
 			address:function(){}
 		},
 		created:function(){
+			this.chineseCities=cityData.chineseCities;
 			if(this.$store.state.reviseAddress != null){
 				this.address = this.$store.state.reviseAddress;
+				this.$store.commit('reviseAddress',null);
 			}
+		},
+		mounted:function(){
+			var mobileSelect5 = new MobileSelect({
+                trigger: '#trigger5',
+                title: '所在地区',
+                wheels: [
+                            {data:this.chineseCities}
+                        ],
+                keyMap: {
+                    id:'id',
+                    value: 'name',
+                    childs :'city'
+                },         
+                callback:function(indexArr, data){
+                    console.log(data);
+                }
+            });
 		},
 		methods:{
 			saveAddress:function(){
@@ -64,7 +86,7 @@
 	}
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 	.add-address{
 		width: 100%;
 		.add-row{
@@ -81,6 +103,15 @@
 			font-size: 28px;
 			input{
 				width: 550px;
+			}
+			.area{
+				width: 550px;
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: space-between;
+				i{
+					font-size: 40px;
+				}
 			}
 		}
 		.detail-address{
@@ -103,4 +134,5 @@
 			margin-top:20px;
 		}
 	}
+
 </style>

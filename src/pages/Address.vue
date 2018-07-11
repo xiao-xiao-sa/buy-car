@@ -9,7 +9,7 @@
 			<div class="bottom">
 				<span>
 					<i class="iconfont icon-xuanzhong" v-if="item.isSelect == true" style="color:#ff2132;"></i>
-					<i class="iconfont icon-weixuanzhong" v-if="item.isSelect == false"></i>
+					<i class="iconfont icon-weixuanzhong" v-if="item.isSelect == false" @click="changeIsSelect(item.id)"></i>
 					默认地址
 				</span>
 				<div class="right">
@@ -18,9 +18,9 @@
 				</div>
 			</div>
 		</div>
-		<div v-if="addressList.length == 0" style="margin-top:100px">
-			<img src="../assets/image/no-address.png" alt="" style="width: 150px; height: 150px;margin-bottom: 20px">
-			<p style="font-size: 16px;">您还未添加地址</p>
+		<div v-if="addressList.length == 0" class="no-address">
+			<img src="../assets/image/no-address.png" alt="" >
+			<p>您还未添加地址</p>
 		</div>
 		<router-link class="add-btn"  to="/addAddress">新增地址</router-link>
 	</div>
@@ -55,6 +55,10 @@
 				})[0];
 				this.$store.commit('reviseAddress',reviseAddress );
 				this.$router.push({path:'/addAddress'})
+			},
+			changeIsSelect:function(val){
+				console.log(val);
+				this.$store.dispatch('changeIsSelect',val);
 			}
 		}
 	}
@@ -114,6 +118,16 @@
 			color: #fff;
 			font-size: 32px;
 			border-radius: 10px;
+		}
+		.no-address{
+			margin-top:100px;
+			font-size: 30px;
+			color: #666;
+			img{
+				width: 200px;
+				height: 200px;
+				margin-bottom: 20px;
+			}
 		}
 	}
 </style>
