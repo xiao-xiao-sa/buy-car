@@ -85,7 +85,7 @@
 			}
 		}
 		.forget-pwd-row-2{
-			font-size: 30px;
+			font-size: 30px; /*px*/
 			display: flex;
 			flex-wrap: nowrap;
 			justify-content: space-between;
@@ -113,7 +113,7 @@
 				line-height: 60px;
 				border:2px solid #ff2132;
 				border-radius: 10px;
-				font-size: 20px;
+				font-size: 20px; /*px*/
 				display: inline-block;
 				width:150px;
 				margin-top:20px;
@@ -126,7 +126,7 @@
 			margin:20px auto;
 			background-color: #ff2132;
 			color: #fff;
-			font-size: 30px;
+			font-size: 30px; /*px*/
 			border-radius: 10px;
 		}
 	}

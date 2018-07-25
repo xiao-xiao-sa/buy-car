@@ -30,7 +30,7 @@
 			userPwd:function(){}
 		},
 		created:function(){
-			document.title="登录";
+			
 		},
 		methods:{
 			login:function(){
@@ -71,7 +71,7 @@
 			margin:0 auto;
 			height: 100px;
 			line-height: 100px;
-			font-size: 30px;
+			font-size: 30px; /*px*/
 			input{
 				width:500px;
 				border:2px solid #999;
@@ -90,7 +90,7 @@
 			width: 660px;
 			margin:10px auto;
 			color: #ff2132;
-			font-size: 24px;
+			font-size: 24px; /*px*/
 		}
 		.login-btn{
 			width: 660px;
@@ -98,7 +98,7 @@
 			margin:20px auto;
 			background-color: #ff2132;
 			color: #fff;
-			font-size: 30px;
+			font-size: 30px; /*px*/
 			border-radius: 10px;
 		}
 	}

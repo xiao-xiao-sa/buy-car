@@ -22,6 +22,8 @@
 </template>
 
 <script>
+	import Qs from 'qs'
+	
 	export default {
 		name:'Repair',
 		data(){return{
@@ -53,6 +55,23 @@
 					return;
 				}
 				//向后台提交数据，未完善
+				this.axios({
+				   url:'/api/xxxxx/xxxx.xxx',
+				   method:'post',
+				   data:Qs.stringify({       //需要引入qs插件，方便后台读取参数
+				   			userName:userName,
+				   			userPhone:userPhone,
+				   			detail:detail
+						}),
+				   headers: {
+				     'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
+				   }
+				}).then(res=>{
+					console.log(res);
+				}).catch(err=>{
+					console.log(err);
+				})
+
 			}
 		}
 
@@ -99,28 +118,16 @@
 		.bottom .row label{
 			width: 130px;
 			display: inline-block;
-			font-size: 30px;
-		}
-		[dpr="2"] .bottom .row label{
-			font-size: 60px;
-		}
-		[dpr="3"] .bottom .row label{
-			font-size: 90px;
+			font-size: 30px; /*px*/
 		}
 		.sub-btn{
 			width: 480px;
 			height: 80px;
 			background-color: #ff2132;
 			color: #fff;
-			font-size: 30px;
+			font-size: 30px; /*px*/
 			border-radius: 10px;
 			margin:80px auto 0;
-		}
-		[dpr="2"] .sub-btn{
-			font-size: 60px;
-		}
-		[dpr="3"] .sub-btn{
-			font-size: 90px;
 		}
     }
 	

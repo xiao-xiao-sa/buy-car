@@ -11,7 +11,7 @@
 
 <script>
 	import Shop3 from '../components/Shop3.vue'
-	import carDetailListData from '../assets/data/carDetailListData'
+	//import carDetailListData from '../assets/data/carDetailListData'
 
 	export default {
 		name:'CarDetailList',
@@ -19,7 +19,8 @@
 			allShopList:null
 		}},
 		created:function(){
-			this.allShopList=carDetailListData.allShopList;
+			//this.allShopList=carDetailListData.allShopList;
+			this.allShopList=this.$store.state.selectCar;
 		},
 		methods:{
 			toPic:function(val){
@@ -42,7 +43,7 @@
 			box-sizing: border-box;
 			text-align: left; 
 			height: 76px;
-			font-size: 32px;
+			font-size: 32px; /*px*/
 			font-weight: 600;
 			line-height: 76px;
 		}

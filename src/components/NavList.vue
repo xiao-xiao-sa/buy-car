@@ -39,14 +39,8 @@
 					border-radius: 50%;
 				}
 				p{
-					font-size: 24px;
+					font-size: 24px; /*px*/
 					color: #333;
-				}
-				[data-dpr="2"] p{
-					font-size: 48px;
-				}
-				[data-dpr="3"] p{
-					font-size:72px;
 				}
 			}
 		}

@@ -30,6 +30,8 @@
 			userInfo:null
 		}},
 		created:function(){
+			//一进入页面的时候就需要从本地获取用户的登录信息，如果没有登录，就直接跳转到登录页面
+			this.$router.push({path:'/Login'})
 			this.rowList1 = myData.rowList1;
 			this.rowList2 = myData.rowList2;
 		},
@@ -59,7 +61,7 @@
 				background-color: #ff2132;
 				width: 200px;
 				height: 50px;
-				font-size: 28px;
+				font-size: 28px; /*px*/
 				color: #fff;
 				border-radius: 10px;
 				margin-top:125px;

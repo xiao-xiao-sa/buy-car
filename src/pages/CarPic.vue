@@ -23,6 +23,7 @@
 			picList:null
 		}},
 		created:function(){
+			var id = this.$store.state.carPicId;
 			console.log(carPicData.carPic);
 			this.title=carPicData.carPic.title;
 			var picType1=carPicData.carPic.picList.filter(function(ele,index,arr){
@@ -48,6 +49,12 @@
 				{"type":"座椅","data":picType2},
 				{"type":"中控","data":picType3},
 			]
+			this.axios.get(url,{params:{id:id}})
+				.then(res=>{
+					console.log(res)
+				}).catch(err=>{
+					console.log(err)
+				})
 
 		},
 		components:{
@@ -60,19 +67,13 @@
 <style lang="less">
 	.car-pic{
 		.title{
-			font-size: 32px;
+			font-size: 32px; /*px*/
 			width: 100%;
 			box-sizing: border-box;
 			height: 90px;
 			padding:25px;
 			text-align: left;
 			font-weight: 600;
-		}
-		[dpr="2"] .title{
-			font-size: 64px;
-		}
-		[dpr="3"] .title{
-			font-size: 96px;
 		}
 		.tabs-bar{
 			width: 100%;
@@ -81,7 +82,7 @@
 			line-height: 70px;
 			box-sizing: border-box;
 			padding:0 25px;
-			font-size: 28px;
+			font-size: 28px; /*px*/
 			margin-bottom: 20px;
 			text-align: left;
 			.tabs-item{
@@ -90,12 +91,6 @@
 			.tabs-item-active{
 				color: #ff2132;
 			}			
-		}
-		[dpr="2"] .tabs-bar{
-			font-size: 56px;
-		}
-		[dpr="3"] .tabs-bar{
-			font-size: 84px;
 		}
 		.tabs-content{
 			width: 100%;
@@ -117,13 +112,7 @@
 		}
 		.pic-total{
 			margin-top: 50px;
-			font-size: 24px;
-		}
-		[dpr="2"] .pic-total{
-			font-size: 48px;
-		}
-		[dpr="3"] .pic-total{
-			font-size: 72px;
+			font-size: 24px; /*px*/
 		}
 	}
 </style>

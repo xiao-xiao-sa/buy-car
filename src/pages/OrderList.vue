@@ -2,7 +2,7 @@
 	<div class="order-detail">
 		<tab v-model='activeKey'>
 			<pane  label='待付款'  name='0'>
-				<order-item v-for="(item0,index0) in order0" v-if="order0.length>0" :order="item0" :key="index0">
+				<order-item v-for="(item0,index0) in order0" v-if="order0.length>0"  :order="item0" :key="index0">
 					<order-shop-item v-for="(item00,index00) in item0.shopList" :shopInfo="item00" :key="index00"></order-shop-item>
 				</order-item>
 				<div v-if="order0.length == 0" class="no-order">
@@ -29,16 +29,42 @@
 	import OrderItem from '../components/OrderItem.vue'
 	import OrderShopItem from '../components/OrderShopItem.vue'
 	import orderData from '../assets/data/orderData'
+	import Qs from 'qs'
 
 	export default {
 		name:'OrderDetail',
 		data(){return{
 			activeKey:0,
 			order0:null,
-			order1:null
+			order1:null,
+			userId:''
 		}},
 		created:function(){
-			document.title = "订单详情";
+			//var userId=this.userId;
+			// this.axios({
+			//    url:'/api/xxxxx/xxxx.xxx',
+			//    method:'post',
+			//    data:Qs.stringify({       //需要引入qs插件，方便后台读取参数
+			//    			userId:userId
+			// 		}),
+			//    headers: {
+			//      'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
+			//    }
+			// }).then(res=>{
+			// 	console.log(res);
+			// 	var orderList = res.orderList;
+			// 	this.order0=[];this.order1=[];
+			// 	for(var i=0,l=orderList.length;i<l;i++){
+			// 		var p=orderList[i];
+			// 		if(p.status==0){
+			// 			this.order0.push(p);
+			// 		}else if(p.status==1){
+			// 			this.order1.push(p)
+			// 		}
+			// 	}
+			// }).catch(err=>{
+			// 	console.log(err);
+			// })
 			var orderList = orderData.orderList;
 			this.order0=[];this.order1=[];
 			for(var i=0,l=orderList.length;i<l;i++){
@@ -79,14 +105,8 @@
 		width: 100%;
 	}
 	.tabs-item{
-		font-size: 32px;
+		font-size: 32px; /*px*/
 		color: #333;
-	}
-	[dpr="2"] .tabs-item{
-		font-size: 64px;
-	}
-	[dpr="3"] .tabs-item{
-		font-size: 96px;
 	}
 	.tabs-item-active{
 		color: #ff2132;
@@ -103,7 +123,7 @@
 	}
 	.no-order{
 		margin-top:100px;
-		font-size: 30px;
+		font-size: 30px; /*px*/
 		color: #666;
 		img{
 			width: 200px;

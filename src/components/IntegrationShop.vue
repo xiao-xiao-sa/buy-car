@@ -1,11 +1,9 @@
 <template>
-	<div class="shop-container">
-		<router-link to="/">
-			<img :src="shopInfo.src" alt="">
-			<p class="title">{{shopInfo.title | changeTextLength}}</p>
-			<p class="integration">{{shopInfo.integration}}积分</p>
-			<span class="mortar">剩余{{shopInfo.mortar}}</span>
-		</router-link>
+	<div class="shop-container" @click="toJfShopDetail">
+		<img :src="shopInfo.src" alt="">
+		<p class="title">{{shopInfo.title | changeTextLength}}</p>
+		<p class="integration">{{shopInfo.integration}}积分</p>
+		<span class="mortar">剩余{{shopInfo.mortar}}</span>
 	</div>
 </template>
 
@@ -21,11 +19,13 @@
 				}else{
 					return value;
 				}
-				
 			}
 		},
 		methods:{
-			
+			toJfShopDetail:function(){
+				this.$store.commit('jfShopId',this.shopInfo.id);
+				this.$router.push({path:'/JfShopDetail'})
+			}
 		}
 	}
 </script>
@@ -46,40 +46,22 @@
 			padding-left: 20px;
 		}
 		.title{
-			font-size:28px;
+			font-size:28px; /*px*/
 			color: #333;
 			font-weight: 600;
 			width: 240px;
 		}
-		[data-dpr="2"] .title{
-			font-size: 56px;
-		}
-		[data-dpr="3"] .title{
-			font-size: 84px;
-		}
 		.integration{
-			font-size:30px;
+			font-size:30px; /*px*/
 			color: #ff2132;
 			margin-top: 10px; 
-		}
-		[dpr="2"] .integration{
-			font-size: 60px;
-		}
-		[dpr="3"] .integration{
-			font-size: 90px;
 		}
 		.mortar{
 			position: absolute;
 			bottom: 20px;
 			right: 10px;
 			color: #999;
-			font-size: 24px;
-		}
-		[dpr="2"] .mortar{
-			font-size: 48px;
-		}
-		[dpr="3"] .mortar{
-			font-size: 72px;
+			font-size: 24px; /*px*/
 		}
 	}
 </style>

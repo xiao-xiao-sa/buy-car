@@ -19,7 +19,9 @@
 			allShopList:null
 		}},
 		created:function(){
-			this.allShopList=carDetailListData.allShopList;
+			//this.allShopList=carDetailListData.allShopList;
+			this.allShopList=this.$store.state.selectCar;
+			console.log(this.allShopList)
 		},
 		methods:{
 			toDetail:function(val){
@@ -42,7 +44,7 @@
 			box-sizing: border-box;
 			text-align: left; 
 			height: 76px;
-			font-size: 32px;
+			font-size: 32px; /*px*/
 			font-weight: 600;
 			line-height: 76px;
 		}

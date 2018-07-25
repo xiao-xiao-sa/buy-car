@@ -60,34 +60,16 @@
 			.left{
 				width: 300px;
 				text-align: left;
-				font-size: 32px;
-			}
-			[dpr="2"] .left{
-				font-size: 64px;
-			}
-			[dpr="3"] .left{
-				font-size: 96px;
+				font-size: 32px; /*px*/
 			}
 			.center{
 				width: 320px;
 				text-align: right;
-				font-size:32px; 
-			}
-			[dpr="2"] .center{
-				font-size: 64px;
-			}
-			[dpr="3"] .center{
-				font-size: 96px;
+				font-size:32px;  /*px*/
 			}
 			.right{
-				font-size: 40px;
+				font-size: 40px; /*px*/
 				color: #666;
-			}
-			[dpr="2"] .right{
-				font-size: 80px;
-			}
-			[dpr="3"] .right{
-				font-size: 120px;
 			}
 		}
 	}

@@ -8,14 +8,20 @@
 				<span class="finish">已拼成{{shopInfo.finish}}件</span>
 			</p>
 		</div>
-		<button >去开团</button>
+		<button @click="toShopDetail">去开团</button>
 	</div>
 </template>
 
 <script>
 	export default {
 		name:'ptShopItem',
-		props:['shopInfo']
+		props:['shopInfo'],
+		methods:{
+			toShopDetail:function(){
+				this.$store.commit('shopDetailId',this.shopInfo.id);
+				this.$router.push({path:'/shopDetail'})
+			}
+		}
 	}
 </script>
 
@@ -39,11 +45,11 @@
 			text-align: left;
 			margin-left:30px;
 			.title{
-				font-size:30px;
+				font-size:30px; /*px*/
 				font-weight: 500;
 			}
 			p{
-				font-size: 26px;
+				font-size: 26px; /*px*/
 				margin-top: 10px;
 				width: 100%;
 				position: relative;

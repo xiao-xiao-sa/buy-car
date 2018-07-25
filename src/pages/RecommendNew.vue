@@ -17,8 +17,13 @@
 			newList:null
 		}},
 		created:function(){
-			document.title = "新车推荐";
 			this.newList = recommendNewData.newList;
+			this.axios.get(url)
+				.then(res=>{
+					console.log(res)
+				}).catch(err=>{
+					console.log(err)
+				})
 		},
 		components:{
 			'tab-bar':TabBar,
@@ -27,7 +32,7 @@
 	}
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 	.all-new-container{
 		display: flex;
 		flex-wrap: wrap;
@@ -36,14 +41,8 @@
 		margin:20px auto;
 		.no-more{
 			margin:35px auto 120px;
-			font-size: 24px;
+			font-size: 24px; /*px*/
 			color: #999;
-		}
-		[dpr="2"] .no-more{
-			font-size: 48px;
-		}
-		[dpr="3"] .no-more{
-			font-size: 72px;
 		}
 	}
 	

@@ -1,5 +1,5 @@
 <template>
-	<div class="shop-container">
+	<div class="shop-container" @click="toShopDetail">
 		<img :src="shopInfo.src" alt="">
 		<div class="right">
 			<h2 class="title">{{shopInfo.title}}</h2>
@@ -12,7 +12,13 @@
 <script>
 	export default {
 		name:'shop2',
-		props:['shopInfo']
+		props:['shopInfo'],
+		methods:{
+			toShopDetail:function(){
+				this.$store.commit('shopDetailId',this.shopInfo.id);
+				this.$router.push({path:'/shopDetail'})
+			}
+		}
 	}
 </script>
 
@@ -33,16 +39,16 @@
 			margin-right: 30px;
 		}
 		.right .title{
-			font-size: 30px;
+			font-size: 30px; /*px*/
 			font-weight: 580;
 		}
 		.right .parameter{
-			font-size: 30px;
+			font-size: 30px; /*px*/
 			font-weight: 500;
 			color: #999;
 		}
 		.right .price{
-			font-size: 26px;
+			font-size: 26px; /*px*/
 			font-weight: 580;
 			color: #ff2132;
 			text-align: left;

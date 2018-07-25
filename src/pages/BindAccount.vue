@@ -27,8 +27,8 @@
 				<input type="text" name="testAccountNumber" v-model="testAccountNumber" placeholder="请确认账户/账号">
 			</div>
 			<div class="bind-row">
-				<label for="testAccountNumber">省市区</label>
-				
+				<label for="">省市区</label>
+				<div id="trigger5" class="area"><span>{{area}}</span><i class="iconfont icon-jiantou2"></i></div>
 			</div>
 			<div class="bind-row">
 				<label for="bankAccount">开户银行</label>
@@ -44,6 +44,8 @@
 </template>
 
 <script>
+	import MobileSelect from 'mobile-select'
+    import cityData from '../assets/data/cityData'
 
 	export default {
 		name:'BindAccount',
@@ -55,8 +57,10 @@
 			yzm:'',
 			accountNumber:'',
 			testAccountNumber:'',
+			area:'选择所在地区',
 			bankAccount:'',
-			branchAccount:''
+			branchAccount:'',
+			chineseCities:null
 		}},
 		watch:{
 			accountName:function(){},
@@ -65,7 +69,31 @@
 			accountNumber:function(){},
 			testAccountNumber:function(){},
 			bankAccount:function(){},
-			branchAccount:function(){}
+			branchAccount:function(){},
+			area:function(){
+				console.log(this.area)
+			}
+		},
+		created:function(){
+			this.chineseCities=cityData.chineseCities;
+		},
+		mounted:function(){
+			var mobileSelect5 = new MobileSelect({
+                trigger: '#trigger5',
+                title: '所在地区',
+                wheels: [
+                            {data:this.chineseCities}
+                        ],
+                keyMap: {
+                    id:'id',
+                    value: 'name',
+                    childs :'city'
+                },         
+                callback:function(indexArr, data){
+                    console.log(data);
+                    console.log(this.area)
+                }
+            });
 		},
 		methods:{
 		    bindSub:function(){
@@ -78,6 +106,15 @@
 		    	var area=this.result;
 		    	console.log(accountName,accountPhone,accountNumber,bankAccount,branchAccount,area);
 		    	//需要对数据进行验证然后提交，未完善
+		    	if(accountName.length==0){
+		    		alert('账号姓名不能为空');
+		    		return;
+		    	}
+		    	if(!this.testPhone(accountPhone)){
+		    		alert('手机号码不正确，请验证');
+		    		return;
+		    	}
+		    	
 		    }
 		}
 	}
@@ -96,7 +133,7 @@
 			display: flex;
 			flex-wrap: nowrap;
 			justify-content: flex-start;
-			font-size: 32px;
+			font-size: 32px; /*px*/
 			background-color: #fff;
 			label,.label{
 				width: 160px;
@@ -110,7 +147,7 @@
 				box-sizing: border-box;
 				padding:0 10px;
 				margin-top:20px;
-				font-size: 26px  !important;
+				font-size: 26px  !important; /*px*/
 			}
 			.right {
 				box-sizing: border-box;
@@ -124,9 +161,24 @@
 				height: 50px;
 				width: 172px;
 				margin:20px 0 0 20px;
-				font-size: 26px;
+				font-size: 26px; /*px*/
 				color: #ff2132;
 				border-radius: 6px;
+			}
+			.area{
+				height: 50px;
+				width: 500px;
+				margin-top:20px;
+				border-radius: 10px;
+				border:2px solid #999;
+				box-sizing: border-box;
+				padding:0 10px;
+				position: relative;
+				i{
+					font-size: 40px; /*px*/
+					position: absolute;
+					right: 0;
+				}
 			}
 			
 		}
@@ -135,7 +187,7 @@
 			height: 90px;
 			background-color: #ff2132;
 			color: #fff;
-			font-size: 32px;
+			font-size: 32px; /*px*/
 			border-radius: 20px;
 			margin:60px auto;
 		}
@@ -149,7 +201,7 @@
 			padding:0 10px;
 			line-height: 50px;
 			margin-top:20px;
-			font-size: 26px;
+			font-size: 26px; /*px*/
 		}
 	}
 </style>

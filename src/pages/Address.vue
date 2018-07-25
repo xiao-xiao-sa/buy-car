@@ -32,13 +32,29 @@
 	export default {
 		name:'Address',
 		data(){return{
-			addressList:null
+			addressList:null,
+			userId:''
 		}},
 		created:function(){
 			//判断转态仓库中是否存在地址列表，如果不存在就从后台获取，存在的话就直接读取
 			if(this.$store.state.addressList == null){
 				this.addressList = addressData.addressList;
 				this.$store.commit('addressList',this.addressList);
+				var userId=this.userId;
+				this.axios({
+				   url:'/api/xxxxx/xxxx.xxx',
+				   method:'post',
+				   data:Qs.stringify({       //需要引入qs插件，方便后台读取参数
+				   			userId:userId
+						}),
+				   headers: {
+				     'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
+				   }
+				}).then(res=>{
+					console.log(res);
+				}).catch(err=>{
+					console.log(err);
+				})
 			}else{
 				this.addressList = this.$store.state.addressList;
 			}
@@ -79,13 +95,13 @@
 				display: flex;
 				flex-wrap: nowrap;
 				justify-content: space-between;
-				font-size: 32px;
+				font-size: 32px; /*px*/
 			}
 			.middle{
 				width: 700px;
 				margin:20px auto;
 				text-align: left;
-				font-size: 28px;
+				font-size: 28px; /*px*/
 			}
 			.bottom{
 				width: 700px;
@@ -95,7 +111,7 @@
 				flex-wrap: nowrap;
 				justify-content: space-between;
 				padding-top:10px;
-				font-size: 30px;
+				font-size: 30px; /*px*/
 				i{
 					font-size: 40px;
 				}
@@ -116,12 +132,12 @@
 			height: 90px;
 			background-color: #ff2132;
 			color: #fff;
-			font-size: 32px;
+			font-size: 32px; /*px*/
 			border-radius: 10px;
 		}
 		.no-address{
 			margin-top:100px;
-			font-size: 30px;
+			font-size: 30px; /*px*/
 			color: #666;
 			img{
 				width: 200px;

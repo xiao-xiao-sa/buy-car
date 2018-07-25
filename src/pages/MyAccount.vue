@@ -48,13 +48,7 @@
 				position: absolute;
 				bottom:50px;
 				left:50px;
-				font-size: 32px;
-			}
-			[dpr="2"] p{
-				font-size: 64px;
-			}
-			[dpr="3"] p{
-				font-size: 96px;
+				font-size: 32px; /*px*/
 			}
 		}
 		.add-account{
@@ -65,23 +59,11 @@
 			border:2px dashed #ff2132;
 			border-radius: 20px;
 			color: #ff2132;
-			font-size: 32px;
+			font-size: 32px; /*px*/
 			i{
-				font-size: 60px;
+				font-size: 60px; /*px*/
 				display: block;
 				margin:30px auto 25px;
-			}
-		}
-		[dpr="2"] .add-account{
-			font-size: 64px;
-			i{
-				font-size: 120px;
-			}
-		}
-		[dpr="3"] .add-account{
-			font-size: 96px;
-			i{
-				font-size: 180px;
 			}
 		}
 	}

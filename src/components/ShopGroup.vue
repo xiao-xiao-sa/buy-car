@@ -1,9 +1,9 @@
 <template>
 	<div class="group-container">
 		<div class="title-container">
-			<router-link :to="group.url" class="title">
+			<router-link :to="url" class="title">
 				<h2>{{group.title}}</h2>
-				<i class="iconfont icon-jiantou"></i>
+				<i class="iconfont icon-jiantou2"></i>
 			</router-link>
 		</div>
 		<div class="content">
@@ -15,7 +15,21 @@
 <script>
 	export default {
 		name:'ShopGroup',
-		props:['group']
+		data(){return{
+			url:'/'
+		}},
+		props:['group'],
+		created:function(){
+			var title = this.group.title;
+			console.log(title)
+			if(title == "好车推荐"){
+				this.url = '/RecommendGood';
+			}else if(title == '新车推荐'){
+				this.url = '/RecommendNew';
+			}else if(title == '拼团活动'){
+				this.url = '/PtShop';
+			}
+		}
 	}
 </script>
 
@@ -36,9 +50,10 @@
 				flex-wrap: nowrap;
 				justify-content: space-between;
 				width:700px;
+				color: #333;
 				h2{
-					font-size: 32px;
-					color: #333;
+					font-size: 32px; /*px*/
+					
 					font-weight: 600;
 					padding-left:16px;
 					box-sizing: border-box;
@@ -49,11 +64,8 @@
 					top:20px;
 					line-height: 40px;
 				}
-				[dpr="2"] h2{
-					font-size: 64px;
-				}
-				[dpr="3"] h2{
-					font-size: 96px;
+				i{
+					font-size:40px; /*px*/
 				}
 			}
 			

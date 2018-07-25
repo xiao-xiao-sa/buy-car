@@ -17,6 +17,12 @@
 			var id=this.$store.state.carDetailId;
 			//获取id后去后台获取carDetail
 			this.carDetail=carDetailData.carDetail;
+			this.axios.get(url,{params:{id:id}})
+				.then(res=>{
+					console.log(res)
+				}).catch(err=>{
+					console.log(err)
+				})
 		},
 		filters:{
 			timestampToTime:function(val) {
@@ -42,13 +48,13 @@
 		.title{
 			width:100%;
 			text-align: left;
-			font-size: 32px;
+			font-size: 32px; /*px*/
 			font-weight: 500;
 			color: #000;
 			margin-bottom: 10px;
 		}
 		.time{
-			font-size: 26px;
+			font-size: 26px; /*px*/
 			color: #666;
 			width: 100%;
 			text-align: left;
@@ -65,7 +71,7 @@
 			}
 			p{
 				margin:20px auto;
-				font-size: 32px;
+				font-size: 32px; /*px*/
 				text-align: left;
 				width: 100%;
 			}

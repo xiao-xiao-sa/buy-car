@@ -43,7 +43,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	.tab-bar{
 		position: fixed;
 		bottom:0;
@@ -64,24 +64,12 @@
 	}
 	
 	.tab-item span{
-		font-size: 24px;
+		font-size: 24px; /*px*/
 		color: #bababa;
-	}
-	[data-dpr="2"] .tab-item span{
-		font-size:48px ;
-	}
-	[data-dpr="3"] .tab-item span{
-		font-size:72px;
 	}
 	.tab-item i{
-		font-size: 50px;
+		font-size: 50px; /*px*/
 		color: #bababa;
-	}
-	[data-dpr="2"] .tab-item i{
-		font-size: 60px;
-	}
-	[data-dpr="3"] .tab-item i{
-		font-size: 90px;
 	}
 	.tab-item.active i{
 		color: #ff2132;

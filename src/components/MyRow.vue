@@ -32,17 +32,17 @@
 			.left{
 				position: absolute;
 				left: 0;
-				font-size: 40px;
+				font-size: 40px; /*px*/
 			}
 			span{
-				font-size: 30px;
+				font-size: 30px; /*px*/
 				position: absolute;
 				left: 80px;
 			}
 			.right{
 				position: absolute;
 				right: 0;
-				font-size: 40px;
+				font-size: 40px; /*px*/
 			}
 		}
 	}

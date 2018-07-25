@@ -35,8 +35,13 @@
 			integrationSort:true
 		}},
 		created:function(){
-			document.title = "积分商城";
 			this.shopList = integrationShopData.shopList;
+			this.axios.get(url)
+				.then(res=>{
+					console.log(res)
+				}).catch(err=>{
+					console.log(err)
+				})
 		},
 		methods:{
 			changeSale:function(){
@@ -75,18 +80,12 @@
 			padding:0 100px;
 		}
 		.filter-btn button{
-			font-size: 24px;
+			font-size: 24px; /*px*/
 			color: #333;
 		}
 		.filter-btn button i{
 			width: 24px;
 			display: inline-block;
-		}
-		[dpr="2"] .filter-btn button{
-			font-size: 48px;
-		}
-		[dpr="3"] .filter-btn button{
-			font-size: 72px;
 		}
 		.search{
 			width: 100%;

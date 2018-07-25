@@ -15,6 +15,12 @@
 		}},
 		created:function(){
 			this.shopList = ptShopData.shopList;
+			this.axios.get(url)
+				.then(res=>{
+					console.log(res)
+				}).catch(err=>{
+					console.log(err)
+				})
 		},
 		components:{
 			'pt-shop-item':PtShopItem

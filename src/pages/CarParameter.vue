@@ -70,7 +70,12 @@
 			console.log(id);
 			//取得id后从后台获取参数对象
 			this.carParameter=carParameterData.carParameter;
-
+			this.axios.get(url,{params:{id:id}})
+				.then(res=>{
+					console.log(res)
+				}).catch(err=>{
+					console.log(err)
+				})
 		}
 	}
 </script>

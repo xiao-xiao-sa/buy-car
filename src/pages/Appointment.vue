@@ -18,6 +18,8 @@
 </template>
 
 <script>
+	import Qs from 'qs'
+		
 	export default {
 		name:'Repair',
 		data(){return{
@@ -34,7 +36,6 @@
 			repairSubmit:function(){
 				var userName = this.userName;
 				var userPhone = this.userPhone;
-				var detail = this.detail;
 				if(userName == ''){
 					alert("请输入姓名");
 					return;
@@ -43,7 +44,21 @@
 					alert("手机号码为11位，请输入有效号码");
 					return;
 				}
-				//向后台提交数据，未完善
+				this.axios({
+				   url:'/api/xxxxx/xxxx.xxx',
+				   method:'post',
+				   data:Qs.stringify({       //需要引入qs插件，方便后台读取参数
+				   			userName:userName,
+				   			userPhone:userPhone
+						}),
+				   headers: {
+				     'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
+				   }
+				}).then(res=>{
+					console.log(res);
+				}).catch(err=>{
+					console.log(err);
+				})
 			}
 		}
 
@@ -82,7 +97,7 @@
 			label{
 				width: 130px;
 				display: inline-block;
-				font-size: 30px;
+				font-size: 30px; /*px*/
 			}
 		}
 		.sub-btn{
@@ -90,21 +105,9 @@
 			height: 80px;
 			background-color: #ff2132;
 			color: #fff;
-			font-size: 30px;
+			font-size: 30px; /*px*/
 			border-radius: 10px;
 			margin:80px auto 0;
-		}
-		[dpr="2"] .bottom .row label{
-			font-size: 60px;
-		}
-		[dpr="3"] .bottom .row label{
-			font-size: 90px;
-		}
-		[dpr="2"] .sub-btn{
-			font-size: 60px;
-		}
-		[dpr="3"] .sub-btn{
-			font-size: 90px;
 		}
 	}
 	

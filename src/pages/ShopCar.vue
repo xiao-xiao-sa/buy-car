@@ -30,10 +30,12 @@
 	import TabBar from '../components/TabBar.vue'
 	import ShopCarItem from '../components/ShopCarItem.vue'
 	import shopCarData from '../assets/data/shopCarData'
+	import Qs from 'qs'
 	export default {
 		name:'Index',
 		data(){return{
-			cur:'ShopCar'
+			cur:'ShopCar',
+			userId:'' //进入页面需要获取用户的userId,判断用户的登录状态
 		}},
 		computed:{
 			totalPrice:function(){
@@ -70,7 +72,23 @@
 
 		},
 		created:function(){
-			this.$store.commit("shopCarList",shopCarData.shopCarList)
+			this.$store.commit("shopCarList",shopCarData.shopCarList);
+			this.axios({
+			   url:'/api/xxxxx/xxxx.xxx',
+			   method:'post',
+			   data:Qs.stringify({       //需要引入qs插件，方便后台读取参数
+			   			userId:''
+					}),
+			   headers: {
+			     'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
+			   }
+			}).then(res=>{
+				console.log(res);
+				//获取到用户的购物车列表，然后保存在vuex中，
+				this.$store.commit("shopCarList",res.shopCarList);
+			}).catch(err=>{
+				console.log(err);
+			})
 		},
 		methods:{
 			isAllSelect:function(){
@@ -95,9 +113,9 @@
 			width: 100%;
 			box-sizing: border-box;
 			padding-left: 25px;
-			font-size: 26px;
+			font-size: 26px; /*px*/
 			i{
-				font-size: 40px;
+				font-size: 40px; /*px*/
 				display: inline-block;
 				margin-right: 30px;
 			}
@@ -116,10 +134,10 @@
 		box-sizing: border-box;
 		padding-left: 25px;
 		.left{
-			font-size: 28px;
+			font-size: 28px; /*px*/
 			width: 125px;
 			i{
-				font-size: 40px;
+				font-size: 40px; /*px*/
 			}
 		}
 		.center{
@@ -127,7 +145,7 @@
 			text-align: right;
 			box-sizing: border-box;
 			padding-right: 20px;
-			font-size: 28px;
+			font-size: 28px; /*px*/
 			color:#999;
 			span{
 				font-size: 24px;
@@ -138,7 +156,7 @@
 		}
 		.right{
 			width: 200px;
-			font-size: 28px;
+			font-size: 28px; /*px*/
 			color: #999;
 			background-color: #e5e5e5;
 		}
@@ -154,14 +172,14 @@
 			height: 200px;
 		}
 		p{
-			font-size: 30px;
+			font-size: 30px; /*px*/
 			color: #999;
 			margin-top: 30px;
 		}
 		.toIndex{
 			width: 270px;
 			height: 66px;
-			font-size: 32px;
+			font-size: 32px; /*px*/
 			color: #fff;
 			background-color: #ff2132;
 			border-radius: 5px;

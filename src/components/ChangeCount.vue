@@ -92,7 +92,7 @@
 		width: 50px;
 		height: 50px;
 		background-color: #efefef;
-		font-size: 20px;
+		font-size: 20px; /*px*/
 		text-align: center;
 		line-height: 50px;
 		cursor: pointer;

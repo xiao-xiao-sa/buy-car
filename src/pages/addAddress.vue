@@ -41,6 +41,7 @@
 				'detail':"",
 				"isSelect":false
 			},
+			userId:'',
 			chineseCities:null
 		}},
 		watch:{
@@ -74,10 +75,30 @@
 			saveAddress:function(){
 				console.log(this.address);
 				//提交数据，并返回所有的addressList,
+				var userId=this.userId,
+					address=this.address;
+				this.axios({
+				   url:'/api/xxxxx/xxxx.xxx',
+				   method:'post',
+				   data:Qs.stringify({       //需要引入qs插件，方便后台读取参数
+				   			userId:userId,
+				   			address:address
+						}),
+				   headers: {
+				     'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
+				   }
+				}).then(res=>{
+					console.log(res);
+					//返回修改后所有的地址列表，存入vuex中，并且跳转到地址列表页面
+					var reviseAddressList = res.reviseAddressList;
+					this.$store.commit('reviseAddressList',reviseAddressList);
+					this.$router.push({path:'/Address'});
+				}).catch(err=>{
+					console.log(err);
+				})
 				var reviseAddressList = [];
 				this.$store.commit('reviseAddressList',reviseAddressList);
 				this.$router.push({path:'/Address'});
-				
 			},
 			isSelect:function(){
 				this.address.isSelect = !this.address.isSelect;
@@ -100,7 +121,7 @@
 			line-height: 90px;
 			background-color: #fff;
 			border-top: 2px solid #efefef;
-			font-size: 28px;
+			font-size: 28px; /*px*/
 			input{
 				width: 550px;
 			}
@@ -110,7 +131,7 @@
 				flex-wrap: nowrap;
 				justify-content: space-between;
 				i{
-					font-size: 40px;
+					font-size: 40px; /*px*/
 				}
 			}
 		}
@@ -122,14 +143,14 @@
 			}
 		}
 		.is-select i{
-			font-size: 40px;
+			font-size: 40px; /*px*/
 		}
 		.save-submit{
 			width: 700px;
 			height: 90px;
 			background-color: #ff2132;
 			color: #fff;
-			font-size: 32px;
+			font-size: 32px; /*px*/
 			border-radius: 10px;
 			margin-top:20px;
 		}

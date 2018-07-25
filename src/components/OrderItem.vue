@@ -7,13 +7,42 @@
 		<div>
 			<slot></slot>
 		</div>
+		<div class='bottom' v-if="order.status == 0">
+			<button class="cancel" @click="cancel(order.number)">取消订单</button>
+			<button class="pay" @click="pay">去付款</button>
+		</div>
 	</div>
 </template>
 
 <script>
+	import Qs from 'qs'
 	export default {
 		name:'orderItem',
 		props:['order'],
+		methods:{
+			cancel:function(val){
+				console.log(val)
+				this.axios({
+				   url:'/api/xxxxx/xxxx.xxx',
+				   method:'post',
+				   data:Qs.stringify({       //需要引入qs插件，方便后台读取参数
+				   			number:val
+						}),
+				   headers: {
+				     'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
+				   }
+				}).then(res=>{
+					console.log(res);
+				}).catch(err=>{
+					console.log(err);
+				})
+			},
+			pay:function(){
+				var number = this.order.number;
+				console.log(this.order)
+				//直接调用微信支付接口
+			}
+		},
 		filters:{
 			timestampToTime:function(val) {
 				val = val + '';
@@ -35,7 +64,7 @@
 	}
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 	.order-item{
 		width: 750px;
 		margin-top:20px;
@@ -43,7 +72,7 @@
 		.top{
 			width: 100%;
 			height: 80px;
-			font-size: 26px;
+			font-size: 26px; /*px*/
 			color: #333;
 			line-height: 80px;
 			box-sizing: border-box;
@@ -52,6 +81,33 @@
 			flex-wrap: nowrap;
 			justify-content: space-between;
 			border-bottom: 2px solid #efefef;
+		}
+		.bottom{
+			height: 100px;
+			width: 100%;
+			background-color: #fff;
+			text-align: right;
+			box-sizing: border-box;
+			padding-right: 50px;
+			.cancel{
+				width: 160px;
+				height: 50px;
+				border-radius: 25px;
+				font-size: 26px;
+				border:1px solid #999;
+				margin-top:25px;
+				margin-right: 50px;
+			}
+			.pay{
+				width: 160px;
+				height: 50px;
+				border-radius: 25px;
+				font-size: 26px;
+				color: #ff2132;
+				border:1px solid #ff2132;
+				margin-top: 25px;
+				
+			}
 		}
 	}
 </style>

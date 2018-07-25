@@ -12,7 +12,7 @@ import Appointment from '@/pages/Appointment'
 import MoreShop from '@/pages/MoreShop'
 import Share from '@/pages/Share'
 import PtShop from '@/pages/PtShop'
-import OrderDetail from '@/pages/OrderDetail'
+import OrderList from '@/pages/OrderList'
 import MyConsume from '@/pages/MyConsume'
 import MyWallet from '@/pages/MyWallet'
 import MyIntegration from '@/pages/MyIntegration'
@@ -31,6 +31,11 @@ import CarPicList from '@/pages/CarPicList'
 import CarDetail from '@/pages/CarDetail'
 import CarParameter from '@/pages/CarParameter'
 import CarPic from '@/pages/CarPic'
+import ShopDetail from '@/pages/ShopDetail'
+import CarFriends from '@/pages/CarFriends'
+import PublishNews from '@/pages/PublishNews'
+import MyRecommend from '@/pages/MyRecommend'
+import JfShopDetail from '@/pages/JfShopDetail'
 
 Vue.use(Router)
 
@@ -39,130 +44,262 @@ export default new Router({
     {
        	path: '/',
        	component: Index,
-        meta: {allowBack: false}
+        meta: {
+          allowBack: false,
+          title:'首页',
+          keepAlive: true
+        }
     },
     {
     	path:'/SelectCar',
     	component:SelectCar,
-      meta: {allowBack: false}
+      meta: {
+        allowBack: false,
+        title:'选车',
+        keepAlive: true
+      }
     },
     {
     	path:'/ShopCar',
     	component:ShopCar,
-      meta: {allowBack: false}
+      meta: {
+        allowBack: false,
+        title:'购物车',
+        keepAlive: true
+      }
     },
     {
     	path:'/My',
     	component:My,
-      meta: {allowBack: false}
+      meta: {
+        allowBack: false,
+        title:'我的',
+        keepAlive: true
+      }
     },
     {
       path:'/RecommendGood',
-      component:RecommendGood
+      component:RecommendGood,
+      meta:{
+        title:'好车推荐'
+      }
     },
     {
       path:'/RecommendNew',
-      component:RecommendNew
+      component:RecommendNew,
+      meta:{
+        title:'新车推荐'
+      }
     },
     {
       path:'/IntegrationMarket',
-      component:IntegrationMarket
+      component:IntegrationMarket,
+      meta:{
+        title:'积分超市'
+      }
     },
     {
       path:'/Repair',
-      component:Repair
+      component:Repair,
+      meta:{
+        title:'故障维修'
+      }
     },
     {
       path:'/Appointment',
-      component:Appointment
+      component:Appointment,
+      meta:{
+        title:'预约保养'
+      }
     },
     {
       path:'/MoreShop',
-      component:MoreShop
+      component:MoreShop,
+      meta:{
+        title:'更多产品'
+      }
     },
     {
       path:'/Share',
-      component:Share
+      component:Share,
+      meta:{
+        title:'好友推荐'
+      }
     },
     {
       path:'/PtShop',
-      component:PtShop
+      component:PtShop,
+      meta:{
+        title:'拼团活动'
+      }
     },
     {
-      path:'/OrderDetail',
-      component:OrderDetail
+      path:'/OrderList',
+      component:OrderList,
+      meta:{
+        title:'订单列表'
+      }
     },
     {
       path:'/MyConsume',
-      component:MyConsume
+      component:MyConsume,
+      meta:{
+        title:'我的消费'
+      }
     },
     {
       path:'/MyWallet',
-      component:MyWallet
+      component:MyWallet,
+      meta:{
+        title:'我的钱包'
+      }
     },
     {
       path:'/MyIntegration',
-      component:MyIntegration
+      component:MyIntegration,
+      meta:{
+        title:'积分详情'
+      }
     },
     {
       path:'/MyAccount',
-      component:MyAccount
+      component:MyAccount,
+      meta:{
+        title:'我的账户'
+      }
     },
     {
       path:'/BindAccount',
-      component:BindAccount
+      component:BindAccount,
+      meta:{
+        title:'绑定账户'
+      }
     },
     {
       path:'/MaintenanceRecords',
-      component:MaintenanceRecords
+      component:MaintenanceRecords,
+      meta:{
+        title:'维修记录'
+      }
     },
     {
       path:'/Setting',
-      component:Setting
+      component:Setting,
+      meta:{
+        title:'设置中心'
+      }
     },
     {
       path:'/Address',
-      component:Address
+      component:Address,
+      meta:{
+        title:'收货地址'
+      }
     },
     {
       path:'/addAddress',
-      component:addAddress
+      component:addAddress,
+      meta:{
+        title:'添加地址'
+      }
     },
     {
       path:'/Login',
-      component:Login
+      component:Login,
+      meta:{
+        title:'登录'
+      }
     },
     {
       path:'/Register',
-      component:Register
+      component:Register,
+      meta:{
+        title:'注册'
+      }
     },
     {
       path:'/ForgetPwd',
-      component:ForgetPwd
+      component:ForgetPwd,
+      meta:{
+        title:'忘记密码'
+      }
     },
     {
       path:'/CarDetailList',
-      component:CarDetailList
+      component:CarDetailList,
+      meta:{
+        title:'车辆详情列表'
+      }
     },
     {
       path:'/CarPicList',
-      component:CarPicList
+      component:CarPicList,
+      meta:{
+        title:'车辆图片列表'
+      }
     },
     {
       path:'/CarParameterList',
-      component:CarParameterList
+      component:CarParameterList,
+      meta:{
+        title:'车辆参数列表'
+      }
     },
     {
       path:'/CarDetail',
-      component:CarDetail
+      component:CarDetail,
+      meta:{
+        title:'车辆详情'
+      }
     },
     {
       path:'/CarParameter',
-      component:CarParameter
+      component:CarParameter,
+      meta:{
+        title:'车辆参数'
+      }
     },
     {
       path:'/CarPic',
-      component:CarPic
+      component:CarPic,
+      meta:{
+        title:'车辆图片'
+      }
+    },
+    {
+      path:'/ShopDetail',
+      component:ShopDetail,
+      meta:{
+        title:'商品详情'
+      }
+    },
+    {
+      path:'/CarFriends',
+      component:CarFriends,
+      meta:{
+        title:'车辆圈友'
+      }
+    },
+    {
+      path:'/PublishNews',
+      component:PublishNews,
+      meta:{
+        title:'发布信息'
+      }
+    },
+    {
+      path:'/MyRecommend',
+      component:MyRecommend,
+      meta:{
+        title:'我的推荐'
+      }
+    },
+    {
+      path:'/JfShopDetail',
+      component:JfShopDetail,
+      meta:{
+        title:'积分商品详情'
+      }
     }
   ]
 })

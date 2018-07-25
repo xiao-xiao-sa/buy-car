@@ -17,9 +17,9 @@
         data() {
             return {
                 startX: 0,       //触摸位置
-                  moveX: 0,       //滑动时的位置
-                  disX: 0,       //移动距离
-                  txtStyle: '',
+                moveX: 0,       //滑动时的位置
+                disX: 0,       //移动距离
+                txtStyle: '',
                 delWidth: 300,
                 top: '',
                 zIndex: 'z-index:-1',
@@ -67,7 +67,10 @@
                 }
             },
             deleteItem: function() {
+                console.log(10000)
+                console.log(this.axios)
               this.$store.dispatch('deleteItem',this.id);
+
             }
         }
     }

@@ -17,10 +17,26 @@
 	export default {
 		name:'MaintenanceRecords',
 		data(){return{
-			maintenanceList:null
+			maintenanceList:null,
+			userId:''
 		}},
 		created:function(){
 			this.maintenanceList=maintenanceData.maintenanceList;
+			var userId = this.userId;
+			this.axios({
+			   url:'/api/xxxxx/xxxx.xxx',
+			   method:'post',
+			   data:Qs.stringify({       //需要引入qs插件，方便后台读取参数
+			   			userId:userId
+					}),
+			   headers: {
+			     'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
+			   }
+			}).then(res=>{
+				console.log(res);
+			}).catch(err=>{
+				console.log(err);
+			})
 		},
 		filters:{
 			changeTextLength:function(value){
@@ -29,7 +45,6 @@
 				}else{
 					return value;
 				}
-				
 			},
 			timestampToTime:function(val) {
 				val = val + '';
@@ -70,14 +85,8 @@
 			text-align: left;
 			margin-left: 20px;
 			h2{
-				font-size: 28px;
+				font-size: 28px; /*px*/
 				color: #333;
-			}
-			[dpr="2"] h2{
-				font-size: 56px;
-			}
-			[dpr="3"] h2{
-				font-size: 84px;
 			}
 		}
 	}

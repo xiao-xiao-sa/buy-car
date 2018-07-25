@@ -22,6 +22,12 @@
 		}},
 		created:function(){
 			this.allShopList = moreShopData.allShopList;
+			this.axios.get(url)
+				.then(res=>{
+					console.log(res)
+				}).catch(err=>{
+					console.log(err)
+				})
 		},
 		components:{
 			'tab':tab,
@@ -48,7 +54,7 @@
 	}
 	.more-shop .tabs-item{
 		cursor: pointer;
-		font-size: 26px;
+		font-size: 26px; /*px*/
 		display: block;
 		height: 100px;
 		width: 100%;
@@ -56,12 +62,7 @@
 		line-height: 100px;
 		border-bottom: 2px solid #d4d4d4;
 	}
-	[dpr="2"] .more-shop .tabs-item{
-		font-size: 52px;
-	}
-	[dpr="3"] .more-shop .tabs-item{
-		font-size: 78px;
-	}
+	
 	.more-shop .tabs-item-active{
 		color: red;
 		background-color: #fff;

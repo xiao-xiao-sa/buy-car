@@ -48,7 +48,7 @@
 			padding:0 25px;
 			line-height: 90px;
 			border-bottom: 2px solid #efefef;
-			font-size: 32px;
+			font-size: 32px; /*px*/
 			.set-row-a{
 				display: block;
 				width: 100%;
@@ -61,20 +61,8 @@
 					text-align: right;
 				}
 				i{
-					font-size: 40px;
+					font-size: 40px; /*px*/
 				}
-			}
-		}
-		[dpr="2"] .set-row{
-			font-size: 64px;
-			i{
-				font-size: 80px;
-			}
-		}
-		[dpr="3"] .set-row{
-			font-size: 96px;
-			i{
-				font-size: 120px;
 			}
 		}
 	}

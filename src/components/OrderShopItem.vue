@@ -43,7 +43,7 @@
 		.right{
 			width:500px;
 			text-align: left;
-			font-size: 28px;
+			font-size: 28px; /*px*/
 			color: #333;
 			position: relative;
 			p{
@@ -55,12 +55,6 @@
 				bottom: 0;
 				color: #999;
 			}
-		}
-		[dpr="2"] .right{
-			font-size: 56px;
-		}
-		[dpr="3"] .right{
-			font-size: 84px;
 		}
 	}
 </style>

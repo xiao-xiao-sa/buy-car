@@ -23,10 +23,26 @@
 	export default {
 		name:'MyConsume',
 		data(){return{
-			consumeList:null
+			consumeList:null,
+			userId:''
 		}},
 		created:function(){
 			this.consumeList = consumeData.consumeList;
+			var userId=this.userId;
+			this.axios({
+			   url:'/api/xxxxx/xxxx.xxx',
+			   method:'post',
+			   data:Qs.stringify({       //需要引入qs插件，方便后台读取参数
+			   			userId:userId
+					}),
+			   headers: {
+			     'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
+			   }
+			}).then(res=>{
+				console.log(res);
+			}).catch(err=>{
+				console.log(err);
+			})
 		},
 		filters:{
 			timestampToTime:function(val) {
@@ -74,7 +90,7 @@
 			height: 60px;
 			border-bottom: 2px solid #999;
 			line-height: 60px;
-			font-size: 24px;
+			font-size: 24px; /*px*/
 			color: #333;
 			.time{
 				width: 150px;
@@ -97,23 +113,11 @@
 				text-align: center;
 			}
 		}
-		[dpr="2"] ul{
-			font-size: 48px;
-		}
-		[dpr="3"] ul{
-			font-size: 72px;
-		}
 		ul:first-child{
 			height: 80px;
 			line-height: 80px;
-			font-size: 26px;
+			font-size: 26px; /*px*/
 			font-weight: 500;
-		}
-		[dpr="2"] ul:first-child{
-			font-size: 52px;
-		}
-		[dpr="3"] ul:first-child{
-			font-size: 78px;
 		}
 	}
 </style>

@@ -27,23 +27,19 @@
 			}
 		}},
 		props:['shopInfo'],
-		created:function(){
-
-		},
-		components:{
-			'delete':Delete,
-			'change-count':ChangeCount
-		},
 		methods:{
 			updateCount:function(data){
 				console.log(data)
-				this.$store.dispatch('updateCart',data);
+				this.$store.commit('updateCart',data);
 			},
 			changeSelect:function(){
 				this.cartItem.select = !this.cartItem.select;
 				this.$store.commit('changeSelect',this.cartItem);
-
 			}
+		},
+		components:{
+			'delete':Delete,
+			'change-count':ChangeCount
 		}
 	}
 </script>
@@ -60,7 +56,7 @@
 		.select{
 			margin-right: 30px;
 			i{
-				font-size: 40px;
+				font-size: 40px; /*px*/
 				height: 100%;
 				line-height: 130px;
 			}
@@ -76,12 +72,12 @@
 			margin-right: 80px;
 		}
 		.text h2{
-			font-size: 28px;
+			font-size: 28px; /*px*/
 			text-align: left;
 			margin-top: 20px;
 		}
 		.text p{
-			font-size: 28px;
+			font-size: 28px; /*px*/
 			color:#ff2132;
 			text-align: left;
 			margin-top:20px;

@@ -46,14 +46,8 @@
 				margin-right: 30px;
 			}
 			span{
-				font-size: 28px;
+				font-size: 28px; /*px*/
 				color: #333;
-			}
-			[dpr="2"] span{
-				font-size: 56px;
-			}
-			[dpr="3"] span{
-				font-size: 84px;
 			}
 		}
 		.code{
@@ -66,7 +60,7 @@
 		background-color: #ff2132;
 		width: 200px;
 		height: 50px;
-		font-size: 28px;
+		font-size: 28px; /*px*/
 		color: #fff;
 		border-radius: 10px;
 		margin-top:125px;

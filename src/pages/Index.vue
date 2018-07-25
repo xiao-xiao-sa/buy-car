@@ -18,6 +18,8 @@
 	import ShopGroup from '../components/ShopGroup.vue'
 	import Shop1 from '../components/Shop1.vue'
 	import indexData from '../assets/data/indexData'
+	import Qs from 'qs'
+
 	export default {
 		name:'Index',
 		data(){return{
@@ -27,10 +29,18 @@
 			shopGroup:null
 		}},
 		created:function(){
-			document.title = "首页";
 			this.bannerList=indexData.bannerList;
 			this.navList = indexData.navList;
 			this.shopGroup = indexData.shopGroup;
+			console.log(this.axios)
+			this.axios.get(url)
+				.then(res=> {
+				    console.log(res);
+				    this.shopGroup = res.shopGroup;
+				})
+				 .catch(err=> {
+				    console.log(err);
+				});
 		},
 		components:{
 			'tab-bar':TabBar,
