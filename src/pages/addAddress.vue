@@ -29,6 +29,7 @@
 <script>
 	import MobileSelect from 'mobile-select'
     import cityData from '../assets/data/cityData'
+    import Qs from 'qs'
 
 	export default {
 		name:'addAddress',
@@ -52,9 +53,11 @@
 			if(this.$store.state.reviseAddress != null){
 				this.address = this.$store.state.reviseAddress;
 				this.$store.commit('reviseAddress',null);
+				console.log(this.address.id);
 			}
 		},
 		mounted:function(){
+			var that = this;
 			var mobileSelect5 = new MobileSelect({
                 trigger: '#trigger5',
                 title: '所在地区',
@@ -68,6 +71,11 @@
                 },         
                 callback:function(indexArr, data){
                     console.log(data);
+                    var area = '';
+                    Array.forEach(data,function(element,index,array){
+                    	area += element.name;
+                    })
+                    that.address.area = area;
                 }
             });
 		},

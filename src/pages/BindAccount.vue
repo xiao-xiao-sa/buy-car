@@ -46,6 +46,7 @@
 <script>
 	import MobileSelect from 'mobile-select'
     import cityData from '../assets/data/cityData'
+    import bCA  from '../assets/js/bankCardAttribution'
 
 	export default {
 		name:'BindAccount',
@@ -114,7 +115,8 @@
 		    		alert('手机号码不正确，请验证');
 		    		return;
 		    	}
-		    	
+		    	var card = bCA.bankCardAttribution('6217001210024455220');
+		    	console.log(card)
 		    }
 		}
 	}

@@ -19,11 +19,15 @@ export default new vuex.Store({
 		carParameterId:null,
 		shopDetailId:'',
 		selectCar:null,
-		jfShopId:null
+		jfShopId:null,
+		card:null
 	},
 	//相当于组件的计算属性
 	getters:{},
 	mutations:{
+		card:function(state,val){
+			state.card = val;
+		},
 		shopCarList:function(state,data){
 			state.shopCarList=data;
 		},
@@ -126,6 +130,7 @@ export default new vuex.Store({
 		jfShopId:function(state,val){
 			state.jfShopId = val;
 		}
+		
 	},
 	actions:{
 		// addCart:function(context,id){

@@ -36,11 +36,19 @@ import CarFriends from '@/pages/CarFriends'
 import PublishNews from '@/pages/PublishNews'
 import MyRecommend from '@/pages/MyRecommend'
 import JfShopDetail from '@/pages/JfShopDetail'
+import ReleaseBind from '@/pages/ReleaseBind'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path:'/ReleaseBind',
+      component:ReleaseBind,
+      meta:{
+        title:'银行卡'
+      }
+    },
     {
        	path: '/',
        	component: Index,
@@ -301,5 +309,6 @@ export default new Router({
         title:'积分商品详情'
       }
     }
+    
   ]
 })
