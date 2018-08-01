@@ -22,60 +22,63 @@
 </template>
 
 <script>
-	import Qs from 'qs'
-	
-	export default {
-		name:'Repair',
-		data(){return{
-			src:require('../assets/image/123.jpg'),
-			userName:'',
-			userPhone:'',
-			detail:''
-		}},
-		watch:{
-			userName:function(){},
-			userPhone:function(){},
-			detail:function(){}
-		},
-		methods:{
-			repairSubmit:function(){
-				var userName = this.userName;
-				var userPhone = this.userPhone;
-				var detail = this.detail;
-				if(userName == ''){
-					alert("请输入姓名");
-					return;
-				}
-				if(!this.testPhone(userPhone)){
-					alert("手机号码为11位，请输入有效号码");
-					return;
-				}
-				if(detail = ''){
-					alert('请输入汽车损坏情况')
-					return;
-				}
-				//向后台提交数据，未完善
-				this.axios({
-				   url:'/api/xxxxx/xxxx.xxx',
-				   method:'post',
-				   data:Qs.stringify({       //需要引入qs插件，方便后台读取参数
-				   			userName:userName,
-				   			userPhone:userPhone,
-				   			detail:detail
-						}),
-				   headers: {
-				     'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
-				   }
-				}).then(res=>{
-					console.log(res);
-				}).catch(err=>{
-					console.log(err);
-				})
+  import Qs from 'qs'
 
-			}
-		}
+  export default {
+  name:'Repair',
+  data(){return{
+  src:require('../assets/image/123.jpg'),
+  userName:'',
+  userPhone:'',
+  detail:''
+  }},
+  watch:{
+  userName:function(){},
+  userPhone:function(){},
+  detail:function(){}
+  },
+  methods:{
+  repairSubmit:function(){
+  var userName = this.userName;
+  var userPhone = this.userPhone;
+  var detail = this.detail;
+  var uid=localStorage.getItem('userID')
+  if(userName == ''){
+  alert("请输入姓名");
+  return;
+  }
+  if(!this.testPhone(userPhone)){
+  alert("手机号码为11位，请输入有效号码");
+  return;
+  }
+  if(detail == ''){
+  alert('请输入汽车损坏情况')
+  return;
+  }
+  //向后台提交数据，未完善
+  this.axios({
+  url:'/api/feedback.aspx',
+  method:'post',
+  data:Qs.stringify({       //需要引入qs插件，方便后台读取参数
+  userName:userName,
+  userPhone:userPhone,
+  detail:detail,
+  t:0,
+  uid:uid
+  }),
+  headers: {
+  'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
+  }
+  }).then(res=>{
+  console.log(res);
+  }).catch(err=>{
+  console.log(err);
+  })
 
-	}
+  }
+  }
+
+  }
 </script>
 
 <style lang="less">

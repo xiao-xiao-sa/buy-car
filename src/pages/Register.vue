@@ -23,27 +23,57 @@
 </template>
 
 <script>
-	import Qs from 'qs'
-	export default {
-		name:'Register',
-		data(){return{
-			userPhone:'',
-			userPwd:'',
-			userPwda:'',
-			yzm:''
-		}},
-		watch:{
-			userPhone:function(){},
-			userPwd:function(){},
-			userPwda:function(){},
-			yzm:function(){}
-		},
-		methods:{
-			register:function(){
-				
-			}
-		}
-	}
+  import Qs from 'qs'
+  export default {
+  name:'Register',
+  data(){return{
+  userPhone:'',
+  userPwd:'',
+  userPwda:'',
+  yzm:''
+  }},
+  watch:{
+  userPhone:function(){},
+  userPwd:function(){},
+  userPwda:function(){},
+  yzm:function(){}
+  },
+  methods:{
+  register:function(){
+  var userPhone=this.userPhone,
+  userPwd=this.userPwd,
+  userPwda=this.userPwda;
+  if(!this.testPhone(userPhone)){
+  alert("手机号码格式不正确");
+  return;
+  }
+  if(userPwd.length==0){
+  alert("请输入密码");
+  return;
+  }
+  if(userPwda!=userPwd){
+  alert("两次输入密码不一致");
+  return;
+  }
+  //post请求，类似如下操作
+  this.axios({
+  url:'/api/register.aspx',
+  method:'post',
+      data:Qs.stringify({       //需要引入qs插件，方便后台读取参数
+    			mobile:this.userPhone,
+    			password:this.userPwd
+ 		}),
+  headers: {
+  'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
+  }
+  }).then(res=>{
+  console.log(res);
+  }).catch(err=>{
+  console.log(err);
+  })
+  }
+  }
+  }
 </script>
 
 <style lang="less" scoped>

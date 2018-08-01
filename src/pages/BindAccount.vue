@@ -44,82 +44,116 @@
 </template>
 
 <script>
-	import MobileSelect from 'mobile-select'
-    import cityData from '../assets/data/cityData'
-    import bCA  from '../assets/js/bankCardAttribution'
-
-	export default {
-		name:'BindAccount',
-		data(){return{
-			showLinkage:false, //控制子组件的显示隐藏
-        	result:'请选择所在省市',
-			accountName:'',
-			accountPhone:'',
-			yzm:'',
-			accountNumber:'',
-			testAccountNumber:'',
-			area:'选择所在地区',
-			bankAccount:'',
-			branchAccount:'',
-			chineseCities:null
-		}},
-		watch:{
-			accountName:function(){},
-			accountPhone:function(){},
-			yzm:function(){},
-			accountNumber:function(){},
-			testAccountNumber:function(){},
-			bankAccount:function(){},
-			branchAccount:function(){},
-			area:function(){
-				console.log(this.area)
-			}
-		},
-		created:function(){
-			this.chineseCities=cityData.chineseCities;
-		},
-		mounted:function(){
-			var mobileSelect5 = new MobileSelect({
-                trigger: '#trigger5',
-                title: '所在地区',
-                wheels: [
-                            {data:this.chineseCities}
-                        ],
-                keyMap: {
-                    id:'id',
-                    value: 'name',
-                    childs :'city'
-                },         
-                callback:function(indexArr, data){
-                    console.log(data);
-                    console.log(this.area)
-                }
-            });
-		},
-		methods:{
-		    bindSub:function(){
-		    	var accountName=this.accountName;
-		    	var accountPhone=this.accountPhone;
-		    	var accountNumber=this.accountNumber;
-		    	var testAccountNumber=this.testAccountNumber;
-		    	var bankAccount=this.bankAccount;
-		    	var branchAccount=this.branchAccount;
-		    	var area=this.result;
-		    	console.log(accountName,accountPhone,accountNumber,bankAccount,branchAccount,area);
-		    	//需要对数据进行验证然后提交，未完善
-		    	if(accountName.length==0){
-		    		alert('账号姓名不能为空');
-		    		return;
-		    	}
-		    	if(!this.testPhone(accountPhone)){
-		    		alert('手机号码不正确，请验证');
-		    		return;
-		    	}
-		    	var card = bCA.bankCardAttribution('6217001210024455220');
-		    	console.log(card)
-		    }
-		}
-	}
+  import MobileSelect from 'mobile-select'
+  import cityData from '../assets/data/cityData'
+  import Qs from 'qs'
+  export default {
+  name:'BindAccount',
+  data(){return{
+  showLinkage:false, //控制子组件的显示隐藏
+  result:'请选择所在省市',
+  accountName:'',
+  accountPhone:'',
+  yzm:'',
+  accountNumber:'',
+  testAccountNumber:'',
+  area:'选择所在地区',
+  bankAccount:'',
+  branchAccount:'',
+  chineseCities:null
+  }},
+  watch:{
+  accountName:function(){},
+  accountPhone:function(){},
+  yzm:function(){},
+  accountNumber:function(){},
+  testAccountNumber:function(){},
+  bankAccount:function(){},
+  branchAccount:function(){},
+  area:function(){
+  console.log(this.area)
+  }
+  },
+  created:function(){
+  this.chineseCities=cityData.chineseCities;
+  },
+  mounted:function(){
+  var that = this;
+  var mobileSelect5 = new MobileSelect({
+  trigger: '#trigger5',
+  title: '所在地区',
+  wheels: [
+  {data:this.chineseCities}
+  ],
+  keyMap: {
+  id:'id',
+  value: 'name',
+  childs :'city'
+  },
+  callback:function(indexArr, data){
+  var area = '';
+  Array.forEach(data,function(element,index,array){
+  area += element.name;
+  })
+  that.area = area;
+  console.log(that.area);
+  }
+  });
+  },
+  methods:{
+  bindSub:function(){
+  var that=this;
+  if(!this.testPhone(this.accountPhone)){
+  alert("手机号码格式不正确");
+  return;
+  }
+  if(this.accountName.length==0){
+  alert("请输入姓名");
+  return;
+  }
+  if(this.accountNumber.length==0){
+  alert("请输入账号");
+  return;
+  }
+  if(this.accountNumber!=this.testAccountNumber){
+  alert("两次输入账号不一致");
+  return;
+  }
+  if(this.bankAccount.length==0){
+  alert("两次输入开户银行");
+  return;
+  }
+  if(this.branchAccount.length==0){
+  alert("两次输入开户支行");
+  return;
+  }
+  //提交数据，并返回所有的addressList,
+  var uid=localStorage.getItem('userID')
+  this.axios({
+  url:'/api/SetBank.aspx',
+  method:'post',
+  data:Qs.stringify({       //需要引入qs插件，方便后台读取参数
+  uid:uid,
+  address:that.area,
+  name:this.accountName,
+  phone:this.accountPhone,
+  t:2,
+  account:this.accountNumber,
+  bank:this.bankAccount,
+  bankdetail:this.branchAccount
+  }),
+  headers: {
+  'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
+  }
+  }).then(res=>{
+  console.log(res);
+  this.$router.push({path:'/MyAccount'});
+  }).catch(err=>{
+  console.log(err);
+  })
+  }
+  }
+  }
 </script>
 
 <style lang="less" scoped>

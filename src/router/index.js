@@ -43,10 +43,12 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path:'/ReleaseBind',
-      component:ReleaseBind,
-      meta:{
-        title:'银行卡'
+      path: '/ReleaseBind',
+      component: ReleaseBind,
+      meta: {
+        allowBack: false,
+        title: '银行卡',
+        keepAlive: true
       }
     },
     {
@@ -309,6 +311,5 @@ export default new Router({
         title:'积分商品详情'
       }
     }
-    
   ]
 })

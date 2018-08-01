@@ -19,7 +19,7 @@ Vue.use(base);
 //定义全局价格过滤器，保留两位小数
 Vue.filter('priceType', function (value) {
   if(!isNaN(value)){
-  	value = parseFloat(value).toFixed(2);
+  	//value = value.toFixed(2);
   	return value;
   }
 })

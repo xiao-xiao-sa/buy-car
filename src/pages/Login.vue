@@ -18,37 +18,54 @@
 </template>
 
 <script>
+  import Qs from 'qs'
+  export default {
+  name:'Login',
+  data(){return{
+  userPhone:'',
+  userPwd:''
+  }},
+  watch:{
+  userPhone:function(){},
+  userPwd:function(){}
+  },
+  created:function(){
 
-	export default {
-		name:'Login',
-		data(){return{
-			userPhone:'',
-			userPwd:''
-		}},
-		watch:{
-			userPhone:function(){},
-			userPwd:function(){}
-		},
-		created:function(){
-			
-		},
-		methods:{
-			login:function(){
-				var userPhone=this.userPhone,
-					userPwd=this.userPwd;
-				if(!this.testPhone(userPhone)){
-					alert("手机号码格式不正确");
-					return;
-				}
-				if(userPwd.length==0){
-					alert("请输入密码");
-					return;
-				}
-				//发送请求登录验证，登录成功后将用户信息保存在本地，
-			}
-
-		}
-	}
+  },
+  methods:{
+  login:function(){
+  var userPhone=this.userPhone,
+  userPwd=this.userPwd;
+  if(!this.testPhone(userPhone)){
+  alert("手机号码格式不正确");
+  return;
+  }
+  if(userPwd.length==0){
+  alert("请输入密码");
+  return;
+  }
+  //post请求，类似如下操作
+  this.axios({
+  url:'/api/login.aspx',
+  method:'post',
+  data:Qs.stringify({       //需要引入qs插件，方便后台读取参数
+  mobile:this.userPhone,
+  code:this.userPwd
+  }),
+  headers: {
+  'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
+  }
+  }).then(res=>{
+  //console.log(res);
+  if(res.data.resultcode==0)
+  this.$router.push({path:'/My'})
+  localStorage.setItem('userID', res.data.uid)
+  }).catch(err=>{
+  console.log(err);
+  })
+  }
+  }
+  }
 </script>
 
 <style lang="less" scoped>

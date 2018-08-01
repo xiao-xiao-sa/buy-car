@@ -2,7 +2,7 @@
 	<div class="order-detail">
 		<tab v-model='activeKey'>
 			<pane  label='待付款'  name='0'>
-				<order-item v-for="(item0,index0) in order0" v-if="order0.length>0"  :order="item0" :key="index0">
+				<order-item v-for="(item0,index0) in order0" v-if="order0.length>0" :order="item0" :key="index0">
 					<order-shop-item v-for="(item00,index00) in item0.shopList" :shopInfo="item00" :key="index00"></order-shop-item>
 				</order-item>
 				<div v-if="order0.length == 0" class="no-order">

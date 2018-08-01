@@ -31,45 +31,34 @@
 			}
 		},
 		created:function(){
-			this.accountList=[
-				{
-					"accountNumber":'6217001210024455220',
-					"bankName":'中国建设银行',
-					"bankCode":'CCB',
-					"cardType":'DC',
-					"cardTypeName":"储蓄卡"
-				},
-				{
-					"accountNumber":'6212264100011335373',
-					"bankName":'中国工商银行',
-					"bankCode":'ICBC',
-					"cardType":'DC',
-					"cardTypeName":"储蓄卡"
-				},
-				{
-					"accountNumber":'6228481200290317812',
-					"bankName":'中国农业银行',
-					"bankCode":'ABC',
-					"cardType":'DC',
-					"cardTypeName":"储蓄卡"
-				},
-				{
-					"accountNumber":'62166128000043557',
-					"bankName":'中国银行',
-					"bankCode":'BOC',
-					"cardType":'DC',
-					"cardTypeName":"储蓄卡"
-				},
-				{
-					"accountNumber":'623061571014694660',
-					"bankName":'杭州银行',
-					"bankCode":'HZCBCN2H',
-					"cardType":'DC',
-					"cardTypeName":"储蓄卡"
-				}
-				
-			]
-		},
+          var uid=localStorage.getItem('userID')
+  console.log(uid)
+   //get请求，类似如下操作
+  this.axios.get('/api/SetBank.aspx',{params:{t:1,uid:uid}})
+  .then(res => {
+  console.log( res.data)
+  var accountList=[];
+  for (var i = 0; i < res.data.items.length; i++) {
+      accountList.push({
+        "accountNumber": res.data.items[i].account,
+        "bankName":res.data.items[i].bank,
+        "bankCode":'',
+        "cardType":'DC',
+        "cardTypeName":"储蓄卡"
+      });
+    }
+    
+  
+
+    //成功回调
+   
+this.accountList = accountList
+console.log(this.accountList)
+  }, res => {
+    //失败回调
+    console.log(res)
+  })
+  },
 		methods:{
 			release:function(val){
 				console.log(val)

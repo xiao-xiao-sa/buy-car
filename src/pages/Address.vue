@@ -27,57 +27,69 @@
 </template>
 
 <script>
-	import addressData from '../assets/data/addressData'
+  import Qs from 'qs'
+  import addressData from '../assets/data/addressData'
 
-	export default {
-		name:'Address',
-		data(){return{
-			addressList:null,
-			userId:''
-		}},
-		created:function(){
-			//判断转态仓库中是否存在地址列表，如果不存在就从后台获取，存在的话就直接读取
-			if(this.$store.state.addressList == null){
-				this.addressList = addressData.addressList;
-				this.$store.commit('addressList',this.addressList);
-				var userId=this.userId;
-				this.axios({
-				   url:'/api/xxxxx/xxxx.xxx',
-				   method:'post',
-				   data:Qs.stringify({       //需要引入qs插件，方便后台读取参数
-				   			userId:userId
-						}),
-				   headers: {
-				     'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
-				   }
-				}).then(res=>{
-					console.log(res);
-				}).catch(err=>{
-					console.log(err);
-				})
-			}else{
-				this.addressList = this.$store.state.addressList;
-			}
-		},
-		methods:{
-			deleteAddress:function(val){
-				this.$store.dispatch('deleteAddress',val);
-			},
-			reviseAddress:function(val){
-				var reviseAddress = this.addressList.filter(function(ele,index,arr){
-					if(ele.id == val){
-						return ele;
-					}
-				})[0];
-				this.$store.commit('reviseAddress',reviseAddress );
-				this.$router.push({path:'/addAddress'})
-			},
-			changeIsSelect:function(val){
-				console.log(val);
-				this.$store.dispatch('changeIsSelect',val);
-			}
-		}
-	}
+  export default {
+  name:'Address',
+  data(){return{
+  addressList:null,
+  userId:''
+  }},
+  created:function(){
+  var uid=localStorage.getItem('userID')
+  console.log(uid)
+  //判断转态仓库中是否存在地址列表，如果不存在就从后台获取，存在的话就直接读取
+  //if(this.$store.state.addressList == null){
+  //this.addressList = addressData.addressList;
+  //this.$store.commit('addressList',this.addressList);
+  var userId=this.userId;
+  this.axios.get('/api/GetAddress.aspx',{params:{uid:uid,t:3}})
+  .then(res=>{
+  console.log(res);
+  var addressList=[];
+  for (var i = 0; i < res.data.items.length; i++) {
+  var isok=false;
+  if (res.data.items[i].isok=="1")
+   isok=true;
+      addressList.push({
+      "id":res.data.items[i].id,
+        "name": res.data.items[i].name,
+        "phone":res.data.items[i].phone,
+        "area":res.data.items[i].address,
+        "detail":res.data.items[i].detail,
+        "isSelect":isok
+      });
+    }
+    //成功回调
+    this.addressList = addressList;
+  }).catch(err=>{
+  console.log(err);
+  })
+  //}
+  //else{
+  //this.addressList = this.$store.state.addressList;
+  //}
+  },
+  methods:{
+  deleteAddress:function(val){
+  this.$store.dispatch('deleteAddress',val);
+  },
+  reviseAddress:function(val){
+  var reviseAddress = this.addressList.filter(function(ele,index,arr){
+  if(ele.id == val){
+  return ele;
+  }
+  })[0];
+  this.$store.commit('reviseAddress',reviseAddress );
+  this.$router.push({path:'/addAddress'})
+  },
+  changeIsSelect:function(val){
+  console.log(val);
+  this.$store.dispatch('changeIsSelect',val);
+  }
+  }
+  }
 </script>
 
 <style lang="less" scoped>

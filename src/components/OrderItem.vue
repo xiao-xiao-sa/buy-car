@@ -8,7 +8,7 @@
 			<slot></slot>
 		</div>
 		<div class='bottom' v-if="order.status == 0">
-			<button class="cancel" @click="cancel(order.number)">取消订单</button>
+			<button class="cancel" @click="cancel">取消订单</button>
 			<button class="pay" @click="pay">去付款</button>
 		</div>
 	</div>
@@ -20,13 +20,13 @@
 		name:'orderItem',
 		props:['order'],
 		methods:{
-			cancel:function(val){
-				console.log(val)
+			cancel:function(){
+				var number = this.order.number;
 				this.axios({
 				   url:'/api/xxxxx/xxxx.xxx',
 				   method:'post',
 				   data:Qs.stringify({       //需要引入qs插件，方便后台读取参数
-				   			number:val
+				   			number:number
 						}),
 				   headers: {
 				     'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
@@ -36,6 +36,7 @@
 				}).catch(err=>{
 					console.log(err);
 				})
+
 			},
 			pay:function(){
 				var number = this.order.number;

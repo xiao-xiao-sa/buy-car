@@ -19,15 +19,15 @@ export default new vuex.Store({
 		carParameterId:null,
 		shopDetailId:'',
 		selectCar:null,
-		jfShopId:null,
-		card:null
+        jfShopId: null,
+        card:null
 	},
 	//相当于组件的计算属性
 	getters:{},
-	mutations:{
-		card:function(state,val){
-			state.card = val;
-		},
+    mutations: {
+      card: function (state, val) {
+        state.card = val;
+      },
 		shopCarList:function(state,data){
 			state.shopCarList=data;
 		},
@@ -87,12 +87,22 @@ export default new vuex.Store({
 			state.addressList=addressList;
 		},
 		deleteAddress:function(state,val){
-			for(var i=0,l=state.addressList.length;i<l;i++){
-				if(state.addressList[i].id==val){
-					state.addressList.splice(i,1);
-					return;
-				}
-			}
+          axios({
+            url: '/api/SetAddress.aspx',
+            method: 'post',
+            data: Qs.stringify({       //需要引入qs插件，方便后台读取参数
+              id: val,
+              t:1
+            }),
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
+            }
+          }).then(res => {
+            console.log(res);
+            context.commit('deleteAddress', id)
+          }).catch(err => {
+            console.log(err);
+          })
 		},
 		reviseAddress:function(state,val){
 			console.log(val);
@@ -130,7 +140,6 @@ export default new vuex.Store({
 		jfShopId:function(state,val){
 			state.jfShopId = val;
 		}
-		
 	},
 	actions:{
 		// addCart:function(context,id){

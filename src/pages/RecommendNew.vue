@@ -7,24 +7,42 @@
 </template>
 
 <script>
-	import Shop1 from '../components/Shop1.vue'
-	import TabBar from '../components/TabBar.vue'
-	import recommendNewData from '../assets/data/recommendNewData'
+  import Shop1 from '../components/Shop1.vue'
+  import TabBar from '../components/TabBar.vue'
+  import recommendNewData from '../assets/data/recommendNewData'
 
-	export default {
-		name:'RecommendGood',
-		data(){return{
-			newList:null
-		}},
-		created:function(){
-			this.newList = recommendNewData.newList;
-			this.axios.get(url)
-				.then(res=>{
-					console.log(res)
-				}).catch(err=>{
-					console.log(err)
-				})
-		},
+  export default {
+  name:'RecommendGood',
+  data(){return{
+  newList:null
+  }},
+  created:function(){
+  //get请求，类似如下操作
+  this.axios.get('/api/GetCarClass.aspx',{params:{t:3}})
+  .then(res => {
+  console.log( res.data)
+  var newList=[];
+  for (var i = 0; i < res.data.items.length; i++) {
+      newList.push({
+        "id": res.data.items[i].id,
+        "src":res.data.items[i].simg,
+        "title":res.data.items[i].name,
+        "construcPrice":res.data.items[i].marktprice,
+        "price":res.data.items[i].price
+      });
+    }
+    
+  
+
+    //成功回调
+   
+this.newList = newList
+console.log(this.newList)
+  }, res => {
+    //失败回调
+    console.log(res)
+  })
+  },
 		components:{
 			'tab-bar':TabBar,
 			'shop-1':Shop1

@@ -12,9 +12,6 @@
 	export default {
 		name:'shop1',
 		props:['shopInfo'],
-		created:function(){
-			console.log(this.shopInfo)
-		},
 		methods:{
 			toShopDetail:function(){
 				this.$store.commit('shopDetailId',this.shopInfo.id);

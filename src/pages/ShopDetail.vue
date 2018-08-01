@@ -2,15 +2,15 @@
 	<div class="shop-detail">
 		<swiper :swiper="shopDetail.bannerList"></swiper>
 		<div class="detail-1">
-			<h2 class="title">{{shopDetail.title | changeTextLength}}</h2>
-			<p class="cprice">指导价 &yen;{{shopDetail.construcPrice | priceType}}万</p>
-			<p class="price">实际价 &yen;{{shopDetail.price | priceType}}万</p>
+			<h2 class="title">{{title | changeTextLength}}</h2>
+			<p class="cprice">指导价 &yen;{{construcPrice}}万</p>
+			<p class="price">实际价 &yen;{{Price}}万</p>
 		</div>
 		<div class="detail-2">
-			<p>汽车品牌：{{shopDetail.brand}}</p>
-			<p>规格型号：{{shopDetail.model}}</p>
-			<p>生产地：{{shopDetail.origin}}</p>
-			<p>排气量：{{shopDetail.displacement}}</p>
+			<p>汽车品牌：{{brand}}</p>
+			<p>规格型号：{{model}}</p>
+			<p>生产地：{{origin}}</p>
+			<p>排气量：{{displacement}}</p>
 			<div class="color">
 				<p>首选颜色：</p>
 				<ul>
@@ -37,51 +37,83 @@
 </template>
 
 <script>
-	import swiper from '../components/Banner.vue'
-	import shopDetailData from '../assets/data/shopDetailData'
+  import swiper from '../components/Banner.vue'
+  import shopDetailData from '../assets/data/shopDetailData'
 
-	export default {
-		name:'ShopDetail',
-		data(){return{
-			shopDetail:null,
-			colorId:0
-		}},
-		created:function(){
-			this.shopDetail=shopDetailData.shopDetail;
-			var id = this.$store.state.shopDetailId;
-			console.log(id);
-			this.axios.get(url,{params:{id:id}})
-				.then(res=>{
-					console.log(res)
-				}).catch(err=>{
-					console.log(err)
-				})
-			
-		},
-		filters:{
-			changeTextLength:function(value){
-				if(value.length>30){
-					return value.substr(0,31) + "...";
-				}else{
-					return value;
-				}
-				
-			}
-		},
-		methods:{
-			changeColor:function(val){
-				this.colorId=val;
-			},
-			toParameter:function(val){
-				console.log(val+'parameter');
-				this.$store.commit('getCarParameter',val);
-				this.$router.push({path:'/CarParameter'});
-			}
-		},
-		components:{
-			'swiper':swiper,
-		}
-	}
+  export default {
+  name:'ShopDetail',
+  data(){return{
+  shopDetail:null,
+  title:'',
+  construcPrice:0,
+  Price:0,
+  brand:null,
+  model:null,
+  origin:null,
+  displacement:null,
+  isPt:1,
+  colorId:0
+  }},
+  created:function(){
+  this.shopDetail=shopDetailData.shopDetail;
+  var id = this.$store.state.shopDetailId;
+  console.log(id);
+  this.axios.get('/api/GetShopdetail.aspx',{params:{id:id}})
+  .then(res=>{
+  var title='';
+  title=res.data.items[0].title;
+  var construcPrice='';
+  construcPrice=res.data.items[0].construcPrice;
+  var model='';
+  model=res.data.items[0].model;
+  var brand='';
+  brand=res.data.items[0].brand;
+  var Price='';
+  Price=res.data.items[0].price;
+  var origin='';
+  origin=res.data.items[0].origin;
+  var displacement='';
+  displacement=res.data.items[0].displacement;
+  //成功回调
+  this.title = title;
+  console.log(title)
+  this.construcPrice = construcPrice;
+  console.log(Price)
+  this.Price = Price;
+  this.brand = brand;
+  this.model = model;
+  this.origin = origin;
+  this.displacement = displacement;
+  }).catch(err=>{
+  console.log(err)
+  })
+
+  },
+  filters:{
+  changeTextLength:function(value){
+  if(value.length>30){
+  return value.substr(0,31) + "...";
+  }else{
+  return value;
+  }
+
+  }
+  },
+  methods:{
+  changeColor:function(val){
+  this.colorId=val;
+  console.log(val)
+  },
+  toParameter:function(val){
+  console.log(val+'parameter');
+  this.$store.commit('getCarParameter',val);
+  this.$router.push({path:'/CarParameter'});
+  }
+  },
+  components:{
+  'swiper':swiper,
+  }
+  }
 
 </script>
 

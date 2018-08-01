@@ -12,43 +12,50 @@
 </template>
 
 <script>
-    import Qs from 'qs'
+  import Qs from 'qs'
 
-	export default {
-		name:'ReleaseBind',
-		data(){return{
-			card:null,
-		}},
-		created:function(){
-			//从vuex中获取card的信息
-			this.card = this.$store.state.card;
-		},
-		methods:{
-			//解除绑定的函数
-			jieband:function(){
-				var accountNumber = this.card.accountNumber;
-				this.axios({
-				   url:'/api/xxxxx/xxxx.xxx',
-				   method:'post',
-				   data:Qs.stringify({       //需要引入qs插件，方便后台读取参数
-				   			accountNumber:accountNumber
-						}),
-				   headers: {
-				     'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
-				   }
-				}).then(res=>{
-					console.log(res);
-					//如果删除成功就返回上一页
-					this.$router.go(-1);
-				}).catch(err=>{
-					console.log(err);
-				})
+  export default {
+  name:'ReleaseBind',
+  data(){return{
+  card:null,
+  }},
+  created:function(){
+  //从vuex中获取card的信息
+  this.card = this.$store.state.card;
 
-			}
-		},
-		filters:{
-			cardNumberFormat:function(val){
-				if(val.length<15){
+  },
+
+  methods:{
+  //解除绑定的函数
+  jieband:function(){
+  var accountNumber = this.card.accountNumber;
+  var uid=localStorage.getItem('userID')
+  console.log(uid)
+  console.log(accountNumber)
+  this.axios({
+  url:'/api/SetBank.aspx',
+  method:'post',
+  data:Qs.stringify({       //需要引入qs插件，方便后台读取参数
+  account:accountNumber,
+  t:3,
+  uid:uid
+  }),
+  headers: {
+  'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
+  }
+  }).then(res=>{
+  console.log(res);
+  //如果删除成功就返回上一页
+  this.$router.go(-1);
+  }).catch(err=>{
+  console.log(err);
+  })
+
+  }
+  },
+  filters:{
+  cardNumberFormat:function(val){
+  if(val.length<15){
 					return "**** **** **** "+val.substring(12); 
 				}else{
 					return "**** **** **** "+val.substring(12,16)+" "+val.substring(16)

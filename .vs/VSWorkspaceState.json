@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\config",
+    "\\src",
+    "\\src\\assets",
+    "\\src\\assets\\data",
+    "\\src\\pages",
+    "\\src\\router",
+    "\\src\\store"
+  ],
+  "SelectedNode": "\\src\\pages\\Appointment.vue",
+  "PreviewInSolutionExplorer": false
+}

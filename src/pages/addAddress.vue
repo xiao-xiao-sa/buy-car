@@ -22,97 +22,123 @@
 			<i class="iconfont icon-weixuanzhong" v-if="address.isSelect == false" @click="isSelect"></i>
 			<i class="iconfont icon-xuanzhong" v-if="address.isSelect == true" style="color:#ff2132" @click="isSelect"></i>
 		</div>
+    <input type="text" v-model="address.id" placeholder="">
 		<button class="save-submit" @click="saveAddress">保存</button>
 	</div>
 </template>
 
 <script>
-	import MobileSelect from 'mobile-select'
-    import cityData from '../assets/data/cityData'
-    import Qs from 'qs'
-
-	export default {
-		name:'addAddress',
-		data(){return{
-			address:{
-				"id":'',
-				"name":'',
-				"phone":'',
-				"area":'选择省、市、区',
-				'detail':"",
-				"isSelect":false
-			},
-			userId:'',
-			chineseCities:null
-		}},
-		watch:{
-			address:function(){}
-		},
-		created:function(){
-			this.chineseCities=cityData.chineseCities;
-			if(this.$store.state.reviseAddress != null){
-				this.address = this.$store.state.reviseAddress;
-				this.$store.commit('reviseAddress',null);
-				console.log(this.address.id);
-			}
-		},
-		mounted:function(){
-			var that = this;
-			var mobileSelect5 = new MobileSelect({
-                trigger: '#trigger5',
-                title: '所在地区',
-                wheels: [
-                            {data:this.chineseCities}
-                        ],
-                keyMap: {
-                    id:'id',
-                    value: 'name',
-                    childs :'city'
-                },         
-                callback:function(indexArr, data){
-                    console.log(data);
+  import MobileSelect from 'mobile-select'
+  import cityData from '../assets/data/cityData'
+  import Qs from 'qs'
+  export default {
+  name:'addAddress',
+  data(){return{
+  address:{
+  "id":'',
+  "uid":'',
+  "name":'',
+  "phone":'',
+  "area":'选择省、市、区',
+  'detail':"",
+  "provincename":'',
+  "cityname":'',
+  "countyname":'',
+  "isSelect":false
+  },
+  userId:'',
+  isok:'0',
+  chineseCities:null
+  }},
+  watch:{
+  address:function(){}
+  },
+  created:function(){
+  this.chineseCities=cityData.chineseCities;
+  if(this.$store.state.reviseAddress != null){
+  this.address = this.$store.state.reviseAddress;
+  this.$store.commit('reviseAddress',null);
+  }
+  },
+  mounted:function(){
+  			var that = this;
+  var mobileSelect5 = new MobileSelect({
+  trigger: '#trigger5',
+  title: '所在地区',
+  wheels: [
+  {data:this.chineseCities}
+  ],
+  keyMap: {
+  id:'id',
+  value: 'name',
+  childs :'city'
+  },
+ callback:function(indexArr, data){
+                    
                     var area = '';
                     Array.forEach(data,function(element,index,array){
                     	area += element.name;
                     })
                     that.address.area = area;
+                    console.log(that.address.area);
                 }
             });
 		},
-		methods:{
-			saveAddress:function(){
-				console.log(this.address);
-				//提交数据，并返回所有的addressList,
-				var userId=this.userId,
-					address=this.address;
-				this.axios({
-				   url:'/api/xxxxx/xxxx.xxx',
-				   method:'post',
-				   data:Qs.stringify({       //需要引入qs插件，方便后台读取参数
-				   			userId:userId,
-				   			address:address
-						}),
-				   headers: {
-				     'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
-				   }
-				}).then(res=>{
-					console.log(res);
-					//返回修改后所有的地址列表，存入vuex中，并且跳转到地址列表页面
-					var reviseAddressList = res.reviseAddressList;
-					this.$store.commit('reviseAddressList',reviseAddressList);
-					this.$router.push({path:'/Address'});
-				}).catch(err=>{
-					console.log(err);
-				})
-				var reviseAddressList = [];
-				this.$store.commit('reviseAddressList',reviseAddressList);
-				this.$router.push({path:'/Address'});
-			},
-			isSelect:function(){
-				this.address.isSelect = !this.address.isSelect;
-			}
-		}
-	}
+  methods:{
+  saveAddress:function(){
+  var that=this;
+  console.log(this.address);
+  if(!this.testPhone(this.address.phone)){
+  alert("手机号码格式不正确");
+  return;
+  }
+   if(this.address.name.length==0){
+  alert("请输入姓名");
+  return;
+  }
+  if(this.address.detail.length==0){
+  alert("请输入详细地址");
+  return;
+  }
+  //提交数据，并返回所有的addressList,
+  var uid=localStorage.getItem('userID')
+  if(this.address.isSelect==true){
+   this.isok='1';}
+ console.log(this.address.id);
+  this.axios({
+  url:'/api/SetAddress.aspx',
+  method:'post',
+  data:Qs.stringify({       //需要引入qs插件，方便后台读取参数
+  uid:uid,
+  Address:that.address.area,
+  Realname:this.address.name,
+  mobile:this.address.phone,
+  t:2,
+  isok:this.isok,
+  detail:this.address.detail,
+  id:this.address.id
+  }),
+  headers: {
+  'Content-Type': 'application/x-www-form-urlencoded' //请求头需要设置，axios默认 'application/json'
+  }
+  }).then(res=>{
+  console.log(res);
+  //返回修改后所有的地址列表，存入vuex中，并且跳转到地址列表页面
+  var reviseAddressList = res.reviseAddressList;
+  this.$store.commit('reviseAddressList',reviseAddressList);
+  this.$router.push({path:'/Address'});
+  }).catch(err=>{
+  console.log(err);
+  })
+  var reviseAddressList = [];
+  this.$store.commit('reviseAddressList',reviseAddressList);
+  this.$router.push({path:'/Address'});
+  },
+  isSelect:function(){
+  this.address.isSelect = !this.address.isSelect;
+  }
+  }
+  }
 </script>
 
 <style lang="less">
